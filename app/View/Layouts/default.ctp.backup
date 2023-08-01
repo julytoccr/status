@@ -1,0 +1,113 @@
+<?php
+/**
+ *
+ * PHP 5
+ *
+ * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+ * Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @copyright     Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org CakePHP(tm) Project
+ * @package       Cake.View.Layouts
+ * @since         CakePHP(tm) v 0.10.0.1076
+ * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
+ */
+
+$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<?php echo $this->Html->charset(); ?>
+	<title>e-status ::
+		<?php echo $title_for_layout; ?>
+	</title>
+	<?php
+		echo $this->Html->meta('icon');
+
+		echo $this->Html->charset('UTF-8');
+		echo $this->Html->css('default');
+
+		echo $this->fetch('meta');
+		echo $this->fetch('css');
+				
+		echo $this->Html->script('prototype');
+    	echo $this->Html->script('scriptaculous');
+    	echo $this->Html->script('jquery-1.4.2.min');
+    	echo $this->Html->script('controls');
+		echo $this->Html->script('herramientas');
+		echo $this->Html->script('flash_message');
+    	echo $this->fetch('script');
+	?>
+	
+	<!--[if lt IE 7]>
+	<?php
+		echo $this->Html->script('ie');
+		echo $this->Html->css('ie');
+		echo $this->Html->script('ie7/ie7-standard-p');
+	?>
+	<![endif]-->
+</head>
+<body>
+	<div id="header">
+		<div class="subHeader">
+		<?php
+			echo $this->Html->link(__('inicio'), '/',array('title'=>'asdf')).'|';
+			echo $this->Html->link(__('ayuda_'), 'http://www-eio.upc.es/personal/homepages/josean/e-status/help-en.html').'|';
+			echo $this->Html->link(__('acerca_de'), '/pages/acerca_de');
+		?>
+			<div class="right">
+				<script type="text/javascript" src="<?php echo $this->Html->url('/js/clock/clock.js'); ?>"></script>
+				<span id="clock_div"></span><script type="text/javascript">StartClock("clock_div")</script>
+			</div>
+		</div>
+		<div class="midHeader">
+			<?php echo $this->Html->image('logo_transp.gif', array('alt'=>'e-status logo', 'height'=>90)); ?>
+		</div>
+	</div>
+
+    <div id="side-bar">
+		<?
+		echo $this->fetch('sidebar');
+		
+		if(! $this->Session->check('usuario')) {
+			echo $this->element('sidebar/guest');
+		} else {
+			if($this->Session->read('usuario.lenguaje') == 'NOLANG')
+				echo $this->element('sidebar/all_users_no_lenguaje');
+			else
+				echo $this->element('sidebar/all_users');
+			
+			$roles = $this->Session->read('usuario.roles');
+			foreach (array('admin','profesor','alumno') as $role){
+				if( isset( $roles[$role] )){
+					echo $this->element('sidebar/' . $role);
+				}
+			}
+		}
+		?>		
+    </div>
+
+    <div class="main">
+    	<h1>
+    		<?php echo $this->Html->image('squares.gif', array('alt'=>'', 'align'=>'left' )); ?>
+    		&nbsp;
+    		<?=$title_for_layout?>
+		</h1>
+		<br/>
+		<?php echo $this->Session->flash(); ?>
+	    <div id="content_for_layout"><?php echo $this->fetch('content'); ?></div>
+    </div>
+
+    <div id="footer">
+		<div class="left">
+        </div>
+		<div class="right">
+		</div>
+    </div>
+	<?php echo $this->element('sql_dump'); ?>
+</body>
+</html>

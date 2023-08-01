@@ -1,0 +1,56 @@
+ .dtree
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	white-space: nowrap;
+	vertical-align: text-top;
+	text-align: left;
+	line-height: normal;
+}
+
+ .dtree img
+{
+	border: 0px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+ .dtree a
+{
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+}
+ .dtree a:hover
+{
+	text-align: center;
+	vertical-align: middle;
+}
+ .dtree .node
+{
+	position: relative;
+	top: -2px;
+	padding: 1px;
+	text-align: center;
+	vertical-align: middle;
+}
+ .dtree .nodeSel
+{
+	position: relative;
+	top: -2px;
+	padding: 1px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.item_active
+{
+	color: white;
+	background-color: #8888EE;
+}
+
+.item_highlight
+{
+	color: black;
+	background-color: #EEEE44;
+}

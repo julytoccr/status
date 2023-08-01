@@ -1,0 +1,6 @@
+
+CREATE VIEW est_alumnos_aprobados AS select `e`.`alumno_id` AS `alumno_id`,`e`.`asignatura_id` AS `asignatura_id`,`e`.`grupo_nombre` AS `grupo_nombre`,`e`.`grupo_id` AS `grupo_id`,count(distinct `p`.`problema_id`) AS `num_problemas_aprobados`,count(0) AS `num_ejecuciones_aprobadas` from (`estatus`.`est_ejecuciones` `e` left join `estatus`.`est_alumnos_problemas_aprobados` `p` on((`e`.`alumno_id` = `p`.`alumno_id`))) where (`e`.`nota` >= 5) group by `e`.`alumno_id`,`e`.`asignatura_id`,`e`.`grupo_nombre`,`e`.`grupo_id`
+;
+
+CREATE VIEW est_alumnos AS select `e`.`alumno_id` AS `alumno_id`,`e`.`asignatura_id` AS `asignatura_id`,`e`.`grupo_nombre` AS `grupo_nombre`,`e`.`grupo_id` AS `grupo_id`,sum(`e`.`puntuacion`) AS `puntuacion_total`,round((sum(`e`.`puntuacion`) / sum(`e`.`factor`)),3) AS `nota_media`,count(distinct `e`.`problema_id`) AS `num_problemas_ejecutados`,count(0) AS `num_ejecuciones` from `estatus`.`est_ejecuciones` `e` group by `e`.`alumno_id`,`e`.`asignatura_id`,`e`.`grupo_nombre`,`e`.`grupo_id`
+;

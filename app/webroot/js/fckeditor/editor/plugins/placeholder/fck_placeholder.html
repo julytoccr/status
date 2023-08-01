@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+Estatus Variable Plugin
+Based on Placeholder
+-->
+<html>
+	<head>
+		<title>Estatus Variable Properties</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta content="noindex, nofollow" name="robots">
+		<script language="javascript">
+
+var oEditor = window.parent.InnerDialogLoaded() ;
+var FCKLang = oEditor.FCKLang ;
+var FCKPlaceholders = oEditor.FCKPlaceholders ;
+var ListaVariables=FCKPlaceholders.EstatusListaVariables();
+
+window.onload = function ()
+{
+	// First of all, translate the dialog box texts
+	oEditor.FCKLanguageManager.TranslatePage( document ) ;
+
+	// Show the "Ok" button.
+	window.parent.SetOkButton( true ) ;
+}
+
+var eSelected = null;
+
+
+function Ok()
+{
+	var sValue = document.getElementById('txtName').value ;
+
+	if ( sValue.length == 0 )
+	{
+		alert( FCKLang.PlaceholderErrNoName ) ;
+		return false ;
+	}
+
+	oEditor.FCK.InsertHtml('$'+sValue + '$');
+	return true ;
+}
+
+		</script>
+	</head>
+	<body scroll="no" style="OVERFLOW: hidden">
+		<table height="100%" cellSpacing="0" cellPadding="0" width="100%" border="0">
+			<tr>
+				<td>
+					<table cellSpacing="0" cellPadding="0" align="center" border="0">
+						<tr>
+							<td>
+								<span fckLang="PlaceholderDlgName">Placeholder Name</span><br>
+								<select id="txtName">
+									<script language="javascript">
+									if (ListaVariables.length>0)
+									{
+										for (var i=0;i<ListaVariables.length;i++)
+										{
+											var name=ListaVariables[i];
+											document.write('<option value="' + name + '">' + name + '</option>');
+										}
+									}
+									else
+									{
+										document.write('<option value="">-----</option>');
+									}
+									</script>
+								</select>
+								<!--input id="txtName" type="text"-->
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

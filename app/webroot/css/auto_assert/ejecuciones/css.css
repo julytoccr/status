@@ -1,0 +1,38 @@
+.alerta_tiempo
+{
+	color: red;
+}
+
+.mensaje_respuesta
+{
+	color: yellow;
+	background-color: black;
+	text-align:center;
+}
+
+.mensaje_nota
+{
+	font-weight: bold;
+	text-align:center;
+}
+
+#tablas
+{
+	background-color:#ACBCEE;
+}
+
+#tablas form
+{
+	padding: 2em;
+	margin-bottom: 2em;
+}
+
+#tablas .tablas_valor
+{
+	padding: 1em;
+}
+
+.ayuda
+{
+	font-style: italic;
+}

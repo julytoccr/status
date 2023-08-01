@@ -1,0 +1,36 @@
+Times for correccion() in ka.upc.edu ON 08/05/2013 23:02:46 : Array
+(
+    [0] => Check expired: 0.026072025299072
+    [1] => Check in process: 0.0016660690307617
+    [2] => Set execution data: 0.2593309879303
+    [3] => Check current student: 6.5088272094727E-5
+    [4] => Check available retries: 0.014982938766479
+    [5] => Searching previous answers: 0
+    [6] => Search problem id: 0.0013329982757568
+    [7] => Correct the problem: 0.73675680160522
+    [8] => Save answers: 0.016206026077271
+    [9] => Check available retries: 0.0067689418792725
+    [10] => Time searching: 0
+    [11] => Time finalizing: 0
+    [12] => Time r: 0
+    [13] => Time calculating: 0.0014538764953613
+    [14] => Total time: 1.0646488666534
+)
+Times for correccion() in ka.upc.edu ON 08/05/2013 23:03:08 : Array
+(
+    [0] => Check expired: 0.020988941192627
+    [1] => Check in process: 0.0017330646514893
+    [2] => Set execution data: 0.26692581176758
+    [3] => Check current student: 6.5088272094727E-5
+    [4] => Check available retries: 0.010915040969849
+    [5] => Searching previous answers: 0
+    [6] => Search problem id: 0.00082612037658691
+    [7] => Correct the problem: 0.74137401580811
+    [8] => Save answers: 0.016041994094849
+    [9] => Check available retries: 0.0067360401153564
+    [10] => Time searching: 0
+    [11] => Time finalizing: 0
+    [12] => Time r: 0
+    [13] => Time calculating: 0.0014169216156006
+    [14] => Total time: 1.0670318603516
+)

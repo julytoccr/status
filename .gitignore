@@ -1,0 +1,9 @@
+/app/Config/database.php
+/app/Config/core.php
+/app/tmp
+/lib/Cake/Console/Templates/skel/tmp/
+/build
+/dist
+.DS_Store
+/tags
+/app/webroot/img/graficos/

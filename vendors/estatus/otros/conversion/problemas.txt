@@ -1,0 +1,332 @@
+-- phpMyAdmin SQL Dump
+-- version 2.8.1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Nov 11, 2006 at 12:58 PM
+-- Server version: 5.0.22
+-- PHP Version: 5.1.2
+-- 
+-- Database: `estatus`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `preguntas`
+-- 
+
+CREATE TABLE `preguntas` (
+  `id` int(11) NOT NULL auto_increment,
+  `problema_id` int(11) NOT NULL,
+  `orden` int(11) NOT NULL default '9999999',
+  `enunciado` text collate utf8_spanish_ci NOT NULL,
+  `respuesta` varchar(30) collate utf8_spanish_ci NOT NULL,
+  `sintaxis_respuesta_id` int(11) NOT NULL,
+  `sintaxis_parametro` varchar(100) collate utf8_spanish_ci NOT NULL,
+  `expresiones_respuesta` text collate utf8_spanish_ci NOT NULL,
+  `expresiones_parametro` varchar(100) collate utf8_spanish_ci NOT NULL,
+  `peso` int(11) NOT NULL,
+  `intentos` int(11) NOT NULL default '1',
+  `ayuda` text collate utf8_spanish_ci NOT NULL,
+  `link1` varchar(100) collate utf8_spanish_ci NOT NULL,
+  `link2` varchar(100) collate utf8_spanish_ci NOT NULL,
+  `mostrar_solucion` tinyint(4) NOT NULL,
+  `mensaje_correcto` text collate utf8_spanish_ci NOT NULL,
+  `mensaje_semicorrecto` text collate utf8_spanish_ci NOT NULL,
+  `mensaje_incorrecto` text collate utf8_spanish_ci NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci COMMENT='Preguntas de los problemas' AUTO_INCREMENT=25 ;
+
+-- 
+-- Dumping data for table `preguntas`
+-- 
+
+INSERT INTO `preguntas` VALUES (1, 18, 1, '¿Doble del número?', 'doble', 8, '', 'if(estatus.error_relativo(solucion_,respuesta_)<=parametro_)\r\n{\r\n  resultado_<-''1'';\r\n}else{\r\n   resultado_<-''0'';\r\n}', '3', 1, 2, 'Pista: $doble$', '', '', 0, '', '', '');
+INSERT INTO `preguntas` VALUES (10, 3, 1, '¿Valor medio?', 'zasdf', 8, '', '1', '5', 1, 1, '', '', '', 0, '', '', '');
+INSERT INTO `preguntas` VALUES (11, 20, 0, 'Vars: $sg1$', 'x1', 8, '', 'if(estatus.error_relativo(solucion_,respuesta_)<=parametro_)\r\n{\r\n  resultado_<-''1'';\r\n}else{\r\n   mensaje<- ''Muy mal. Esto es grave'';\r\n   resultado_<-''0'';\r\n}', '5', 1, 1, '', '', '', 0, '', '', '');
+INSERT INTO `preguntas` VALUES (12, 21, 1, '¿Doble de $num$ ?', 'num_2', 8, '', 'if (abs(solucion_ - respuesta_)<=parametro_)\r\n{\r\n     resultado_ <- 1\r\n}else{\r\n     resultado_ <- 0\r\n}', '5', 1, 3, 'Pista: $num_2$', 'http://www.ya.com', '', 1, '', '', '');
+INSERT INTO `preguntas` VALUES (13, 21, 2, '¿Color? Pista: $color$', 'color', 11, '', 'if(estatus.error_relativo(solucion_,respuesta_)<=parametro_)\r\n{\r\n  resultado_<-''1'';\r\n}else{\r\n   resultado_<-''0'';\r\n}', '5', 1, 2, '', '', '', 1, '', '', '');
+INSERT INTO `preguntas` VALUES (14, 24, 0, 'P(X) $sentido$ $k3$<br />Pista: $respuesta1$', 'respuesta1', 8, '', 'if (respuesta_>1 || respuesta_ <0)\r\n{\r\n   mensaje_ <- ''Es una probabilidad por dios'';\r\n   resultado_<-''0''\r\n}else{\r\n   if(estatus.error_relativo(solucion_,respuesta_)<=parametro_)\r\n   {\r\n      resultado_<-''1''\r\n   }   else    {\r\n      resultado_<-''0''\r\n   }\r\n}', '3', 1, 1, '', '', '', 0, '', '', '');
+INSERT INTO `preguntas` VALUES (15, 21, 3, 'Valor máximo? Pista: <span style="font-style: italic;">$maximo$</span>', 'maximo', 8, '', 'if(estatus.error_relativo(solucion_,respuesta_)<=parametro_)\r\n{\r\n  resultado_<-''1'';\r\n}else{\r\n   if (resultados_[ num_pregunta_ - 1] == 1)\r\n   {\r\n      mensaje_<- ''Como puedes acertar la anterior y fallar esta?'';\r\n   }\r\n\r\n   resultado_<-''0''; \r\n}', '6', 1, 2, '', '', '', 0, '', '', '');
+INSERT INTO `preguntas` VALUES (16, 26, 1, 'Entra un número que esté entre el percentil $p1$ y el percentil $p2$ de una N($mu$,$sg$)', 'resp1', 8, '', 'if (respuesta_ >=z1 && respuesta_ <= z2)\r\n{\r\n    grafi_ok=ini_imagen(300,300)\r\n    plot(x,y,type="l")\r\n    temp_x<-c(respuesta_,respuesta_)\r\n    temp_y<-c(0,dnorm(respuesta_,mean=mu,sd=sg))\r\n    lines(temp_x,temp_y,col="green")\r\n    fin_imagen()\r\n\r\n    resultado_ <- 1;\r\n}else{\r\n    resultado_ <- 0;\r\n}', '0', 1, 1, 'Pista: $resp1$', '', '', 1, 'Correcto! puede apreciar en el grafico su solucion: $respuesta_$\r\n\r\n$grafi_ok$', '', '');
+INSERT INTO `preguntas` VALUES (17, 26, 2, 'Si X es binomial($n$,$p$), entra un intervalo de valores que acumule una prob. mayor que $p_ini$ pero menor que $p_fin$. <br /><span style="font-weight: bold;">Extremo inferior</span>', '', 11, '', 'extremo_inf <- respuesta_\r\nextremo_sup <- respuestas_[[ num_pregunta_ + 1 ]]\r\n\r\nif (extremo_inf > extremo_sup)\r\n{\r\n    mensaje_ <- ''El extremo inferior debe ser menor que el superior'';\r\n    resultado_ <- 0;\r\n}else{ \r\n    acum<-pbinom(extremo_sup,n,p)  - pbinom(extremo_inf,n,p)\r\n    \r\n    if (acum >p_ini && acum < p_fin)\r\n    {\r\n       resultado_ <- 1;\r\n    } else { \r\n       resultado_ <- 0;\r\n    }\r\n}', '', 1, 2, '', '', '', 0, '', '', '');
+INSERT INTO `preguntas` VALUES (19, 26, 9999999, '<span style="font-weight: bold;">Extremo superior</span>', '', 11, '', 'resultado_<- resultados_[ num_pregunta_ - 1]', '', 1, 2, '', '', '', 0, '', '', '');
+INSERT INTO `preguntas` VALUES (20, 26, 9999999, 'Cual es el p-valor de la respuesta anterior?', '', 9, '', '#al usar el array respuestas_, es necesario pasar cada elemento a numérico\r\n\r\nresp_anterior <- respuestas_[[num_pregunta_ - 1]];\r\nsolucion_ <- pbinom( resp_anterior ,n,p)\r\n        \r\nif(estatus.error_relativo(solucion_,respuesta_)<=parametro_)\r\n{\r\n     resultado_<-''1''\r\n}   else    {\r\n     resultado_<-''0''\r\n}', '5', 1, 1, '', '', '', 0, '', '', '');
+INSERT INTO `preguntas` VALUES (22, 26, 9999999, 'Si X es binomial($n$,$p$), entra un intervalo de valores que acumule una prob. mayor que $p_ini$ pero menor que $p_fin$. <br /><span style="font-weight: bold;">Entre los dos números separados por un espacio<br /></span>', '', 7, '2', 'if ( length (respuesta_) != 2)\r\n{\r\n     resultado_ <- 0;\r\n     mensaje_ <- ''Debe entrar dos números separados por espacios'';\r\n} else {\r\n    extremo_inf <- respuesta_[1]\r\n    extremo_sup <- respuesta_[2]\r\n\r\n    if (extremo_inf > extremo_sup)\r\n    {\r\n        mensaje_ <- ''El extremo inferior debe ser menor que el superior'';\r\n        resultado_ <- 0;\r\n    }else{\r\n        acum<-pbinom(extremo_sup,n,p)  - pbinom(extremo_inf,n,p)\r\n    \r\n        if (acum >p_ini && acum < p_fin)\r\n        {\r\n            resultado_ <- 1\r\n        } else { \r\n            resultado_ <- 0\r\n        }\r\n    }\r\n}', '', 2, 1, '', '', '', 0, '', '', '');
+INSERT INTO `preguntas` VALUES (23, 26, 9999999, 'Entre los dos p-valores de la respuesta anterior separados por un espacio', '', 7, '2', 'anterior <- respuestas_[[ num_pregunta_ - 1]];\r\n                \r\n#anterior es un vector, se puede calcular directamente \r\n#las probabilidades de todos los elementos\r\nsol<- pbinom(anterior,n,p)\r\n            \r\n#puntuamos 0.5 por cada elemento correcto\r\nresultado_ <- 0;\r\n            \r\nif(estatus.error_relativo(sol[1], respuesta_[1])<=parametro_)\r\n{\r\n      resultado_<- resultado_ + 0.5;\r\n}\r\n    \r\nif(estatus.error_relativo(sol[2], respuesta_[2])<=parametro_)\r\n{\r\n      resultado_<- resultado_ + 0.5;\r\n}\r\n            \r\nif (resultado_ == 0.5)\r\n{   \r\n        mensaje_ <- ''Una de las probabilidades es incorrecta, se puntúa la mitad'';\r\n}\r\n', '5', 2, 1, '', '', '', 0, '', '', '');
+INSERT INTO `preguntas` VALUES (24, 33, 9999999, '<pre wrap="">Prueba R. Calcular el doble de $n$.<br />Se pueden poner dolares$ donde se quiera 3$.<br />No hay problema $ mientras se ponga algo dentro $doble$ $doble_3$ $doble.4$</pre>', 'doble', 8, '', 'if(estatus.error_relativo(solucion_,respuesta_)<=parametro_)\r\n{\r\n  resultado_<-''1'';\r\n}else{\r\n   resultado_<-''0'';\r\n}', '5', 1, 1, '', '', '', 0, '', '', '');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `problemas`
+-- 
+
+CREATE TABLE `problemas` (
+  `id` int(11) NOT NULL auto_increment,
+  `nombre` varchar(100) collate utf8_spanish_ci NOT NULL,
+  `descripcion` text collate utf8_spanish_ci NOT NULL,
+  `enunciado` text collate utf8_spanish_ci NOT NULL,
+  `expresiones` text collate utf8_spanish_ci NOT NULL,
+  `dificultad_id` int(11) NOT NULL,
+  `published` date default NULL,
+  `created` date default NULL,
+  `modified` date default NULL,
+  `expresiones_publicas` tinyint(1) NOT NULL,
+  `profesor_id` int(11) NOT NULL,
+  `variables_mostrar` text collate utf8_spanish_ci NOT NULL,
+  PRIMARY KEY  (`id`),
+  KEY `problemas_dificultad_fk` (`dificultad_id`),
+  KEY `problemas_profesor_fk` (`profesor_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=34 ;
+
+-- 
+-- Dumping data for table `problemas`
+-- 
+
+INSERT INTO `problemas` VALUES (1, 'Var continua', 'asdfasdf', 'Este es el enunciado del problema de <span style="font-weight: bold;">variable continua. </span>Aquí se pueden instanciar variables como $x$ o bien $y$. Además, se pueden insertar directamente imágenes: <img width="67" height="59" align="middle" src="/files/Image/img_informatica.jpg" alt="" /><br />$grafi$', 'n1 = sample(4:25,1)\r\nn2 = sample(trunc(1.5*n1):(3*n1),1)\r\nn3 = sample(trunc(1.5*n2):(3*n2),1)\r\nmu=166\r\nsg=8\r\n# gráfica de las distribuciones\r\nsg1=sg/sqrt(n1)\r\nsg2=sg/sqrt(n2)\r\nsg3=sg/sqrt(n3)\r\nx=seq(mu-3.5*sg,mu+3.5*sg,len=300)\r\nx1=seq(mu-3.5*sg1,mu+3.5*sg1,len=200)\r\nx2=seq(mu-3.5*sg2,mu+3.5*sg2,len=150)\r\nx3=seq(mu-3.5*sg3,mu+3.5*sg3,len=100)\r\ny=dnorm(x,m=mu,sd=sg)\r\ny1=dnorm(x1,m=mu,sd=sg1)\r\ny2=dnorm(x2,m=mu,sd=sg2)\r\ny3=dnorm(x3,m=mu,sd=sg3)\r\ngrafi=ini_imagen()\r\nplot(x,y,type="l",ylim=c(0,1.05*y3[50]))\r\nlines(x1,y1,col="blue")\r\nlines(x2,y2,col="green")\r\nlines(x3,y3,col="red")\r\nfin_imagen()\r\n# \r\nET1 = round(sg/sqrt(n1),2)\r\nET2 = round(sg/sqrt(n2),2)\r\nET3 = round(sg/sqrt(n3),2)\r\nvnum = rnorm(1)\r\nm = round(vnum[1]*sg/sqrt(n1)+mu,2)\r\ngdl = n1-1\r\nts = qt(0.975, gdl)\r\nr1 = runif(1,0,1)\r\nA = qchisq(r1,gdl)\r\ns = round(sqrt((A*sg^2)/gdl),3)\r\nzz = ts*s/sqrt(n1)\r\nICL = m-zz\r\nICU = m+zz', 1, NULL, NULL, '2006-10-13', 0, 3, '');
+INSERT INTO `problemas` VALUES (2, 'Var discreta', 'sadfadfads', 'a sdflkjas dalksdjflk jaslkdjfasdkjflaksjdf lkasdlkjfl jaslkjflksdajf lkjfasdf', 'a<-estatus.HTML(3,4)\r\nb<-estatus.HTML(4,5)\r\nc<-estatus.HTML(5,4)', 3, NULL, NULL, '2006-08-08', 1, 3, '');
+INSERT INTO `problemas` VALUES (3, 'Variancia', 'fdasf asd', 'ghfhdg hhg dh dhdfhdfhg', 'xasdf<-as\r\ny<-as\r\ny<-fd\r\nzasdf<-sd\r\nfds<-fasdfasdf sad asdfasd asdf asd fasdfasdf', 3, '2006-07-23', NULL, '2006-07-24', 0, 3, '');
+INSERT INTO `problemas` VALUES (10, 'Var continua4', 'asdfasdf', 'asdfasdf', 'asdfasdf', 1, NULL, NULL, NULL, 1, 3, '');
+INSERT INTO `problemas` VALUES (11, 'Var continua3', 'asdfasdf', 'asdfasdf', 'asdfasdf', 1, NULL, NULL, NULL, 1, 3, '');
+INSERT INTO `problemas` VALUES (12, 'Var discreta2', 'fdfasdf asdf asdf', 'a sdflkjas dalksdjflk jaslkdjfasdkjflaksjdf lkasdlkjfl jaslkjflksdajf lkjfasdf', 'dasfsfdd', 2, '2006-07-17', NULL, NULL, 1, 3, '');
+INSERT INTO `problemas` VALUES (13, 'Variancia1', 'fdasf asd', 'asdf asdf asdfasdf', 'asdffasf', 3, '2006-07-17', NULL, NULL, 1, 3, '');
+INSERT INTO `problemas` VALUES (14, 'Var continua', 'asdfasdf', 'asdfasdf', 'asdfasdf', 1, NULL, NULL, NULL, 1, 3, '');
+INSERT INTO `problemas` VALUES (15, 'Var discreta44', 'fdfasdf asdf asdf', 'a sdflkjas dalksdjflk jaslkdjfasdkjflaksjdf lkasdlkjfl jaslkjflksdajf lkjfasdf', 'dasfsfdd', 2, '2006-07-17', NULL, NULL, 1, 3, '');
+INSERT INTO `problemas` VALUES (16, 'Especial', 'Es un problema muy fácil 2', 'asdfasdfasdfasdf', 'R:=a asdlfa hfkasdhf kasdhfkjasdhf jkashdfkjhasdfkjhakjhfkasjhkjasd', 1, NULL, '2006-07-20', '2006-07-20', 0, 3, '');
+INSERT INTO `problemas` VALUES (17, 'nuevo problema', 'asdfasdadf', 'asdfasdfasdf', 'fdasfsdfasdfsda asdf asdf asdfasdfasdasdf', 1, NULL, '2006-07-20', '2006-07-20', 1, 3, '');
+INSERT INTO `problemas` VALUES (18, 'El doble', 'Problema muy sencillo', 'Tenga en cuenta el número: $n$<span style="font-weight: bold;"><br /></span>', 'n<- round(rnorm(1,10,1),3)\r\ndoble <- n*2\r\n', 1, '2006-07-23', '2006-07-20', '2006-08-09', 1, 3, '');
+INSERT INTO `problemas` VALUES (19, 'Nuevo problema 3', 'asdfasdadf asdfasdf', 'a $a$ fdas fdsa <span style="font-weight: bold;">fdsa</span>', 'fdasfsdfasdfsda asdf asdf asdfasdfasdasdf', 1, NULL, '2006-07-20', '2006-07-21', 1, 3, '');
+INSERT INTO `problemas` VALUES (20, 'Supermercado', 'Los clientes de un supermercado pagan, o bien en metálico, o bien con tarjeta', 'Los clientes de un supermercado pagan, o bien en metálico, o bien con tarjeta (usualmente, cuando la cantidad a pagar es más bien alta). Es conocido que:<br />\r\n<ol>\r\n    <li>El $P$% de los clientes paga en metálico.</li>\r\n    <li>Las cantidades pagadas por los diferentes clientes son independientes</li>\r\n    <li>La cantidad a pagar se distribuye, en los dos casos, como una ley normal.<br /></li>\r\n</ol>\r\n<ul> </ul>\r\n    <ul> </ul>\r\n        $tabla$<br /><br />$T$<br /><br /><br />--------------------<br /><br />$T2$', 'U=runif(7,0,1)\r\nmu1=round(37.5+U[1]*5, digits=2)\r\nmu2=round(13.5+U[2]*3, digits=2)\r\nsg1=round(12+U[3]*2, digits=2)\r\nsg2=round(4+U[4]*1.5, digits=2)\r\nz=round(U[5]*3-1.5, digits=2)\r\nP=round(20+25*U[6], digits=1)\r\nN=round(100+100*U[7], digits=0)\r\nx1=(sg2*mu1+sg1*mu2)/(sg1+sg2)+z\r\nx1=round(x1, digits=1)\r\ny1=pnorm((x1-mu1)/sg1)\r\ny2=pnorm((x1-mu2)/sg2)\r\ny0=P*y2+(100-P)*y1\r\nPM=y2*P/y0\r\nu=90*P/100\r\ns=sqrt(u*(1-P/100))\r\nLb=round(u+s*qnorm(0.05), digits=0)\r\nUb=round(u+s*qnorm(0.95), digits=0)\r\na=qnorm(0.80)*sg1+mu1\r\nux=mu1*N\r\nsx=sg1*sqrt(N)\r\nbx=ux+sx*qnorm(0.10)\r\n\r\ntabla=matrix(c(mu1, mu2, sg1, sg2), ncol=2)\r\nrownames(tabla)<-c("con tarjeta", "metálico")\r\ncolnames(tabla)<-c("media", "desviación tipo")\r\n\r\n\r\nT = array(c(1,2,3,4,111,12,13,14), c(2,2,2),dimnames=list(c("T","P"), c("+","-"), c("A","B")))\r\nT2 = array(c(1,2,3,4,111,12,13,14, 99,98,97,96), c(2,2,3),dimnames=list(c("T","P"), c("+","-"), c("A","B","C")))\r\nT3 = array(c(1,2,3,4), c(2,2),dimnames=list(c("T","P"), c("+","-")))\r\nvect<-c(2.3,4.3,22.2,34.1,3,5)', 2, NULL, '2006-07-25', '2006-10-08', 0, 3, 'T2,T,T3,tabla,vect');
+INSERT INTO `problemas` VALUES (21, 'Gráfico 1', 'Se muestra un gráfico y se hacen algunas preguntas', 'Contesta a las siguientes preguntas a partir del gráfico y ten en cuenta este numero : <span style="font-weight: bold;">$num$<br /><br />Gráfico:<br /></span>$grafi$', 'color=3\r\nwhile(color>=3){\r\n   color=as.integer(runif(1,0,3))\r\n}\r\ncolores = c("red", "green", "blue")\r\nnum = round(runif(1,10,30), digits=0)\r\nnum_2=num *2\r\n\r\nvalores=rnorm(num)\r\nmaximo=max(valores)\r\n\r\ngrafi = ini_imagen()\r\nplot(valores, col=colores[color+1])\r\nfin_imagen()', 1, NULL, '2006-07-26', '2006-11-09', 0, 3, '');
+INSERT INTO `problemas` VALUES (22, 'Gráfico', 'Se muestra un gráfico', 'Contesta a las siguientes preguntas a partir del siguiente gráfico: <br />$grafi$', 'color=3\r\nwhile(color>=3){\r\n   color=as.integer(runif(1,0,3))\r\n}\r\ncolores = c("red", "green", "blue")\r\nnum = round(runif(1,10,30), digits=0)\r\n\r\ngrafi = ini_imagen()\r\nplot(rnorm(num), col=colores[color+1])\r\nfin_imagen()', 1, NULL, '2006-07-26', '2006-07-26', 0, 3, '');
+INSERT INTO `problemas` VALUES (23, 'Discreta dificil', 'Dada una variable aleatoria discreta, hay que contestar ciertas preguntas.', 'Considerando la siguiente variable aleatoria discreta:<br /><br />&nbsp;&nbsp;&nbsp; X ~ B($n$, $p1$)<br /><br />Contesta a las siguientes preguntas:', 'N = runif (1,10,21)\r\nN = trunc(N)\r\nn = N[1]\r\nPP = runif(1,1,20)\r\nPP = trunc(PP)\r\np1 = PP[1]/20\r\nP = runif(2,0.05,0.95)\r\np2 = round(P[1], digits =3)\r\n\r\nalfa = round(P[2],digits = 4)\r\nKZ = trunc(qbinom(0.9999, n, p1))\r\nKA = trunc(qbinom(0.0001, n, p1))\r\nK = runif(2,KA,KZ+1)\r\nK = trunc(K)\r\nk3 = max(K)\r\nk4 = min(K)\r\n\r\n# Calculo de todas las posibles respuestas\r\npmnig = pbinom(k3,n,p1)\r\npmnig = round(pmnig,digits=4)        \r\npmn = pbinom(k3-1,n,p1)\r\npmn = round(pmn,digits=4)\r\npmy = 1 - pmnig\r\npmyig = 1 - pmn\r\npig = pmnig-pmn\r\n\r\n# Vector de respuestas\r\nlista_respuestas = c(pmn, pmy, pmyig, pmyig, pig, pmnig)\r\n\r\n# Vector de sentidos\r\nlista_sentidos = c("menor que", "mayor que", "al menos", "por lo menos igual a", "igual a", "como máximo")\r\n\r\n# Calculo del indice aleatorio y de los valores de los simbolos\r\nindice = as.integer(runif(1,1,7))\r\n\r\nsentido = lista_sentidos[indice]\r\nrespuesta1 = lista_respuestas[indice]\r\n\r\n# Esto no es necesario pero como ya no necesitamos más los vectores los podemos eliminar\r\n# de esta forma ya no apareceran entre las variables del problema\r\n\r\nrm(lista_sentidos)\r\nrm(lista_respuestas)\r\nrm(pmnig)\r\nrm(pmyig)\r\nrm(pmn)\r\nrm(pmy)\r\nrm(pig)', 3, NULL, '2006-07-27', '2006-08-11', 1, 3, '');
+INSERT INTO `problemas` VALUES (24, 'Variable discreta dificil', 'Dada una variable aleatoria discreta, hay que contestar ciertas preguntas.', 'Considerando la siguiente variable aleatoria discreta:<br /><br />&nbsp;&nbsp;&nbsp; X ~ B($n$, $p1$)<br /><br />Contesta a las siguientes preguntas<br /><br /><a href="/files/File/Taules.pdf">(haz clic aquí para ver las tablas estadísticas)</a>', 'N = runif (1,10,21)\r\nN = trunc(N)\r\nn = N[1]\r\nPP = runif(1,1,20)\r\nPP = trunc(PP)\r\np1 = PP[1]/20\r\nP = runif(2,0.05,0.95)\r\np2 = round(P[1], digits =3)\r\n\r\nalfa = round(P[2],digits = 4)\r\nKZ = trunc(qbinom(0.9999, n, p1))\r\nKA = trunc(qbinom(0.0001, n, p1))\r\nK = runif(2,KA,KZ+1)\r\nK = trunc(K)\r\nk3 = max(K)\r\nk4 = min(K)\r\n\r\n# Calculo de todas las posibles respuestas\r\npmnig = pbinom(k3,n,p1)\r\npmnig = round(pmnig,digits=4)        \r\npmn = pbinom(k3-1,n,p1)\r\npmn = round(pmn,digits=4)\r\npmy = 1 - pmnig\r\npmyig = 1 - pmn\r\npig = pmnig-pmn\r\n\r\n# Vector de respuestas\r\nlista_respuestas = c(pmn, pmy, pmyig, pmyig, pig, pmnig)\r\n\r\n# Vector de sentidos\r\nlista_sentidos = c("menor que", "mayor que", "al menos", "por lo menos igual a", "igual a", "como máximo")\r\n\r\n# Calculo del indice aleatorio y de los valores de los simbolos\r\nindice = as.integer(runif(1,1,7))\r\n\r\nsentido = lista_sentidos[indice]\r\nrespuesta1 = lista_respuestas[indice]\r\n\r\n# Esto no es necesario pero como ya no necesitamos más los vectores los podemos eliminar\r\n# de esta forma ya no apareceran entre las variables del problema\r\n\r\nrm(lista_sentidos)\r\nrm(lista_respuestas)\r\nrm(pmnig)\r\nrm(pmyig)\r\nrm(pmn)\r\nrm(pmy)\r\nrm(pig)', 3, '2006-10-29', '2006-07-27', '2006-09-07', 1, 3, '');
+INSERT INTO `problemas` VALUES (25, 'Prueba de estadistica alumnos', 'Prueba de estadística alumnos mediante SQL', 'Número de ejecuciones: $ejec$<br />Número de aprovados: $aprov$<br />Nota media: $media$<br /><br />Datos: $notas$', 'notas = estatus.fetch_all("select nota from ejecuciones where nota is not null")\r\nejec = dim(notas)[1]\r\naprov = length(notas[ notas >= 5])\r\nmedia = mean(notas)\r\n', 1, NULL, '2006-07-29', '2006-07-29', 0, 3, '');
+INSERT INTO `problemas` VALUES (26, 'Preguntas dinámicas', 'Algunas preguntas dinámicas que pueden corregirse con un código escrito en R.', 'Preguntas dinámicas sobre una N($mu$,$sg$) y sobre una binomial($n$,$p$)<br /><br />Gráfica de N($mu$,$sg$)<br />$grafi$', 'mu=round(runif(1,1,100),0)\r\nsg=round(runif(1,1,10),0)\r\n\r\nx=seq(mu-3.5*sg,mu+3.5*sg,len=100)\r\ny=dnorm(x,m=mu,sd=sg)\r\ngrafi=ini_imagen()\r\nplot(x,y,type="l")\r\nfin_imagen()\r\n\r\n\r\n#Pregunta 1\r\n#Entra un número que esté entre el percentil 20\r\n#y el percentil 40 de una N(mu,sg) { p20 <= resp1 <= p40}\r\np1<-round(runif(1,1,50),0)\r\np2<-round(runif(1,50,99),0)\r\n\r\nz1<-qnorm( p1 / 100, mean=mu,sd=sg)\r\nz2<-qnorm( p2 / 100, mean=mu,sd=sg)\r\nresp1<-mean(c (z1,z2))\r\n\r\n####################\r\n#Pregunta 2\r\n#si X es binomial($n$,$p$), entra un intervalo de valores que acumule\r\n#una prob. mayor que $p_ini$ pero menor que $p_fin$ { $p_ini$<F(_q[2])-F(_q[1]-1)< $p_fin$}\r\nn<-round(runif(1,5,15),0)\r\np<-round(runif(1,0.1,1.9),1)/2\r\np_ini <- round(runif(1,0.1,1.2),1)/2\r\np_fin <- round(runif(1,p_ini*2+0.4,1.9),1)/2        ', 3, '2006-10-29', '2006-08-05', '2006-11-09', 0, 3, '');
+INSERT INTO `problemas` VALUES (27, 'Prueba1', 'Probando', 'ESto es $n$', 'n <- runif(1,1,100)', 1, NULL, '2006-08-05', '2006-08-05', 0, 3, '');
+INSERT INTO `problemas` VALUES (28, 'Prueba', 'Probando', 'Esto es $n$', 'n = runif(1,1,100)', 1, NULL, '2006-08-05', '2006-08-05', 0, 3, '');
+INSERT INTO `problemas` VALUES (29, 'Var discreta', 'sadfadfads', 'a sdflkjas dalksdjflk jaslkdjfasdkjflaksjdf lkasdlkjfl jaslkjflksdajf lkjfasdf', 'a<-estatus.HTML(3,4)\r\nb<-estatus.HTML(4,5)\r\nc<-estatus.HTML(5,4)', 3, NULL, NULL, '2006-08-08', 1, 3, '');
+INSERT INTO `problemas` VALUES (30, 'Var discreta', 'sadfadfads', 'a sdflkjas dalksdjflk jaslkdjfasdkjflaksjdf lkasdlkjfl jaslkjflksdajf lkjfasdf', 'a<-estatus.HTML(3,4)\r\nb<-estatus.HTML(4,5)\r\nc<-estatus.HTML(5,4)', 3, NULL, NULL, '2006-08-08', 1, 3, '');
+INSERT INTO `problemas` VALUES (31, 'Var discreta', 'sadfadfads', 'a sdflkjas dalksdjflk jaslkdjfasdkjflaksjdf lkasdlkjfl jaslkjflksdajf lkjfasdf', 'a<-estatus.HTML(3,4)\r\nb<-estatus.HTML(4,5)\r\nc<-estatus.HTML(5,4)', 3, NULL, NULL, '2006-08-08', 1, 3, '');
+INSERT INTO `problemas` VALUES (32, 'Var discreta', 'sadfadfads', 'a sdflkjas dalksdjflk jaslkdjfasdkjflaksjdf lkasdlkjfl jaslkjflksdajf lkjfasdf', 'a<-estatus.HTML(3,4)\r\nb<-estatus.HTML(4,5)\r\nc<-estatus.HTML(5,4)', 3, NULL, NULL, '2006-08-08', 1, 3, '');
+INSERT INTO `problemas` VALUES (33, 'Dolares', 'Probar que el simbolo dolar se puede usar donde se quiera', '<pre wrap="">Prueba R. Calcular el doble de $n$.<br />Se pueden poner dolares$ donde se quiera 3$.<br />No hay problema $ mientras se ponga algo dentro $doble$ $doble_3$ $doble.4$<br /><br /></pre>', 'n<-round(runif(1,0,100),0)\r\ndoble<-n * 2\r\ndoble_3<-doble\r\ndoble.4<-doble', 1, NULL, '2006-10-13', '2006-10-13', 0, 3, '');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `carpetas_no_subscritas`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`carpetas_no_subscritas` AS select `estatus`.`profesores`.`id` AS `profesor_id`,`estatus`.`carpetas`.`id` AS `carpeta_id` from (`estatus`.`profesores` join `estatus`.`carpetas`) where (not(exists(select `estatus`.`subscripciones`.`profesor_id` AS `profesor_id`,`estatus`.`subscripciones`.`carpeta_id` AS `carpeta_id` from `estatus`.`subscripciones` where ((`estatus`.`profesores`.`id` = `estatus`.`subscripciones`.`profesor_id`) and (`estatus`.`carpetas`.`id` = `estatus`.`subscripciones`.`carpeta_id`)))) and (`estatus`.`carpetas`.`profesor_id` <> `estatus`.`profesores`.`id`) and (`estatus`.`carpetas`.`compartida` = 1));
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `est_alumnos`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`est_alumnos` AS select `e`.`alumno_id` AS `alumno_id`,`e`.`asignatura_id` AS `asignatura_id`,`e`.`grupo_nombre` AS `grupo_nombre`,`e`.`grupo_id` AS `grupo_id`,sum(`e`.`puntuacion`) AS `puntuacion_total`,round((sum(`e`.`puntuacion`) / sum(`e`.`factor`)),3) AS `nota_media`,count(distinct `e`.`problema_id`) AS `num_problemas_ejecutados`,count(0) AS `num_ejecuciones` from `estatus`.`est_ejecuciones` `e` group by `e`.`alumno_id`,`e`.`asignatura_id`,`e`.`grupo_nombre`,`e`.`grupo_id`;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `est_alumnos_aprobados`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`est_alumnos_aprobados` AS select `e`.`alumno_id` AS `alumno_id`,`e`.`asignatura_id` AS `asignatura_id`,`e`.`grupo_nombre` AS `grupo_nombre`,`e`.`grupo_id` AS `grupo_id`,count(distinct `p`.`problema_id`) AS `num_problemas_aprobados`,count(0) AS `num_ejecuciones_aprobadas` from (`estatus`.`est_ejecuciones` `e` left join `estatus`.`est_alumnos_problemas_aprobados` `p` on((`e`.`alumno_id` = `p`.`alumno_id`))) where (`e`.`nota` >= 5) group by `e`.`alumno_id`,`e`.`asignatura_id`,`e`.`grupo_nombre`,`e`.`grupo_id`;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `est_alumnos_problemas_aprobados`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`est_alumnos_problemas_aprobados` AS select `e`.`alumno_id` AS `alumno_id`,`e`.`grupo_nombre` AS `grupo_nombre`,`e`.`grupo_id` AS `grupo_id`,`e`.`asignatura_id` AS `asignatura_id`,`e`.`problema_id` AS `problema_id`,avg(`e`.`nota`) AS `nota_media` from `estatus`.`est_ejecuciones` `e` group by `e`.`alumno_id`,`e`.`grupo_nombre`,`e`.`grupo_id`,`e`.`problema_id` having (avg(`e`.`nota`) >= 5);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `est_ejecuciones`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`est_ejecuciones` AS select `estatus`.`ejecuciones`.`id` AS `ejecucion_id`,`estatus`.`ejecuciones`.`alumno_id` AS `alumno_id`,`estatus`.`alumnos`.`usuario_id` AS `usuario_id`,`estatus`.`ejecuciones`.`agrupacion_id` AS `agrupacion_id`,`estatus`.`ejecuciones`.`nota` AS `nota`,`estatus`.`ejecuciones`.`created` AS `created`,`estatus`.`agrupaciones`.`bloque_id` AS `bloque_id`,`estatus`.`agrupaciones`.`problema_id` AS `problema_id`,`estatus`.`problemas`.`dificultad_id` AS `dificultad_id`,`estatus`.`dificultades`.`factor` AS `factor`,round((`estatus`.`ejecuciones`.`nota` * `estatus`.`dificultades`.`factor`),3) AS `puntuacion`,`estatus`.`grupos`.`asignatura_id` AS `asignatura_id`,`estatus`.`grupos`.`nombre` AS `grupo_nombre`,`estatus`.`grupos`.`id` AS `grupo_id` from ((((((`estatus`.`ejecuciones` join `estatus`.`agrupaciones`) join `estatus`.`bloques`) join `estatus`.`problemas`) join `estatus`.`dificultades`) join `estatus`.`alumnos`) join `estatus`.`grupos`) where ((`estatus`.`agrupaciones`.`id` = `estatus`.`ejecuciones`.`agrupacion_id`) and (`estatus`.`bloques`.`id` = `estatus`.`agrupaciones`.`bloque_id`) and (`estatus`.`problemas`.`id` = `estatus`.`agrupaciones`.`problema_id`) and (`estatus`.`dificultades`.`id` = `estatus`.`problemas`.`dificultad_id`) and (`estatus`.`alumnos`.`id` = `estatus`.`ejecuciones`.`alumno_id`) and (`estatus`.`alumnos`.`grupo_id` = `estatus`.`grupos`.`id`) and (`estatus`.`ejecuciones`.`nota` is not null));
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `est_ranking_ejecuciones`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`est_ranking_ejecuciones` AS select `e`.`alumno_id` AS `alumno_id`,`e`.`asignatura_id` AS `asignatura_id`,(count(`e2`.`alumno_id`) + 1) AS `posicion_ranking_ejecuciones` from (`estatus`.`est_alumnos` `e` left join `estatus`.`est_alumnos` `e2` on(((`e`.`alumno_id` <> `e2`.`alumno_id`) and (`e`.`asignatura_id` = `e2`.`asignatura_id`) and ((`e`.`num_ejecuciones` < `e2`.`num_ejecuciones`) or ((`e`.`num_ejecuciones` = `e2`.`num_ejecuciones`) and (`e`.`alumno_id` > `e2`.`alumno_id`)))))) group by `e`.`alumno_id`,`e`.`asignatura_id` order by `e`.`asignatura_id`,(count(`e2`.`alumno_id`) + 1),`e`.`alumno_id`;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `est_ranking_nota`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`est_ranking_nota` AS select `e`.`alumno_id` AS `alumno_id`,`e`.`asignatura_id` AS `asignatura_id`,(count(`e2`.`alumno_id`) + 1) AS `posicion_ranking_nota` from (`estatus`.`est_alumnos` `e` left join `estatus`.`est_alumnos` `e2` on(((`e`.`alumno_id` <> `e2`.`alumno_id`) and (`e`.`asignatura_id` = `e2`.`asignatura_id`) and ((`e`.`nota_media` < `e2`.`nota_media`) or ((`e`.`nota_media` = `e2`.`nota_media`) and (`e`.`alumno_id` > `e2`.`alumno_id`)))))) group by `e`.`alumno_id`,`e`.`asignatura_id` order by `e`.`asignatura_id`,(count(`e2`.`alumno_id`) + 1),`e`.`alumno_id`;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `est_ranking_puntuacion`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`est_ranking_puntuacion` AS select `e`.`alumno_id` AS `alumno_id`,`e`.`asignatura_id` AS `asignatura_id`,(count(`e2`.`alumno_id`) + 1) AS `posicion_ranking_puntuacion` from (`estatus`.`est_alumnos` `e` left join `estatus`.`est_alumnos` `e2` on(((`e`.`alumno_id` <> `e2`.`alumno_id`) and (`e`.`asignatura_id` = `e2`.`asignatura_id`) and ((`e`.`puntuacion_total` < `e2`.`puntuacion_total`) or ((`e`.`puntuacion_total` = `e2`.`puntuacion_total`) and (`e`.`alumno_id` > `e2`.`alumno_id`)))))) group by `e`.`alumno_id`,`e`.`asignatura_id` order by `e`.`asignatura_id`,(count(`e2`.`alumno_id`) + 1),`e`.`alumno_id`;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_agrupaciones_pendientes_notificar`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_agrupaciones_pendientes_notificar` AS select sql_no_cache `estatus`.`agrupaciones`.`id` AS `agrupacion_id` from `estatus`.`agrupaciones` where (((curdate() - interval 24 hour) <= `estatus`.`agrupaciones`.`created`) and (`estatus`.`agrupaciones`.`notificado` = 0));
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_alumnos_usuarios`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_alumnos_usuarios` AS select `estatus`.`alumnos`.`usuario_id` AS `usuario_id`,`estatus`.`alumnos`.`id` AS `alumno_id`,`estatus`.`alumnos`.`grupo_id` AS `grupo_id`,`estatus`.`grupos`.`nombre` AS `grupo_nombre`,`estatus`.`grupos`.`asignatura_id` AS `asignatura_id` from (`estatus`.`alumnos` join `estatus`.`grupos`) where (`estatus`.`alumnos`.`grupo_id` = `estatus`.`grupos`.`id`);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_ejecuciones`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_ejecuciones` AS select `e`.`id` AS `ejecucion_id`,`e`.`alumno_id` AS `alumno_id`,`e`.`agrupacion_id` AS `agrupacion_id`,`e`.`problema_id` AS `profesor_problema_id`,`a`.`problema_id` AS `alumno_problema_id` from (`estatus`.`ejecuciones` `e` left join `estatus`.`agrupaciones` `a` on((`e`.`agrupacion_id` = `a`.`id`)));
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_estadisticas_problemas`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_estadisticas_problemas` AS select `estatus`.`bloques`.`asignatura_id` AS `asignatura_id`,`estatus`.`agrupaciones`.`problema_id` AS `problema_id`,avg(`est_ejecuciones`.`nota`) AS `nota_media`,count(`est_ejecuciones`.`ejecucion_id`) AS `numero_ejecuciones` from ((`estatus`.`bloques` join `estatus`.`agrupaciones` on((`estatus`.`bloques`.`id` = `estatus`.`agrupaciones`.`bloque_id`))) left join `estatus`.`est_ejecuciones` on(((`est_ejecuciones`.`problema_id` = `estatus`.`agrupaciones`.`problema_id`) and (`est_ejecuciones`.`asignatura_id` = `estatus`.`bloques`.`asignatura_id`)))) group by `estatus`.`bloques`.`asignatura_id`,`estatus`.`agrupaciones`.`problema_id`;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_login_alumnos_diario`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_login_alumnos_diario` AS select sql_no_cache `estatus`.`grupos`.`asignatura_id` AS `asignatura_id`,count(0) AS `num_logins`,count(distinct `estatus`.`alumnos`.`usuario_id`) AS `num_alumnos`,year(`estatus`.`historial_logins`.`created`) AS `anyo`,month(`estatus`.`historial_logins`.`created`) AS `mes`,dayofmonth(`estatus`.`historial_logins`.`created`) AS `dia`,`estatus`.`func_datediff`(_latin1'd',`estatus`.`historial_logins`.`created`,now()) AS `dias_diferencia` from ((`estatus`.`historial_logins` join `estatus`.`grupos`) join `estatus`.`alumnos`) where ((`estatus`.`alumnos`.`grupo_id` = `estatus`.`grupos`.`id`) and (`estatus`.`alumnos`.`usuario_id` = `estatus`.`historial_logins`.`usuario_id`)) group by `estatus`.`grupos`.`asignatura_id`,year(`estatus`.`historial_logins`.`created`),month(`estatus`.`historial_logins`.`created`),dayofmonth(`estatus`.`historial_logins`.`created`),`estatus`.`func_datediff`(_latin1'd',`estatus`.`historial_logins`.`created`,now()) order by `estatus`.`grupos`.`asignatura_id`,`estatus`.`func_datediff`(_latin1'd',`estatus`.`historial_logins`.`created`,now()) desc;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_nota_media_ejecuciones_asignatura`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_nota_media_ejecuciones_asignatura` AS select round((sum(`est_ejecuciones`.`puntuacion`) / sum(`est_ejecuciones`.`factor`)),3) AS `nota_media_ejecuciones`,`est_ejecuciones`.`asignatura_id` AS `asignatura_id` from `estatus`.`est_ejecuciones` group by `est_ejecuciones`.`asignatura_id`;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_nota_media_ejecuciones_grupos`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_nota_media_ejecuciones_grupos` AS select round((sum(`est_ejecuciones`.`puntuacion`) / sum(`est_ejecuciones`.`factor`)),3) AS `nota_media_ejecuciones`,`est_ejecuciones`.`asignatura_id` AS `asignatura_id`,`est_ejecuciones`.`grupo_nombre` AS `grupo_nombre`,`est_ejecuciones`.`grupo_id` AS `grupo_id` from `estatus`.`est_ejecuciones` group by `est_ejecuciones`.`asignatura_id`,`est_ejecuciones`.`grupo_nombre`,`est_ejecuciones`.`grupo_id`;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_numero_ejecuciones_aprobadas_asignaturas`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_numero_ejecuciones_aprobadas_asignaturas` AS select count(`estatus`.`ejecuciones`.`id`) AS `numero_ejecuciones_aprobadas`,`estatus`.`bloques`.`asignatura_id` AS `asignatura_id` from ((`estatus`.`ejecuciones` join `estatus`.`agrupaciones`) join `estatus`.`bloques`) where ((`estatus`.`ejecuciones`.`agrupacion_id` = `estatus`.`agrupaciones`.`id`) and (`estatus`.`ejecuciones`.`nota` is not null) and (`estatus`.`ejecuciones`.`nota` >= 5) and (`estatus`.`agrupaciones`.`bloque_id` = `estatus`.`bloques`.`id`)) group by `estatus`.`bloques`.`asignatura_id`;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_numero_ejecuciones_aprobadas_grupos`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_numero_ejecuciones_aprobadas_grupos` AS select count(`estatus`.`ejecuciones`.`id`) AS `numero_ejecuciones_aprobadas`,`estatus`.`grupos`.`asignatura_id` AS `asignatura_id`,`estatus`.`grupos`.`nombre` AS `grupo_nombre`,`estatus`.`grupos`.`id` AS `grupo_id` from ((((`estatus`.`grupos` join `estatus`.`alumnos` on((`estatus`.`grupos`.`id` = `estatus`.`alumnos`.`grupo_id`))) join `estatus`.`ejecuciones` on((`estatus`.`alumnos`.`id` = `estatus`.`ejecuciones`.`alumno_id`))) join `estatus`.`agrupaciones` on((`estatus`.`agrupaciones`.`id` = `estatus`.`ejecuciones`.`agrupacion_id`))) join `estatus`.`bloques` on((`estatus`.`bloques`.`id` = `estatus`.`agrupaciones`.`bloque_id`))) where ((`estatus`.`ejecuciones`.`nota` is not null) and (`estatus`.`ejecuciones`.`nota` >= 5)) group by `estatus`.`grupos`.`asignatura_id`,`estatus`.`grupos`.`nombre`,`estatus`.`grupos`.`id`;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_numero_ejecuciones_asignaturas`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_numero_ejecuciones_asignaturas` AS select count(`estatus`.`ejecuciones`.`id`) AS `numero_ejecuciones`,`estatus`.`bloques`.`asignatura_id` AS `asignatura_id` from ((`estatus`.`ejecuciones` join `estatus`.`agrupaciones`) join `estatus`.`bloques`) where ((`estatus`.`ejecuciones`.`agrupacion_id` = `estatus`.`agrupaciones`.`id`) and (`estatus`.`agrupaciones`.`bloque_id` = `estatus`.`bloques`.`id`) and (`estatus`.`ejecuciones`.`nota` is not null)) group by `estatus`.`bloques`.`asignatura_id`;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_numero_ejecuciones_grupos`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_numero_ejecuciones_grupos` AS select count(`estatus`.`ejecuciones`.`id`) AS `numero_ejecuciones`,`estatus`.`grupos`.`asignatura_id` AS `asignatura_id`,`estatus`.`grupos`.`nombre` AS `grupo_nombre`,`estatus`.`grupos`.`id` AS `grupo_id` from ((((`estatus`.`grupos` join `estatus`.`alumnos` on((`estatus`.`grupos`.`id` = `estatus`.`alumnos`.`grupo_id`))) join `estatus`.`ejecuciones` on((`estatus`.`alumnos`.`id` = `estatus`.`ejecuciones`.`alumno_id`))) join `estatus`.`agrupaciones` on((`estatus`.`agrupaciones`.`id` = `estatus`.`ejecuciones`.`agrupacion_id`))) join `estatus`.`bloques` on((`estatus`.`bloques`.`id` = `estatus`.`agrupaciones`.`bloque_id`))) where (`estatus`.`ejecuciones`.`nota` is not null) group by `estatus`.`grupos`.`asignatura_id`,`estatus`.`grupos`.`nombre`,`estatus`.`grupos`.`id`;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_numero_problemas_ejecutados_asignaturas`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_numero_problemas_ejecutados_asignaturas` AS select count(distinct `a1`.`problema_id`) AS `problemas_disponibles`,count(distinct `ag2`.`problema_id`) AS `problemas_ejecutados`,`estatus`.`bloques`.`asignatura_id` AS `asignatura_id` from (((((`estatus`.`agrupaciones` `a1` join `estatus`.`bloques` `b1`) join `estatus`.`ejecuciones` `e2`) join `estatus`.`agrupaciones` `ag2`) join `estatus`.`bloques` `b2`) join `estatus`.`bloques`) where ((`a1`.`bloque_id` = `b1`.`id`) and (`estatus`.`bloques`.`asignatura_id` = `b1`.`asignatura_id`) and (`e2`.`agrupacion_id` = `ag2`.`id`) and (`ag2`.`bloque_id` = `b2`.`id`) and (`estatus`.`bloques`.`asignatura_id` = `b2`.`asignatura_id`) and (`e2`.`nota` is not null)) group by `estatus`.`bloques`.`asignatura_id`;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_numero_problemas_ejecutados_grupos`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_numero_problemas_ejecutados_grupos` AS select count(distinct `a1`.`problema_id`) AS `problemas_disponibles`,count(distinct `ag2`.`problema_id`) AS `problemas_ejecutados`,`estatus`.`grupos`.`asignatura_id` AS `asignatura_id`,`estatus`.`grupos`.`nombre` AS `grupo_nombre`,`estatus`.`grupos`.`id` AS `grupo_id` from (((((((((`estatus`.`agrupaciones` `a1` join `estatus`.`bloques` `b1`) join `estatus`.`ejecuciones` `e2`) join `estatus`.`agrupaciones` `ag2`) join `estatus`.`bloques` `b2`) join `estatus`.`alumnos` `al2`) join `estatus`.`grupos` `g2`) join `estatus`.`bloques`) join `estatus`.`grupos`) join `estatus`.`alumnos`) where ((`a1`.`bloque_id` = `b1`.`id`) and (`estatus`.`bloques`.`asignatura_id` = `b1`.`asignatura_id`) and (`e2`.`agrupacion_id` = `ag2`.`id`) and (`ag2`.`bloque_id` = `b2`.`id`) and (`estatus`.`bloques`.`asignatura_id` = `b2`.`asignatura_id`) and (`e2`.`nota` is not null) and (`e2`.`alumno_id` = `al2`.`id`) and (`estatus`.`alumnos`.`grupo_id` = `al2`.`grupo_id`) and (`estatus`.`bloques`.`asignatura_id` = `estatus`.`grupos`.`asignatura_id`) and (`estatus`.`alumnos`.`grupo_id` = `estatus`.`grupos`.`id`)) group by `estatus`.`bloques`.`asignatura_id`,`estatus`.`grupos`.`nombre`,`estatus`.`grupos`.`id`;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_problemas_asignaturas`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_problemas_asignaturas` AS select distinct `estatus`.`bloques`.`asignatura_id` AS `asignatura_id`,`estatus`.`agrupaciones`.`problema_id` AS `problema_id` from (`estatus`.`bloques` join `estatus`.`agrupaciones`) where (`estatus`.`bloques`.`id` = `estatus`.`agrupaciones`.`bloque_id`);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_problemas_carpetas`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_problemas_carpetas` AS select `p`.`id` AS `id`,`p`.`nombre` AS `nombre`,`p`.`descripcion` AS `descripcion`,`p`.`enunciado` AS `enunciado`,`p`.`expresiones` AS `expresiones`,`p`.`dificultad_id` AS `dificultad_id`,`p`.`published` AS `published`,`p`.`created` AS `created`,`p`.`modified` AS `modified`,`p`.`expresiones_publicas` AS `expresiones_publicas`,`p`.`profesor_id` AS `profesor_id`,`prof`.`nombre` AS `profesor_nombre`,`c`.`id` AS `carpeta_id`,`c`.`nombre` AS `carpeta_nombre`,`c`.`profesor_id` AS `carpeta_profesor_id`,`c`.`compartida` AS `carpeta_compartida`,`cp`.`es_alias` AS `es_alias`,`dif`.`nombre` AS `dificultad_nombre` from ((((`estatus`.`problemas` `p` join `estatus`.`carpetas_problemas` `cp`) join `estatus`.`carpetas` `c`) join `estatus`.`usuarios` `prof`) join `estatus`.`dificultades` `dif`) where ((`p`.`id` = `cp`.`problema_id`) and (`c`.`id` = `cp`.`carpeta_id`) and (`prof`.`id` = `p`.`profesor_id`) and (`dif`.`id` = `p`.`dificultad_id`));
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_problemas_eliminables`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_problemas_eliminables` AS select `estatus`.`problemas`.`id` AS `problema_id` from `estatus`.`problemas` where not(exists(select 1 AS `Not_used` from `estatus`.`agrupaciones` where (`estatus`.`agrupaciones`.`problema_id` = `estatus`.`problemas`.`id`)));
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_problemas_no_eliminables`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_problemas_no_eliminables` AS select `estatus`.`problemas`.`id` AS `problema_id` from `estatus`.`problemas` where not(exists(select 1 AS `Not_used` from `estatus`.`view_problemas_eliminables` `v` where (`v`.`problema_id` = `estatus`.`problemas`.`id`)));
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `view_resultados_preguntas_problemas`
+-- 
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatus`.`view_resultados_preguntas_problemas` AS select `a`.`problema_id` AS `problema_id`,`b`.`asignatura_id` AS `asignatura_id`,`re`.`numero_pregunta` AS `numero_pregunta`,round(avg(`re`.`resultado`),3) AS `media_resultado`,round(std(`re`.`resultado`),3) AS `desv_resultado`,count(0) AS `num_ejecuciones` from (((`estatus`.`respuestas_ejecuciones` `re` join `estatus`.`ejecuciones` `e`) join `estatus`.`agrupaciones` `a`) join `estatus`.`bloques` `b`) where ((`re`.`valor` <> _utf8'') and (`re`.`ejecucion_id` = `e`.`id`) and (`e`.`agrupacion_id` = `a`.`id`) and (`a`.`bloque_id` = `b`.`id`)) group by `a`.`problema_id`,`re`.`numero_pregunta`,`b`.`asignatura_id`;
+
+-- 
+-- Constraints for dumped tables
+-- 
+
+-- 
+-- Constraints for table `problemas`
+-- 
+ALTER TABLE `problemas`
+  ADD CONSTRAINT `problemas_dificultad_fk` FOREIGN KEY (`dificultad_id`) REFERENCES `dificultades` (`id`);

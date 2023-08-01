@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properities -->
+  <title>e-status :: Menu 1</title>
+
+  <link rel="stylesheet" type="text/css" href="semantic.min.css">
+  
+  <style>
+    .launch.button {
+      height: auto;
+	  left: -1px;
+	  overflow: hidden;
+	  position: fixed;
+	  top: 97px;
+	  white-space: nowrap;
+	  width: 50px;
+	  transition: width 0.3s ease 0s, transform 0.5s ease 0s;
+	}
+	
+	.fixed.launch.button:hover {
+	  width: 120px;
+	}
+	
+	.ui.secondary.menu .item:not(.active) {
+	  overflow: hidden;
+	  transition: width 0.3s ease 0s;
+	}
+	
+	.ui.secondary.menu .item h4 {
+	  display: inline-block !important;
+	  vertical-align: middle;
+	  margin: 0;
+	}
+	
+	#menu.tab-menu-alumno:after {
+	  position: fixed;
+	  display: block;
+	  bottom: 0;
+	  right: 0;
+	  font-family: Icons;
+	  font-size: 160px;
+	  content: '\f19d';
+	  visibility: visible;
+	  color: white;
+	  height: 150px;
+	  width: 180px;
+	  opacity: 0.05;
+	  z-index: -1;
+	  overflow: hidden;
+	}
+	
+	#menu.tab-menu-profe:after {
+	  position: fixed;
+	  display: block;
+	  bottom: 0;
+	  right: 0;
+	  font-family: Icons;
+	  font-size: 210px;
+	  content: '\f0b1';
+	  visibility: visible;
+	  color: white;
+	  height: 180px;
+	  width: 180px;
+	  opacity: 0.05;
+	  z-index: -1;
+	  overflow: hidden;
+	}
+	
+	#menu.tab-menu-admin:after {
+	  position: fixed;
+	  display: block;
+	  bottom: 0;
+	  right: 0;
+	  font-family: Icons;
+	  font-size: 210px;
+	  content: '\f0d0';
+	  visibility: visible;
+	  color: white;
+	  height: 180px;
+	  width: 180px;
+	  opacity: 0.05;
+	  z-index: -1;
+	  overflow: hidden;
+	}
+	
+	#menu ~ .pusher .contents {
+	  transition: padding-right 500ms ease 0ms;
+	}
+	
+	#menu.visible ~ .pusher .contents {
+	  padding-right: 475px;
+	}
+  </style>
+
+  <!-- <script src="jquery-1.9.1.min.js"></script> -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+
+  <!-- Used with Tab History !-->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+  <script src="semantic.min.js"></script>
+  <script src="e-login.js"></script>
+  
+</head>
+<body style="background-color: #ffffff;">
+	<div id="menu" class="ui left vertical inverted visible sidebar very wide menu tab-menu-alumno">
+		<div class="ui secondary pointing menu" style="margin-bottom: 25px">
+		  <a class="active item" data-tab="tab-menu-alumno">
+			<i class="student icon"></i><h4 style="overflow: hidden; display: inline-block"> Alumno</h4>
+		  </a>
+		  <a class="item" data-tab="tab-menu-profe">
+			<i class="travel icon"></i><h4 style="overflow: hidden; width: 0px; display: inline-block"> Profesor</h4>
+		  </a>
+		  <a class="item" data-tab="tab-menu-admin">
+			<i class="wizard icon"></i><h4 style="overflow: hidden; width: 0px; display: inline-block"> Administrador</h4>
+		  </a>
+		</div>
+		<div class="ui tab active" data-tab="tab-menu-alumno">
+		    <a class="item">
+				<i class="history icon" style="vertical-align: top"></i>
+				Historial
+		    </a>
+			<div class="ui vertical inverted accordion menu" style="width: 100%">
+				<div class="item">
+				  <a class="title">
+					<i class="dropdown icon"></i>
+				    <i class="browser icon" style="opacity: .75"></i>
+					&nbsp;Asignaturas
+				  </a>
+				  <div class="content">
+					  <div class="ui form">
+						  <div class="grouped fields">
+							<div class="field" style="padding: 5px 15px">
+							  <div class="ui radio checkbox">
+								<input name="size" value="small" type="radio">
+								<label>Asignatura 1</label>
+							  </div>
+							</div>
+							<div class="field" style="padding: 5px 15px">
+							  <div class="ui radio checkbox">
+								<input name="size" value="medium" type="radio">
+								<label>Asignatura 2</label>
+							  </div>
+							</div>
+							<div class="field" style="padding: 5px 15px">
+							  <div class="ui radio checkbox">
+								<input name="size" value="large" type="radio">
+								<label>Asignatura 3</label>
+							  </div>
+							</div>
+							<div class="field" style="padding: 5px 15px">
+							  <div class="ui radio checkbox">
+								<input name="size" value="x-large" type="radio">
+								<label>Asignatura 4</label>
+							  </div>
+							</div>
+						  </div>
+						</div>
+				  </div>
+				</div>
+			</div>
+			<div class="ui vertical inverted accordion menu" style="width: 100%">
+				<div class="item">
+				  <a class="title">
+					<i class="dropdown icon"></i>
+				    <i class="list layout icon" style="opacity: .75"></i>
+					&nbsp;Bloques
+				  </a>
+				  <div class="content">
+					  <a class="item" style="padding-top: 10px; padding-bottom: 10px">
+						Todos
+					  </a>
+					  <a class="item" style="padding-top: 10px; padding-bottom: 10px">
+						Bloque 1
+					  </a>
+					  <a class="item" style="padding-top: 10px; padding-bottom: 10px">
+						Bloque 2
+					  </a>
+					  <a class="item" style="padding-top: 10px; padding-bottom: 10px">
+						Bloque 3
+					  </a>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class="ui tab" data-tab="tab-menu-profe">
+		  <a class="item">
+			<i class="home icon"></i>
+			Home
+		  </a>
+		  <a class="item">
+			<i class="block layout icon"></i>
+			Topics
+		  </a>
+		  <a class="item">
+			<i class="smile icon"></i>
+			Friends
+		  </a>
+		  <a class="item">
+			<i class="calendar icon"></i>
+			History
+		  </a>
+		</div>
+		<div class="ui tab" data-tab="tab-menu-admin">
+		  <span>ADMIN!!</span>
+		</div>
+	</div>
+	
+	<div id="config" class="ui right vertical inverted sidebar menu tab-menu-alumno">
+		<div class="ui inverted segment" style="text-align: center; height: 100%">
+		  <h3 style="margin-left: auto; margin-right: auto; margin-top: 0px; padding-top: calc(2rem - 0.165em);">Configuraci&oacute;n</h3>
+		  <div class="ui floating dropdown labeled icon button">
+			<i class="world icon"></i>
+			<span class="text">Espa&ntilde;ol</span>
+			<div class="menu">
+			  <div class="item active">Espa&ntilde;ol</div>
+			  <div class="item">Catal&agrave;</div>
+			  <div class="item">English</div>
+			</div>
+		  </div>
+		  <div style="position: absolute; bottom: 0; width: 100%; text-align: center; margin-bottom: 25px;">
+			  <h4 style="">Perico Palotes <i style="cursor: pointer" class="pencil icon"></i></h4>
+			  <div class="ui small image" style="margin-bottom: 10px;">
+				  <a class="ui right corner blue large label">
+					<i class="close icon"></i>
+				  </a>
+				  <img src="daniel.jpg">
+			  </div>
+			  <div class="ui inverted black button">Cambiar</div>
+		  </div>
+		</div>
+	</div>
+  
+	<div class="ui black big launch right attached fixed button">
+	  <i class="content icon"></i>
+	  <span class="text">Menu</span>
+	</div>
+	
+	<div class="pusher">
+	   <div class="contents">
+		   here goes the actual content
+		   <div style="float: right; margin-top: 10px; margin-right: 5px">
+				<div class="ui animated fade red button">
+				  <div class="visible content"><i class="large sign out icon"></i></div>
+				  <div class="hidden content">
+					Log Out
+				  </div>
+				</div>
+				<div class="ui animated fade blue configure button">
+				  <div class="visible content"><i class="large configure icon"></i></div>
+				  <div class="hidden content">
+					Configure
+				  </div>
+				</div>
+		   </div>
+	   </div>
+	</div>
+	
+	
+	<script>
+		$(document).ready(function() {
+		
+			jQuery.fn.animateAuto = function(prop, speed, callback){
+				var elem, height, width;
+				return this.each(function(i, el){
+					el = jQuery(el), elem = el.clone().css({"height":"auto","width":"auto"}).appendTo(".pusher");
+					height = elem.css("height"),
+					width = elem.css("width"),
+					elem.remove();
+					
+					if(prop === "height")
+						el.animate({"height":height}, speed, callback);
+					else if(prop === "width")
+						el.animate({"width":width}, speed, callback);  
+					else if(prop === "both")
+						el.animate({"width":width,"height":height}, speed, callback);
+				});  
+			}
+
+			var menuSidebarSettings = { dimPage: false, transition: 'uncover', exclusive: false, closable: false };
+			$('#menu').sidebar(menuSidebarSettings);
+			$('#menu').sidebar('attach events', '.launch.button');
+			
+			var configSidebarSettings = { dimPage: true, transition: 'push', exclusive: true };
+			$('#config').sidebar(configSidebarSettings);
+			$('.configure.button').on('click', function() {
+			    if ($('#menu').sidebar('is visible')) {
+					menuSidebarSettings.onHidden = function() {
+						menuSidebarSettings.onHidden = null;
+						$('#menu').sidebar(menuSidebarSettings);
+						
+						$('#config').sidebar('show');
+						$('#config').addClass('right').removeClass('left');
+					};
+					$('#menu').sidebar(menuSidebarSettings);
+					
+					configSidebarSettings.onHidden = function() {
+						configSidebarSettings.onHidden = null;
+						$('#config').sidebar(configSidebarSettings);
+					
+					    $('#menu').sidebar('show');
+					};
+				    $('#config').sidebar(configSidebarSettings);
+				    $('#menu').sidebar('hide');
+				}
+				else {
+				    $('#config').sidebar('show');
+					$('#config').addClass('right').removeClass('left');
+				}
+			});
+			
+			$('.ui.secondary.menu .item').on('mouseenter', function() {
+			    if ($(this).hasClass('active')) return;
+			    $(this).find('h4').clearQueue();
+			    $(this).find('h4').animateAuto("width", 200);
+			}).on('mouseleave', function() {
+			    if ($(this).hasClass('active')) return;
+			    $(this).find('h4').clearQueue();
+			    $(this).find('h4').animate({width: 0}, 200);
+			}).on('click', function() {
+			    if ($(this).hasClass('active')) return;
+			  
+			    $(this).parent().find('.active').removeClass('active').clearQueue().find('h4').animate({width: 0}, 200);
+			    $(this).addClass('active');
+				
+				$('#menu').removeClass('tab-menu-alumno').removeClass('tab-menu-profe').removeClass('tab-menu-admin').addClass($(this).data('tab'));
+			});
+			
+			$('#menu a.item').tab();
+			$('.ui.accordion').accordion();
+			$('.ui.checkbox').checkbox();
+			$('.ui.dropdown').dropdown();
+		});
+	</script>
+</body>
+</html>

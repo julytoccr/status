@@ -1,0 +1,13 @@
+<?php
+class ViewNumeroAlumnosGrupo extends AppModel
+{
+	var $name = 'ViewNumeroAlumnosGrupo';
+
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+	var $belongsTo = array(
+			'Grupo',
+			'Asignatura'
+	);
+
+}
+?>

@@ -1,0 +1,349 @@
+.field, form input, form select, form textarea {
+  background-color: white;
+/*  background-color: #6487DC;  */
+  color: black;
+}
+
+.text_fixed
+{
+	font-family: monospace;
+}
+
+/*.field:hover, form input:hover, form select:hover, form textarea:hover {
+  background-color: #003399;
+  color: white;
+}*/
+
+.flash_error
+{
+	text-align: center;
+	position: relative;
+	background-color:#FFE8E8;
+	border:1px solid red;
+	padding:4px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+.flash_info
+{
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+	background-color: #7497EC;
+	border:1px solid black;
+	padding:4px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: white;
+}
+
+/** TABLAS */
+
+#listado
+{
+  margin: 3em 0 0 0;
+}
+
+.tabla_listado
+{
+  width: 100%;
+  position: relative;
+  float: left;
+  margin: 2em 0 2em 0;
+  background-color: #6487DC;
+  color: white;
+  border: 1px solid #333;
+  white-space: normal;
+}
+
+.tabla_listado_old
+{
+  width: 100%;
+  position: relative;
+  float: left;
+  margin: 2em 0 2em 0;
+  background-color: #6487DC;
+  color: white;
+  border: 1px solid #333;
+  white-space: normal;
+}
+
+
+.tabla_listado table tr td
+{
+  border-right: 1px solid #ccc;
+  text-align: center;
+}
+
+.listado
+{
+
+}
+
+
+.listado td
+{
+	vertical-align: top;
+}
+
+.tabla_listado td
+{
+	vertical-align: top;
+}
+
+.tabla_form textarea
+{
+	height: 70px;
+	width: 350px;
+}
+
+.tabla_form
+{
+	text-align: left;
+}
+
+
+.tabla_form iframe
+{
+	width: 500px;
+	height: 350px;
+}
+
+/** LINKS */
+.main a:hover
+{
+  color: #003399;
+  text-decoration: none;
+}
+
+.main .tabla_listado
+{
+	background-color: #ccc;
+}
+
+.main .tabla_listado a
+{
+	color:white;
+}
+.main .tabla_listado th
+{
+	background-color: #003399;
+	padding: 5px;
+}
+.main .tabla_listado td
+{
+	background-color:#84A7FC;
+	padding: 5px;
+}
+.main .tabla_listado_altRow td {
+  background: #7497EC;
+}
+
+.main .tabla_view th
+{
+	text-align: right;
+	width: 20%;
+}
+
+.main .tabla_view td
+{
+	text-align: left;
+}
+
+
+input, select{
+  font-weight: bold;
+}
+
+
+/* Fading Tooltips */
+div#toolTip {
+  position:absolute;
+  width:220px;
+  background: rgb(0,47,143);
+  border:1px double #003399;
+  text-align:left;
+  padding:5px;
+  -moz-border-radius:5px;
+  z-index:1000;
+}
+div#toolTip p {
+  margin:0;
+  padding:0;
+  color:#fff;
+  font:11px/12px verdana,arial,serif;
+}
+div#toolTip p em {
+  display:block;
+  margin-top:3px;
+  color:#f60;
+  font-style:normal;
+  font-weight:bold;
+}
+
+.atencion
+{
+	color: red;
+	font-weight: bold;
+}
+
+
+/* ajax in place editor */
+.main form.inplaceeditor-form { /* The form */
+}
+
+.main form.inplaceeditor-form input[type="text"] { /* Input box */
+	color: white;
+}
+
+.main form.inplaceeditor-form textarea { /* Textarea, if multiple columns */
+}
+
+.main form.inplaceeditor-form input[type="submit"] { /* The submit button */
+  margin-left:1em;
+}
+
+.main form.inplaceeditor-form a { /* The cancel link */
+  margin-left:1em;
+}
+
+
+/* Autocomplete */
+div.auto_complete {
+    position         :absolute;
+    width            :250px;
+    background-color :white;
+    border           :1px solid #888;
+    margin           :0px;
+    padding          :0px;
+
+}
+li.selected { background-color: #ffb; }
+
+.row
+{
+	clear: left;
+	border: 0px solid #000;
+	margin-bottom: 6px;
+	vertical-align: bottom;
+	text-align: left;
+}
+
+label
+{
+    padding: 0px;
+	border: 0px solid #000;
+	vertical-align: center;
+	display: block;
+	float: left;
+	color: #444;
+	font-size: 14px;
+	min-width: 40%;
+}
+
+.encuestas label{
+	float:none;
+}
+
+.input_component
+{
+	font-size: 12px;
+	padding: 3px;
+}
+
+.column_NO_USADO .label_NO_USADO
+{
+	display:block;
+	float: left;
+	font-size: 1.5em;
+	min-height: 28px;
+	width:200px;
+	padding: 12px 6px 12px 8px;
+	border-right: 0px solid #D2D7D8;
+}
+
+.error-message
+{
+	text-align: center;
+	position: relative;
+	background-color:#FFE8E8;
+	border:1px solid red;
+	padding:4px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.sideBarDot
+{
+	font-size: 16px;
+	margin: 0 3px 0 0;
+}
+
+.arboles td
+{
+	padding: 5px;
+	background-color: #CFDFFF;
+	vertical-align: top;
+}
+
+.main
+{
+	min-height: 500px;
+}
+
+.bloque_flotante
+{
+	width: 20em;
+	float: left;
+	margin-bottom: 2em;
+	margin-right: 1em;
+	background-color: #A4BFF6;
+	color: black;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+}
+
+.bloque_flotante h2
+{
+	background-color: #003399;
+	padding: 0.2em;
+	margin-top: 0px;
+	margin-bottom: 0.5em;
+	font-size: 1em;
+	color: white;
+}
+
+#header
+{
+	border-bottom-color: #999999;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+}
+
+#cakeSqlLog td
+{
+	border-color: #999999;
+	border-style: solid;
+	border-width: 1px;
+	vertical-align: top;
+}
+
+.calendar_flat
+{
+	width:0px;
+	clear: left;
+	padding: 0px;
+	margin: 0px;
+	border-width: 0px;
+	background-color: transparent;
+}
+
+.query_log
+{
+	font-weight: bold;
+	font-style: italic;
+}
+
+#AlumnoAsignaturas{
+	width:155px;
+}

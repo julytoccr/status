@@ -1,0 +1,786 @@
+<?php
+/**
+ * EstatusRserve
+ * Interfaz para sesión Rserve
+ *
+ * @author David Rodriguez
+ * @author Miguel Ros
+ *
+ * @package estatus
+ */
+vendor('/estatus/rserve/conexion');
+
+
+/**
+ * Directorio donde se escriben temporales desde y hacia Rserve
+ */
+define('RSERVE_TMP',TMP . 'rserve/');
+
+class EstatusRserve extends Object
+{
+	var $_ip;
+	var $_port;
+	var $_conexion=null;
+	var $_error=null;
+	var $_ultima_respuesta=null;
+
+	/**
+	 * Cachear instrucciones. Si es cierto, entonces las
+	 * instrucciones enviadas mediante evaluar() se guardan
+	 * en memoria, y se ejecutarán cuando se haga evaluar_cache().
+	 * Tras evaluar_cache() el valor pasa a falso automáticamente.
+	 *
+	 * @var boolean $cache
+	 */
+
+	var $cache=false;
+
+	var $_cached_inst=array();
+
+	var $historia=array();
+
+	/**
+	 * @param boolean $load_estatus Cierto si se desea cargar las librerías de estatus
+	 * @param string $ip IP del servidor RServe
+	 * @param integer $port Puerto del servidor
+	 *
+	 */
+	function __construct($load_estatus=true,$ip='127.0.0.1',$port=6311)
+	{
+		static $conexion=null;
+		$this->_ip=$ip;
+		$this->_port=$port;
+
+
+		$this->_conexion=new RConexion($ip,$port);
+		$this->_conexion->conexion();
+		if ($load_estatus)
+		{
+			$this->evaluar('library(estatus)');
+			//$this->evaluar('library(est)');
+		}
+	}
+
+	/**
+	 * Llamado automáticamente
+	 */
+	function __destruct()
+	{
+		if ($this->_conexion->conectado)
+		{
+			$dir=$this->obtener_directorio();
+			$this->_conexion->close();
+			$this->_eliminar_directorio($dir);
+		}
+	}
+
+	/**
+	 * Elimina un directorio recursivamente
+	 *
+	 * @param string $dir Directorio a eliminar
+	 * @return boolean Éxito
+	 */
+	function _eliminar_directorio($dir)
+	{
+		uses('folder');
+		if (! is_dir($dir)) return true;
+
+		$folder=& new Folder($dir);
+		$data=@$folder->ls();
+		$error=false;
+		if ($data)
+		{
+
+			//eliminar recursivamente los subdirectorios
+			foreach ($data[0] as $subdir)
+			{
+				if (! $this->_eliminar_directorio($dir . DS. $subdir))
+				{
+					$error=true;
+				}
+			}
+
+			//eliminar los archivos del directorio
+			foreach ($data[1] as $file)
+			{
+				if (! @unlink($dir . DS  .$file))
+				{
+					$error=true;
+				}
+			}
+		}
+
+		//eliminar el directorio
+		if (! $error) return @rmdir($dir);
+		else return false;
+	}
+
+	/**
+	 * Devuelve el último error ocurrido
+	 *
+	 * @return string
+	 */
+	function ultimo_error()
+	{
+		return $this->_error;
+	}
+
+	/**
+	 * Devuelve la última respuesta de R
+	 *
+	 * @return object RespuestaR
+	 */
+	function ultima_respuesta()
+	{
+		return $this->_ultima_respuesta;
+	}
+
+	/**
+	 * Reinicia la sesión eliminando todos los objetos
+	 */
+	function reiniciar()
+	{
+		$this->cache=false;
+		$this->_cached_inst=array();
+		$this->historia=array();
+		$this->evaluar('rm(list=rs())');
+	}
+
+
+	/**
+	 * Enviar a R las instrucciones que queremos ejecutar
+	 *
+	 * @param mixed $instrucciones Código a ejecutar. Si es un string, tiene las instrucciones separadas por \n.
+	 * Si es un array de líneas de instrucciones, se convertirá automáticamente a string
+	 *
+	 * @param boolean $solo_sintaxis Si es cierto, entonces únicamente se comprueba la sintaxis, no se ejecuta
+	 *
+	 * @return boolean Cierto si las instrucciones son correctas.
+	 * Falso si incorrectas y actualiza el último error
+	 */
+	function evaluar_instrucciones($instrucciones,$solo_sintaxis=false)
+	{
+		$this->historia[]='# start evaluar_instrucciones';
+		if (is_array($instrucciones))
+		{
+			$this->historia=am($this->historia,$instrucciones);
+			$instrucciones=join($instrucciones,"\n");
+		}
+		else
+		{
+			$this->historia=am($this->historia,split("\n",$instrucciones));
+		}
+		$this->historia[]='# end evaluar_instrucciones';
+
+		//escribimos las instrucciones en un temporal
+		$nombre_temp = tempnam(RSERVE_TMP, 'expresiones');
+		file_put_contents($nombre_temp,$instrucciones);
+
+		//Petición a R para la evaluación del archivo
+		if ($solo_sintaxis)
+		{
+			$res = $this->_conexion->evaluarVoid("cat(file=\"$nombre_temp\")");
+			$res = $this->_conexion->evaluarVoid("parse(\"$nombre_temp\")");
+		}
+		else
+		{
+			$res = $this->_conexion->evaluarVoid("source(\"$nombre_temp\", echo=TRUE)");
+		}
+		$this->_ultima_respuesta=$res;
+		unlink($nombre_temp);
+		// Comprobamos que el resultado es correcto
+
+		if($res->tipo == XT_ERROR)
+		{
+			// Recuperamos el mensaje de error de R
+			$error= $this->evaluar("geterrmessage()");
+			$str=$error->imprimir();
+			$str=substr($str,strpos($str,':')+1);
+			$this->_error=$str;
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * Obtiene el codigo que nos permite recuperar una variable
+	 * en otra sesion
+	 *
+	 * @param string $nombre Nombre de la variable
+	 * @return string Código
+	 *
+	 */
+	function obtener_codigo_variable($nombre)
+	{
+		$res = $this->evaluar("toString(deparse($nombre))");
+		return $res->imprimir();
+	}
+
+	/**
+	 * Obtiene el código HTML para visualizar una variable
+	 * @param string $variable Nombre de la variable
+	 */
+	function obtener_HTML_variable($nombre)
+	{
+		$res = $this->evaluar("estatus.HTML($nombre)");
+		return $res->imprimir();
+	}
+
+	/**
+	 * Obtiene una representación HTML de una variable
+	 * @param string $nombre Nombre de la variable
+	 * @param string $plantilla Plantilla de representación bajo /vendors/estatus/html
+	 */
+	function obtener_HTML_variable2($nombre,$plantilla='default')
+	{
+		$tipo = $this->obtener_tipo_variable($nombre);
+		switch ($tipo)
+		{
+			case 'matrix':
+				$list= $this->obtener_lista($nombre);
+				$html=$this->obtener_HTML_matrix($list);
+				break;
+			case 'array':
+				$html='[ARRAY]';
+				$list= $this->obtener_lista($nombre);
+				switch(count($list['attr']['dim']))
+				{
+					case 2:
+						$html=$this->obtener_HTML_matrix($list);
+						break;
+					case 3:
+						$html=$this->obtener_HTML_multiarray($list);
+						break;
+					default:
+						$html='[UNKNOWN ARRAY]';
+						break;
+				}
+				break;
+			case 'est.imagen':
+				vendor('/estatus/rserve/graficos');
+				$graficos=& new GraficosRserve($this);
+				$img=$graficos->guardar_grafico_img($nombre);
+				$url = IMAGES_URL . $img;
+				$webroot_url=WEBROOT_URL;
+
+				if (in_array($nombre.'_map',$this->obtener_lista_variables()))
+				{
+					$graficos->_map=$this->obtener_valor_variable($nombre . '_map');
+					$html_map=$graficos->print_map($nombre);
+					$html="<div class=\"estatusr\"><img src=\"{$webroot_url}{$url}\" border=\"0\" alt=\"\" usemap=\"$nombre\"/></div>$html_map";
+				}
+				else
+				{
+					$html="<div class=\"estatusr\"><img src=\"{$webroot_url}{$url}\" border=\"0\" alt=\"\" /></div>";
+				}
+
+				//$html="<r:grafico nombre=\"$nombre\" />";
+				break;
+			case 'numeric':
+			case 'vector':
+			case 'character':
+			default:
+				$html=$this->obtener_valor_variable($nombre);
+				if (is_array($html))
+				{
+					$html=join(", " , $html);
+				}
+				break;
+		}
+		return $html;
+	}
+
+	function obtener_HTML_matrix($list)
+	{
+		$html='<table class="estatusr_table">';
+		if (isset($list['attr']['dimnames']))
+		{
+			$html.='<tr>';
+			if (isset($list['attr']['dimnames'][0][0]))
+			{
+				$html.= '<td class="estatusr_blanco">&nbsp;</td>';
+			}
+			foreach ($list['attr']['dimnames'][1] as $colname)
+			{
+				$html.="<td class=\"estatusr_colname\">$colname</td>";
+			}
+			$html.='</tr>';
+		}
+
+		$matrix=array();
+		$nrows=$list['attr']['dim'][0];
+		$ncols=$list['attr']['dim'][1];
+		$k=1;
+		for ($i=0;$i<$ncols;$i++)
+		{
+			for ($j=0;$j<$nrows;$j++)
+			{
+				$matrix[$j][$i]=$list['value'][$k];
+				$k++;
+			}
+		}
+
+		foreach ($matrix as $i=>$row)
+		{
+			$html.='<tr>';
+			if (isset($list['attr']['dimnames'][0][0]))
+			{
+				$html.="<td class=\"estatusr_rowname\">{$list['attr']['dimnames'][0][$i]}</td>";
+			}
+			foreach ($row as $field)
+			{
+				$html.="<td class=\"estatusr_field\">$field</td>";
+			}
+			$html.='</tr>';
+		}
+		$html.='</table>';
+		return $html;
+	}
+
+	function obtener_HTML_multiarray($list)
+	{
+		$k=1;
+		$html="";
+		for($m=0;$m<$list['attr']['dim'][2];$m++)
+		{
+			$html.='<table class="estatusr_table">';
+			if (isset($list['attr']['dimnames']))
+			{
+				$html.='<tr>';
+				if (isset($list['attr']['dimnames'][0][0]))
+				{
+					$html.= '<td class="estatusr_blanco">' . $list['attr']['dimnames'][2][$m]. '</td>';
+				}
+				foreach ($list['attr']['dimnames'][1] as $colname)
+				{
+					$html.="<td class=\"estatusr_colname\">$colname</td>";
+				}
+				$html.='</tr>';
+			}
+
+			$matrix=array();
+			$nrows=$list['attr']['dim'][0];
+			$ncols=$list['attr']['dim'][1];
+			for ($i=0;$i<$ncols;$i++)
+			{
+				for ($j=0;$j<$nrows;$j++)
+				{
+					$matrix[$j][$i]=$list['value'][$k];
+					$k++;
+				}
+			}
+
+			foreach ($matrix as $i=>$row)
+			{
+				$html.='<tr>';
+				if (isset($list['attr']['dimnames'][0][0]))
+				{
+					$html.="<td class=\"estatusr_rowname\">{$list['attr']['dimnames'][0][$i]}</td>";
+				}
+				foreach ($row as $field)
+				{
+					$html.="<td class=\"estatusr_field\">$field</td>";
+				}
+				$html.='</tr>';
+			}
+			$html.='</table>';
+		}
+		return $html;
+	}
+
+
+	/**
+	 * Devuelve el tipo de variable
+	 * @param string $nombre
+	 * @return string Clase de la variable (ej: 'matrix','est.imagen','numeric','vector')
+	 */
+	function obtener_tipo_variable($nombre)
+	{
+		$res = $this->evaluar("class($nombre)");
+		$tipo = $res->imprimir();
+
+		$res = $this->evaluar($nombre);
+		$valor = $res->imprimir();
+
+
+		if ($tipo == 'numeric' && is_array($valor))
+		{
+			$tipo='vector';
+		}
+		return $tipo;
+	}
+
+
+	/**
+	 * Devuelve un fichero ubicado dentro del directorio de sesión actual
+	 *
+	 * @param string $file Nombre del fichero
+	 * @return string Contenido del fichero
+	 */
+	function obtener_fichero($file)
+	{
+		$dir=$this->obtener_directorio();
+		return file_get_contents($dir . DS . $file);
+	}
+
+	/**
+	 * Devuelve la lista de variables que tenemos definidas
+	 * en la sesion actual de R
+	 * @return array Array de nombres de variables declaradas
+	 */
+	function obtener_lista_variables()
+	{
+		return array_keys($this->obtener_lista_valores_tipos_variables());
+	}
+
+	/**
+	 * Devuelve un array asociativo de variable=>valor con todas las
+	 * variables que tenemos definidas en la sesion actual de R
+	 *
+	 * @return array Array asociativo variable=>valor
+	 */
+	function obtener_lista_valores_variables()
+	{
+		$temp=$this->obtener_lista_valores_tipos_variables();
+
+		$arr=array();
+		foreach ($temp as $nombre=>$info)
+		{
+			$arr[$nombre]=$info['valor'];
+		}
+		return $arr;
+	}
+
+
+	/**
+	 * Devuelve un array asociativo de variable=>array('tipo'=>$tipo, 'valor'=>$valor) con todas las
+	 * variables que tenemos definidas en la sesion actual de R
+	 *
+	 * @return array Array asociativo de variable=>array('tipo'=>$tipo, 'valor'=>$valor)
+	 */
+
+	function obtener_lista_valores_tipos_variables()
+	{
+		$res = $this->evaluar("estatus.ListaVariables()");
+		if (!$res || $res->hayError()) return array();
+		$ret=$res->imprimir();
+		if (! is_array($ret)) $ret=array();
+
+		$arr=array();
+		for ($i=0;$i<count($ret);$i+=3)
+		{
+			$arr[$ret[$i]]=array(	'valor'=>$ret[$i+1],
+									'tipo'=>$ret[$i+2]);
+		}
+		return $arr;
+	}
+
+
+	/**
+	 * Obtiene el valor de una variable
+	 * @param string $nombre Nombre de la variable
+	 * @return mixed Valor de la variable
+	 */
+	function obtener_valor_variable($nombre)
+	{
+		$res = $this->evaluar($nombre);
+		return $res->imprimir();
+	}
+
+	/**
+	 * Recupera una variable a partir del código
+	 * generado en la funcion obtener_codigo_variable
+	 *
+	 * @param string $nombre Nombre de la variable
+	 * @param string $codigo Código de la variable
+	 * @param boolean $es_string $codigo es directamente un string
+	 *
+	 * @return string Resultado
+	 */
+	function recuperar_variable($nombre, $codigo, $es_string=false)
+	{
+		if (is_array($codigo))
+		{
+			return $this->enviar_array($codigo,$nombre);
+		}
+		else
+		{
+			if (! $es_string)
+			{
+				if ($codigo==='') $codigo="''";
+			}
+			else
+			{
+				$codigo="'$codigo'";
+			}
+			$res = $this->evaluar("$nombre<-$codigo");
+			return $res->imprimir();
+		}
+	}
+
+	/**
+	 * Obtiene el directorio de trabajo de la sesión actual
+	 *
+	 * @return string Directorio de trabajo (ruta absoluta).
+	 * El directorio será similar a /ruta_absoluta_cake/RSERVE_TMP/connXXX
+	 */
+	function obtener_directorio(){
+		$res = $this->evaluar('getwd()');
+		if ($res) return $res->imprimir();
+		else return null;
+	}
+
+	/**
+	 * Estable el directorio de trabajo actual en la sesión
+	 * @param string $dir
+	 */
+	function establecer_directorio($dir)
+	{
+		$res = $this->evaluar("setwd(\"$dir\")");
+	}
+
+
+	/*
+	 * Elimina un directorio
+	 * ???
+	 * @param string $dir Nombre del directorio
+	 * TODO: Posiblemente retornar cierto si correcto
+	 */
+	/*
+	function eliminar_directorio($dir)
+	{
+		unlink($dir);
+		$res = $this->evaluar("unlink(\"$dir\", TRUE)");
+	}
+	*/
+
+	/**
+	 * Devuelve el error relativo cometido por el alumno
+	 * @param string $nombre Nombre de la variable
+	 * @param real $valor Respuesta del alumno
+	 */
+	function obtener_error_relativo($nombre, $valor)
+	{
+		$res = $this->evaluar("if(inherits(try(round(abs($nombre-as.numeric(\"$valor\"))*100/$nombre, digits=3)),\"try-error\")){'-'}else{round(abs($nombre-as.numeric(\"$valor\"))*100/$nombre, digits=3)}");
+		return $res->imprimir();
+	}
+
+	/**
+	 * Enviar un array a R
+	 * @param array $array Array a enviar. Debe ser un vector de enteros/strings mezclados
+	 * @param string $nombre Nombre de la variable destino en R
+	 * @param boolean $es_string El array a enviar tiene strings
+	 */
+	function enviar_array($array,$nombre,$es_string=true)
+	{
+		$codigo='c(';
+		for($i=0;$i<count($array);$i++)
+		{
+			if ($i!=0)
+			{
+				$codigo.=',';
+			}
+
+			if (is_numeric($array[$i]))
+			{
+				$codigo.= $array[$i];
+			}
+			elseif ($es_string)
+			{
+				$str=$array[$i];
+				$str=str_replace('"','\"',$str);
+				$codigo.="\"{$str}\"";
+			}
+			else
+			{
+				$codigo.=$array[$i];
+			}
+
+		}
+		$codigo.=')';
+		return $this->recuperar_variable($nombre,$codigo);
+	}
+
+	/**
+	 * Envía a R sentencias
+	 * @param mixed $codigo Un string con la sentencia o un array de sentencias
+	 * @param boolean $resultado ¿Se desea obtener el resultado? Solo para no-cache
+	 * @return object Resultado
+	 */
+	function evaluar($codigo,$resultado=true)
+	{
+		if (is_array($codigo))
+		{
+			$codigo=join("\n",$codigo);
+		}
+		if ($this->cache)
+		{
+			$this->_cached_inst[]=$codigo;
+			//hay que responder con un objeto RespuestaR
+			return new RespuestaR(XT_STR,'cached');
+		}
+		else
+		{
+			$this->historia[]=$codigo;
+			if ($resultado)
+			{
+				$res=$this->_conexion->evaluar($codigo);
+				$this->_ultima_respuesta=$res;
+				return $res;
+			}
+			else
+			{
+				$this->_conexion->evaluarVoid($codigo);
+				return new RespuestaR(XT_STR,'void');
+			}
+		}
+	}
+
+	/**
+	 * Evalúa las instrucciones cacheadas.
+	 * Automáticamente restaura $cache a false
+	 * @return object Última respuesta
+	 */
+	function evaluar_cache()
+	{
+		$this->cache=false;
+		$this->evaluar_instrucciones($this->_cached_inst);
+		$this->_cached_inst=array();
+		return $this->ultima_respuesta();
+	}
+
+	/**
+	 * Establece la semilla de generación de números
+	 * aleatorios de R.
+	 * @param integer $semilla Si es null, genera una nueva semilla aleatoriamente
+	 * @return integer Semilla generada (en caso de $semilla=null)
+	 */
+	function establecer_semilla($semilla=null)
+	{
+		if ($semilla===null || ! is_numeric($semilla))
+		{
+			$semilla=rand();
+		}
+		$this->evaluar("set.seed($semilla)");
+		return $semilla;
+	}
+
+	/**
+	 * Devuelve una estructura compleja sobre una variable tipo lista
+	 * (matrix, array, ...) incluyendo todos los atributos 'dim' , 'dimnames' ...
+	 * @param string $nombre Nombre de variable R
+	 * @return array
+	 * 	$result['value'] => Valor de la variable
+	 *  $result['attr'] => Atributos extras
+	 */
+	function obtener_lista($nombre)
+	{
+		$res=$this->evaluar($nombre);
+		$value=$res->valor;
+		if (isset($res->attr->valor))
+		{
+			$attr=$this->_parsear_attr($res->attr->valor);
+		}
+		else
+		{
+			$attr=array();
+		}
+		return array('value'=>$value , 'attr'=>$attr);
+	}
+
+	/**
+	 * Parsea los atributos extra de una lista
+	 * @param string $body Valor Body de una XT_LIST
+	 * @return array Array asociativo nombre_atributo => valor
+	 */
+	function _parsear_attr($body)
+	{
+		$attr=array();
+		if (is_array($body) && isset($body['head']))
+		{
+			$name=$body['tag']['resp']->valor;
+			$value=$body['head']->imprimir_php();
+			$attr[$name]=$value;
+			return am($attr,$this->_parsear_attr($body['body']->valor));
+		}
+		return $attr;
+	}
+
+	/**
+	 * Obtiene una matriz desde R, con nombres de filas y columnas
+	 *
+	 * @param string $nombre Nombre de la variable
+	 * @return array
+	 * 	$result['values'] Valores de la matriz. $result['matrix']['fila$i']['columna$j'] (0<=i<nrows; 0<=j<ncols)
+	 *  $result['ncols'] Número de columnas
+	 *  $result['nrows'] Número de filas
+	 *  $result['rownames'][$i] (opcional) Array de nombres de filas (0<=i<nrows)
+	 *  $result['colnames'][$i] (opcional) Array de nombres de columnas (0<=i<ncols)
+	 */
+	/*
+	function obtener_matriz($nombre)
+	{
+		$res=$this->evaluar($nombre);
+		$dim=$res->attr->valor['head']->valor;
+		$nrows=$dim[1];
+		$ncols=$dim[2];
+
+		$valores=$res->valor;
+		$k=1;
+
+		$matrix=array();
+		for ($i=0;$i<$ncols;$i++)
+		{
+			for ($j=0;$j<$nrows;$j++)
+			{
+				$matrix[$j][$i]=$valores[$k];
+				$k++;
+			}
+		}
+		$result=array(
+			'ncols'=>$ncols,
+			'nrows'=>$nrows,
+			'values'=>$matrix,
+		);
+		$names=$res->attr->valor['body'];
+		//var_dump($names);
+		if ($names->valor != '')
+		{
+			$labels=array();
+			foreach ($names->valor['head']->valor as $i=>$v1)
+			{
+				$labels[$i]=array();
+				foreach ($v1->valor as $j=>$v2)
+				{
+					$labels[$i][$j]=$v2->valor;
+				}
+			}
+			$result['rownames']=$labels[0];
+			$result['colnames']=$labels[1];
+		}
+		return $result;
+	}
+	*/
+}
+
+
+class ExtensionRserve extends Object
+{
+	var $_rserve=null;
+
+	/**
+	 * @param object $rserve Instancia de EstatusRserve o null para crear una nueva conexión
+	 */
+	function __construct($rserve=null)
+	{
+		if ($rserve===null)
+		{
+			$this->_rserve=& new EstatusRserve();
+		}
+		else
+		{
+			$this->_rserve=& $rserve;
+		}
+	}
+}
+?>

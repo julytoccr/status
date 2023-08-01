@@ -1,0 +1,1 @@
+resultado = matrix(sample(0:99, 9), ncol=3)

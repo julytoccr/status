@@ -1,0 +1,2497 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-03-03 03:01+0100\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgid "syntax_natural"
+msgstr "The answer has to be a natural number"
+
+msgid "syntax_entero"
+msgstr "The answer has to be an integer number"
+
+msgid "aceptar_nota"
+msgstr "Accept mark"
+
+msgid "syntax_real"
+msgstr "The answer has to be a real number"
+
+msgid "syntax_real_positivo"
+msgstr "The answer has to be a real positive number"
+
+msgid "ver_todas"
+msgstr "See all"
+
+msgid "buscar_textos"
+msgstr "Search in texts"
+
+msgid "buscar_etiquetas"
+msgstr "Search in labels"
+
+msgid "revisada"
+msgstr "Revised"
+
+msgid "no_revisada"
+msgstr "Unrevised"
+
+msgid "eliminar_notificacion"
+msgstr "Delete notification"
+
+msgid "estado_notificacion"
+msgstr "Notification status"
+
+msgid "administrar_notificacion"
+msgstr "Manage notification"
+
+msgid "mens_notificacion_eliminada"
+msgstr "The notification has been deleted"
+
+msgid "mens_notificacion_revisada"
+msgstr "The notification has been marked as revised"
+
+msgid "ver_todas_notificaciones"
+msgstr "See all notifications"
+
+msgid "titulo_pagina_principal"
+msgstr "Main Page"
+
+msgid "ver_notificaciones_no_revisadas"
+msgstr "See unrevised notifications"
+
+msgid "form_sugerencia"
+msgstr "Suggestion"
+
+msgid "form_seleccione_tipo_busqueda"
+msgstr "Select type of search"
+
+msgid "form_notas_adicionales"
+msgstr "Additional notes"
+
+msgid "mens_notificacion_insertada"
+msgstr "Notification successful"
+
+msgid "titulo_administrar_terminos"
+msgstr "Manage terms"
+
+msgid "titulo_votar_encuestas"
+msgstr "Vote surveys"
+
+msgid "titulo_administrar_etiquetas"
+msgstr "Manage labels"
+
+msgid "titulo_administrar_lenguajes"
+msgstr "Manage languages"
+
+msgid "titulo_usuarios"
+msgstr "Users"
+
+msgid "titulo_tipos_respuestas"
+msgstr "Answer types"
+
+msgid "titulo_tablas_estadisticas"
+msgstr "Statistic tables"
+
+msgid "titulo_sintaxis_respuestas"
+msgstr "Answer syntaxes"
+
+msgid "titulo_restricciones_bloques"
+msgstr "Block Restrictions"
+
+msgid "titulo_programas"
+msgstr "Programs"
+
+msgid "titulo_profesores"
+msgstr "Teachers"
+
+msgid "titulo_preguntas_encuestas"
+msgstr "Surveys questions"
+
+msgid "titulo_problemas"
+msgstr "Problems"
+
+msgid "titulo_opciones_preguntas"
+msgstr "Questions options"
+
+msgid "titulo_preguntas"
+msgstr "Questions"
+
+msgid "titulo_listados_alumnos"
+msgstr "Student list"
+
+msgid "titulo_historial"
+msgstr "History"
+
+msgid "titulo_estadisticas_problemas"
+msgstr "Problem statistics"
+
+msgid "titulo_estadisticas"
+msgstr "Statistics"
+
+msgid "titulo_estadisticas_grupos"
+msgstr "Group statistics"
+
+msgid "titulo_estadisticas_alumnos"
+msgstr "Students statistics"
+
+msgid "titulo_encuestas"
+msgstr "Surveys"
+
+msgid "titulo_ejecuciones"
+msgstr "Executions"
+
+msgid "titulo_asignar_encuestas"
+msgstr "Assign surveys"
+
+msgid "titulo_editor"
+msgstr "Editor"
+
+msgid "titulo_bloques"
+msgstr "Blocks"
+
+msgid "titulo_alumnos"
+msgstr "Students"
+
+msgid "titulo_administrar_profesores"
+msgstr "Manage teachers"
+
+msgid "titulo_administradores"
+msgstr "Administrators"
+
+msgid "titulo_administrar_problemas"
+msgstr "Manage problems"
+
+msgid "titulo_administrar_asignaturas"
+msgstr "Manage subjects"
+
+msgid "titulo_administrar_alumnos"
+msgstr "Manage students"
+
+msgid "titulo_administrar_administradores"
+msgstr "Manage administrators"
+
+msgid "error_admin_modificado"
+msgstr "Problems modifying administrator"
+
+msgid "confirmar_alta_lenguajes"
+msgstr "Are you sure you want to register these languages? "
+
+msgid "notificaciones_correcciones"
+msgstr "Correction notifications that users have done:"
+
+msgid "marcar_como_revisada"
+msgstr "Mark as revised"
+
+msgid "url"
+msgstr "URL"
+
+msgid "form_texto_actual"
+msgstr "Current text"
+
+msgid "notificar_error_traduccion"
+msgstr "Notify translation error"
+
+msgid "ver_notificacion_correcciones"
+msgstr "See language corrections notifications"
+
+msgid "no_quitar_herencia"
+msgstr "It is not possible to delete the inheritance because there are labels that don't have text in this language"
+
+msgid "lenguaje_lenguaje"
+msgstr "Language: %1$s"
+
+msgid "administrador"
+msgstr "Administrator"
+
+msgid "numero_registros"
+msgstr "Number of registers"
+
+msgid "cambiar_password"
+msgstr "Change password"
+
+msgid "ultimo_problema_probado"
+msgstr "Last passed problem"
+
+msgid "salida"
+msgstr "Exit"
+
+msgid "gestionar_bloques"
+msgstr "Manage blocks"
+
+msgid "confirm_eliminar_pregunta"
+msgstr "Are you sure you want to delete the question?"
+
+msgid "no_ejecuciones"
+msgstr "There are no executions"
+
+msgid "grafico_nota_vs_tiempo"
+msgstr "Mark vs time graphic"
+
+msgid "total_problemas"
+msgstr "Total problems"
+
+msgid "grafico_nota_vs_orden_ejecucion"
+msgstr "Mark vs execution order graphic"
+
+msgid "pregunta"
+msgstr "Question"
+
+msgid "numero_alumnos"
+msgstr "Number of students"
+
+msgid "no_login_sistema"
+msgstr "There are not any logins in the system"
+
+msgid "problema"
+msgstr "Problem"
+
+msgid "estadisticas_asignatura"
+msgstr "Subject statistics"
+
+msgid "explic_listado_ejecuciones_problema"
+msgstr "Problem executions list"
+
+msgid "explic_crear_asignacion_encuesta"
+msgstr "Creates a new survey assignation"
+
+msgid "menu_crear_asignacion_encuesta"
+msgstr "Create assignation"
+
+msgid "explic_editar_encuestas"
+msgstr "Goes back to survey editing"
+
+msgid "menu_editar_encuestas"
+msgstr "Edit surveys"
+
+msgid "profesor"
+msgstr "Teacher"
+
+msgid "asignacion_encuesta"
+msgstr "Assignation survey"
+
+msgid "resolver"
+msgstr "Solve"
+
+msgid "volver"
+msgstr "Go back"
+
+msgid "busqueda_todas_entradas"
+msgstr "All entries:"
+
+msgid "busqueda_textos_cadena"
+msgstr "Search in the texts of the string: %1$s"
+
+msgid "busqueda_etiquetas_cadena"
+msgstr "Search in the labels of the string: %1$s"
+
+msgid "estado_alta"
+msgstr "Registration status"
+
+msgid "seleccionar_asignatura"
+msgstr "Select subject"
+
+msgid "programas"
+msgstr "Programs"
+
+msgid "sintaxis_respuestas"
+msgstr "Answer syntax"
+
+msgid "saludo"
+msgstr "Welcome"
+
+msgid "login"
+msgstr "Login"
+
+msgid "invitado"
+msgstr "Guest"
+
+msgid "cerrar_sesion"
+msgstr "Close session"
+
+msgid "saludo_usuario"
+msgstr "Welcome %1$s"
+
+msgid "calculadora_tstudent"
+msgstr "Calculator: t-Student"
+
+msgid "calculadora_normal"
+msgstr "Calculator: Normal"
+
+msgid "calculadora_fisher"
+msgstr "Calculator: Snedecor's F"
+
+msgid "cerrar"
+msgstr "Close all"
+
+msgid "calcular"
+msgstr "Calculate"
+
+msgid "confirm_eliminar_tipo"
+msgstr "Are you sure you want to delete the type?"
+
+msgid "calculadora_chicuadrado"
+msgstr "Calculator: Chi-square"
+
+msgid "confirm_eliminar_restriccion"
+msgstr "Are you sure you want to delete the restriction?"
+
+msgid "condicion_grafico"
+msgstr "The variable has to be exactly named 'grafico'"
+
+msgid "devolver_grafico"
+msgstr "Give a graphic back:"
+
+msgid "devolver_mensaje"
+msgstr "Give a message back:"
+
+msgid "consulta_sql"
+msgstr "SQL query:"
+
+msgid "variables_parametros"
+msgstr "variables param1_, param2_,…"
+
+msgid "ayuda"
+msgstr "Help:"
+
+msgid "acceso_parametros"
+msgstr "Access parameters:"
+
+msgid "confirm_eliminar_programa"
+msgstr "Are you sure you want to delete the program?"
+
+msgid "ejecutar"
+msgstr "Execute"
+
+msgid "asignatura_asignatura"
+msgstr "Subject: %1$s"
+
+msgid "problema_problema"
+msgstr "Problem: %1$s"
+
+msgid "aviso_sobreescritura_problema"
+msgstr "Attention: the current problem will be overwritten"
+
+msgid "restaurar_xml"
+msgstr "Load XML"
+
+msgid "explic_restaurar_xml"
+msgstr "The problem is loaded from an XML file"
+
+msgid "indicar_xml_restaurar_problema"
+msgstr "Select the XML file to load the problem"
+
+msgid "explic_generar_xml"
+msgstr "The problem is saved in a XML file.  The changes on the problem will be saved automatically"
+
+msgid "explic_prueba_problema"
+msgstr "Runs the problem to perform tests. The changes on the problem will be saved automatically"
+
+msgid "generar_xml"
+msgstr "Generate XML"
+
+msgid "prueba_problema"
+msgstr "Test problem"
+
+msgid "explic_editar_preguntas_problema"
+msgstr "Edits the questions of the problem. The changes on the problem will be saved automatically"
+
+msgid "editar_preguntas"
+msgstr "Edit questions"
+
+msgid "explic_guardar_cambios_problema"
+msgstr "Saves the changes done in the problem"
+
+msgid "habilitado_en_paginas"
+msgstr "%1$s has been enabled in the website"
+
+msgid "atencion"
+msgstr "Attention"
+
+msgid "logo_estatus_creador"
+msgstr "The e-status logo was designed by %1$s"
+
+msgid "contactar_con_nosotros"
+msgstr "To contact us:"
+
+msgid "edificio_despacho"
+msgstr "%1$s Building  -  %2$s Office"
+
+msgid "alumnos_destacados"
+msgstr "Outstanding students"
+
+msgid "noticias_destacadas"
+msgstr "Important news"
+
+msgid "cabecera_acercade"
+msgstr "e-status is an educational product developed by the  Statistics and Operational Investigation Department (DEIO) of the UPC. Several Computer Science Faculty students have taken part, under the direction of José Antonio González, professor of the DEIO, in the development of the current e-status features, as a part of their respective Final Projects:"
+
+msgid "login_usuario"
+msgstr "Your login is: %1$s"
+
+msgid "password_password"
+msgstr "Your password is: %1$s"
+
+msgid "confirm_eliminar_opcion"
+msgstr "Are you sure you want to delete the option?"
+
+msgid "restriccion_desde_dia"
+msgstr "from %1$s"
+
+msgid "restriccion_hasta_dia"
+msgstr "to %1$s"
+
+msgid "saludo_estatus"
+msgstr "Welcome to e-status"
+
+msgid "no_restriccion_fecha"
+msgstr "Without a date restriction"
+
+msgid "saludo_usuario_problema"
+msgstr "Hello %1$s"
+
+msgid "habilitado"
+msgstr "Enabled:"
+
+msgid "acerca_de"
+msgstr "About"
+
+msgid "inicio"
+msgstr "Start"
+
+msgid "contacto"
+msgstr "Contact"
+
+msgid "nombre_problema"
+msgstr "Problem name"
+
+msgid "nombre_bloque"
+msgstr "Block name"
+
+msgid "puesto_ranking_nota"
+msgstr "Position in the rating list by mark"
+
+msgid "puesto_ranking_puntuacion"
+msgstr "Position in the rating list by score"
+
+msgid "puesto_ranking_ejecuciones"
+msgstr "Position in the rating list by executions"
+
+msgid "grafico_ejecuciones_vs_puntuacion"
+msgstr "Executions vs score graphic"
+
+msgid "grafico_alumnos_activos"
+msgstr "Most active students graphic"
+
+msgid "desviacion_resultado"
+msgstr "Deviation result"
+
+msgid "media_resultado"
+msgstr "Average result"
+
+msgid "numero_respuestas"
+msgstr "Number of answers"
+
+msgid "fecha"
+msgstr "Date"
+
+msgid "estadisticas_preguntas_problema"
+msgstr "Questions of the problem statistics: %1$s"
+
+msgid "alumno"
+msgstr "Student"
+
+msgid "ejecuciones_problema"
+msgstr "Execution"
+
+msgid "estadisticas_problema_problema"
+msgstr "Problem statistics: %1$s"
+
+msgid "ejecuciones_problema_problema"
+msgstr "Problem executions: %1$s"
+
+msgid "grafico_repeticiones_problema"
+msgstr "Graphic of the distribution of the number of repetitions of the problem: %1$s"
+
+msgid "grafico_opiniones_problema"
+msgstr "Histogram of the students opinion about the usefulness of the problem: %1$s"
+
+msgid "media"
+msgstr "Average"
+
+msgid "porcentaje_usuarios"
+msgstr "Users"
+
+msgid "suma"
+msgstr "Addition"
+
+msgid "total_usuarios"
+msgstr "Total users"
+
+msgid "total_ejecuciones"
+msgstr "Total executions"
+
+msgid "puntuacion_total"
+msgstr "Total score"
+
+msgid "total_alumnos"
+msgstr "Total students"
+
+msgid "total_problemas_utilizados"
+msgstr "Total of used problems"
+
+msgid "total_problemas_disponibles"
+msgstr "Total of available problems"
+
+msgid "estadisticas_grupo"
+msgstr "Statistics of group: %1$s"
+
+msgid "grafico_boxplot_puntuacion"
+msgstr "Score boxplot graphic"
+
+msgid "grafico_boxplot_nota"
+msgstr "Mark boxplot graphic"
+
+msgid "grafico_nota_vs_puntuacion"
+msgstr "Mark vs group score graphic"
+
+msgid "grafico_problemas_alumno"
+msgstr "Problems per student graphic"
+
+msgid "email"
+msgstr "Email"
+
+msgid "usuario"
+msgstr "User"
+
+msgid "listado_alumnos_asignatura"
+msgstr "List of all the students of the subject"
+
+msgid "estadisticas_de_los_problemas"
+msgstr "Problems statistics"
+
+msgid "grafico_nota_vs_ejecuciones"
+msgstr "Mark vs executions graphic"
+
+msgid "numero_logins"
+msgstr "Number of logins"
+
+msgid "alumnos_diferentes"
+msgstr "Different students"
+
+msgid "media_ejecuciones_problemas_utilizados"
+msgstr "Average executions by used problems"
+
+msgid "nota_media_ejecuciones"
+msgstr "Average executions mark"
+
+msgid "numero_ejecuciones"
+msgstr "Number of executions"
+
+msgid "n"
+msgstr "N"
+
+msgid "opciones"
+msgstr "Options"
+
+msgid "grupo"
+msgstr "Group"
+
+msgid "total"
+msgstr "Total"
+
+msgid "numero_votos"
+msgstr "Number of votes"
+
+msgid "proporcion"
+msgstr "Proportion"
+
+msgid "opcion"
+msgstr "Option"
+
+msgid "confirm_eliminar_asignacion"
+msgstr "Are you sure you want to delete the assignation?"
+
+msgid "resultados"
+msgstr "Results"
+
+msgid "confirm_eliminar_encuesta"
+msgstr "Are you sure you want to delete the survey?"
+
+msgid "votar"
+msgstr "Vote"
+
+msgid "fecha_limite"
+msgstr "Date limit:"
+
+msgid "explic_cambiar_orden_tipos_respuestas"
+msgstr "Changes the order of the answer types"
+
+msgid "menu_crear_tipo"
+msgstr "Create type"
+
+msgid "explic_crear_tipo_respuesta"
+msgstr "Create a new type of answer"
+
+msgid "tipos_respuestas"
+msgstr "Answer types"
+
+msgid "explic_fisher"
+msgstr "Calculate the value of the Snedecor's F distribution function "
+
+msgid "menu_fisher"
+msgstr "F of Fisher"
+
+msgid "explic_chiquadrado"
+msgstr "Calculates the value of the Chi-square distribution function "
+
+msgid "explic_tstudent"
+msgstr "Calculates the value of the t-Student distribution function "
+
+msgid "menu_chiquadrado"
+msgstr "Chi-square"
+
+msgid "menu_tstudent"
+msgstr "t-Student"
+
+msgid "explic_normal"
+msgstr "Calculates the value of the Normal distribution function "
+
+msgid "explic_crear_sintaxis_respuesta"
+msgstr "Creates a new answer syntax"
+
+msgid "calculadora"
+msgstr "Calculator"
+
+msgid "menu_normal"
+msgstr "Normal"
+
+msgid "menu_crear_sintaxis_respuesta"
+msgstr "Create syntax"
+
+msgid "explic_cambiar_orden_sintaxis_respuesta"
+msgstr "Changes the order of the answer syntax types "
+
+msgid "explic_crear_restriccion_bloque"
+msgstr "Creates a new block restriction"
+
+msgid "sintaxis_respuesta"
+msgstr "Answer syntax"
+
+msgid "menu_crear_restriccion"
+msgstr "Create restriction"
+
+msgid "explic_editar_bloques"
+msgstr "Goes back to blocks editing"
+
+msgid "menu_editar_bloques"
+msgstr "Edit blocks"
+
+msgid "restricciones_bloque"
+msgstr "Block restrictions"
+
+msgid "explic_crear_programa"
+msgstr "Creates a new program R"
+
+msgid "menu_crear_programa"
+msgstr "Create program"
+
+msgid "explic_crear_pregunta_encuesta"
+msgstr "Creates a new question for the survey"
+
+msgid "explic_cambiar_orden_programas"
+msgstr "Change the order of the programs"
+
+msgid "explic_cambiar_orden_preguntas_encuesta"
+msgstr "Change the order of the survey questions"
+
+msgid "preguntas_encuesta"
+msgstr "Survey questions"
+
+msgid "explic_crear_pregunta"
+msgstr "Creates a new question"
+
+msgid "menu_crear_pregunta"
+msgstr "Create question"
+
+msgid "explic_editar_problema"
+msgstr "Goes back to problem editing"
+
+msgid "explic_cambiar_orden_preguntas"
+msgstr "Changes the order of the questions of the problem"
+
+msgid "menu_editar_problema"
+msgstr "Edit problem"
+
+msgid "explic_crear_opcion"
+msgstr "Creates a new option for the question"
+
+msgid "menu_crear_opcion"
+msgstr "Create option"
+
+msgid "menu_cambiar_orden"
+msgstr "Change order"
+
+msgid "explic_cambiar_orden_opciones"
+msgstr "Changes the order of the options of the question"
+
+msgid "explic_preguntas"
+msgstr "Goes back to questions editing"
+
+msgid "explic_encuestas"
+msgstr "Goes back to survey editing"
+
+msgid "menu_encuestas"
+msgstr "Surveys"
+
+msgid "opciones_encuestas"
+msgstr "Survey options"
+
+msgid "explic_ranking_puntuacion"
+msgstr "Student rating list ordered by total score"
+
+msgid "explic_ranking_nota"
+msgstr "Student rating list ordered by average mark"
+
+msgid "explic_ranking_ejecuciones"
+msgstr "Student rating list ordered by number executions"
+
+msgid "explic_grafico_ejecuciones_orden"
+msgstr "Shows a graphic with the executions mark ordered by execution"
+
+msgid "menu_grafico_ejecuciones_orden"
+msgstr "Executions order history graphic"
+
+msgid "explic_grafico_puntuaciones"
+msgstr "Shows an executions vs score graphic"
+
+msgid "menu_grafico_ejecuciones_tiempo"
+msgstr "Executions history along the time graphic"
+
+msgid "explic_grafico_ejecuciones_tiempo"
+msgstr "Shown a graphic of the mark of the executions along the time"
+
+msgid "menu_puntuacion_bloques"
+msgstr "Block scores"
+
+msgid "explic_puntuacion_bloques"
+msgstr "Shows the executions scores grouped by blocks"
+
+msgid "menu_grafico_puntuaciones"
+msgstr "Score graphic"
+
+msgid "explic_ejecuciones_realizadas"
+msgstr "Shows a list with the execution history"
+
+msgid "menu_ejecuciones_realizadas"
+msgstr "Done executions"
+
+msgid "historial_alumno"
+msgstr "History: %1$s"
+
+msgid "historial_pagina_principal"
+msgstr "History main page"
+
+msgid "explic_grafico_opiniones"
+msgstr "Histogram of the students' opinion about the problem usefulness"
+
+msgid "alias"
+msgstr "Alias"
+
+msgid "menu_grafico_opiniones"
+msgstr "Opinions graphic"
+
+msgid "explic_grafico_repeticiones"
+msgstr "Graphic with the distribution of the number of repetitions"
+
+msgid "menu_grafico_repeticiones"
+msgstr "Repetitions graphic"
+
+msgid "explic_estadisticas_preguntas"
+msgstr "Problem questions statistics"
+
+msgid "menu_estadisticas_generales"
+msgstr "General statistics"
+
+msgid "explic_estadisticas_generales"
+msgstr "Problem general statistics"
+
+msgid "menu_preguntas"
+msgstr "Questions"
+
+msgid "estadisticas_problema"
+msgstr "Problem statistics"
+
+msgid "explic_grafico_problemas_alumno"
+msgstr "Number of problems by students of groups barplot"
+
+msgid "explic_grafico_puntuacion"
+msgstr "Group scores boxplot"
+
+msgid "menu_grafico_problemas_alumno"
+msgstr "Problems by student graphic"
+
+msgid "menu_grafico_puntuacion"
+msgstr "Score graphic"
+
+msgid "explic_grafico_nota"
+msgstr "Group marks boxplot"
+
+msgid "menu_grafico_nota"
+msgstr "Mark graphic"
+
+msgid "explic_grafico_nota_vs_puntuacion"
+msgstr "Mark vs group score graphic"
+
+msgid "menu_grafico_nota_vs_puntuacion"
+msgstr "Mark vs score graphic"
+
+msgid "explic_estadisticas_grupos"
+msgstr "Subject groups statistics"
+
+msgid "estadisticas_grupos"
+msgstr "Group statistics"
+
+msgid "explic_ranking_puntuacion_alumnos"
+msgstr "Student rating list ordered by total score"
+
+msgid "menu_ranking_nota"
+msgstr "Mark rating list"
+
+msgid "explic_ranking_nota_alumnos"
+msgstr "Student rating list ordered by average mark"
+
+msgid "menu_ranking_puntuacion"
+msgstr "Score rating list"
+
+msgid "explic_ranking_ejecuciones_alumnos"
+msgstr "Student rating list ordered by number of executions"
+
+msgid "menu_buscar_alumnos"
+msgstr "Search students"
+
+msgid "explic_buscar_alumnos"
+msgstr "Looks students up through searches"
+
+msgid "menu_listado_excel"
+msgstr "Excel list"
+
+msgid "explic_listado_excel_alumnos"
+msgstr "Extracts lists in an excel file with statistics of the students"
+
+msgid "menu_ranking_ejecuciones"
+msgstr "Executions rating list"
+
+msgid "menu_listado_alumnos"
+msgstr "Student list"
+
+msgid "explic_listado_alumnos"
+msgstr "List of all the subject students"
+
+msgid "estadisticas_alumnos"
+msgstr "Student statistics"
+
+msgid "apellidos"
+msgstr "Surnames"
+
+msgid "nombre"
+msgstr "Name"
+
+msgid "volver_estadisticas"
+msgstr "Go back to statistics"
+
+msgid "posicion"
+msgstr "Position"
+
+msgid "explic_listado_ejecuciones"
+msgstr "Problem list ordered by number of executions"
+
+msgid "menu_listado_ejecuciones"
+msgstr "Executions list"
+
+msgid "menu_listado_nota"
+msgstr "Mark list"
+
+msgid "explic_listado_problemas_nota"
+msgstr "Problem list ordered by mark"
+
+msgid "explic_grafico_nota_vs_ejecuciones"
+msgstr "Mark vs. number of executions graphic"
+
+msgid "menu_grafico"
+msgstr "Graphic"
+
+msgid "estadisticas_problemas"
+msgstr "Problem statistics"
+
+msgid "explic_historial_login_estadisticas"
+msgstr "Shows the history of logins of the system"
+
+msgid "menu_historial_login"
+msgstr "Login history"
+
+msgid "explic_alumnos_estadisticas"
+msgstr "Student statistics: searches, lists and rating lists"
+
+msgid "explic_grupos_estadisticas"
+msgstr "Statistics of the subject groups"
+
+msgid "menu_grupos"
+msgstr "Groups"
+
+msgid "explic_problemas_estadisticas"
+msgstr "Statistics of the problems of the subject"
+
+msgid "menu_problemas"
+msgstr "Problems"
+
+msgid "explic_asignatura_estadisticas"
+msgstr "General statistics of the subject"
+
+msgid "explic_puntuaciones_encuesta"
+msgstr "Extends the information showing the average and the deviation of scores of the voters in each question in function of the group"
+
+msgid "estadisticas"
+msgstr "Statistics"
+
+msgid "menu_asignatura"
+msgstr "Subject"
+
+msgid "menu_puntuaciones"
+msgstr "Scores"
+
+msgid "explic_grupo_encuesta"
+msgstr "Extends the information showing the number of voters in each question in function of the group"
+
+msgid "explic_resultados_encuesta"
+msgstr "Basic information of the survey results"
+
+msgid "menu_grupo"
+msgstr "Groups"
+
+msgid "menu_resultados"
+msgstr "Results"
+
+msgid "resultados_encuesta"
+msgstr "Survey results"
+
+msgid "explic_asignar_encuesta"
+msgstr "Assigns surveys to the subjects"
+
+msgid "menu_asignar_encuesta"
+msgstr "Assign surveys"
+
+msgid "explic_crear_encuesta"
+msgstr "Creates a new survey"
+
+msgid "menu_crear_encuesta"
+msgstr "Create survey"
+
+msgid "encuestas"
+msgstr "Surveys"
+
+msgid "syntax_numeros_separados"
+msgstr "You have to enter %1$s numbers separated by commas "
+
+msgid "syntax_alfanumerico"
+msgstr "An alphanumeric value was expected in the answer."
+
+msgid "explic_eliminar_carpetas_problemas"
+msgstr "Deletes folders and problems that you own. It is required to previously select the folders and the problems to delete. If one folder is deleted, all its problems(except alias problems) will be deleted."
+
+msgid "menu_subscribir_carpetas"
+msgstr "Subscribe folders"
+
+msgid "explic_subscribir_carpetas"
+msgstr "Subscribes to folders. It is required to previously select folders not own by you to get subscribed to. Non-subscribed folders will get subscribed and vice versa."
+
+msgid "explic_compartir_carpetas"
+msgstr "Shares folders that you own. It is required to previously select the folders to share. The unshared folders will be shared and vice versa"
+
+msgid "explic_publicar_problemas"
+msgstr "Publishes problems. It is required to previously select problems that you own to be published. Unpublished problems will be published and vice versa"
+
+msgid "menu_compartir_carpetas"
+msgstr "Share folders"
+
+msgid "menu_publicar_problemas"
+msgstr "Publish problems"
+
+msgid "menu_crear_alias_problemas"
+msgstr "Create problem aliases"
+
+msgid "explic_crear_alias_problemas"
+msgstr "Creates problem aliases. It is required to previously select destination folders that you own"
+
+msgid "menu_mover_problemas"
+msgstr "Move problems"
+
+msgid "explic_mover_problemas"
+msgstr "Moves problems between folders. It is required to previously select the problems and one destination folder that you own"
+
+msgid "menu_copiar_problemas"
+msgstr "Copy problems"
+
+msgid "explic_copiar_problemas"
+msgstr "Copies problems. It is required to previously select only one destination block"
+
+msgid "explic_crear_problema"
+msgstr "Creates a new problem. It is required to previously select only one destination block"
+
+msgid "menu_crear_carpeta"
+msgstr "Create folder"
+
+msgid "explic_crear_carpeta"
+msgstr "Creates a new folder"
+
+msgid "menu_crear_problema"
+msgstr "Create problem"
+
+msgid "explic_refrescar_carpetas_problemas"
+msgstr "Updates the folder and problem list"
+
+msgid "menu_refrescar"
+msgstr "Refresh"
+
+msgid "editor"
+msgstr "Editor"
+
+msgid "carpetas"
+msgstr "Folders"
+
+msgid "explic_volver_bloques"
+msgstr "Returns to subject block management"
+
+msgid "explic_buscar_problemas"
+msgstr "Search problems with certain criteria"
+
+msgid "menu_volver_bloques"
+msgstr "Go back to blocks"
+
+msgid "menu_buscar_problemas"
+msgstr "Search problems"
+
+msgid "explic_no_notificar_problemas_bloques"
+msgstr "Ignores pending notifications of the selected problems of the blocks "
+
+msgid "menu_no_notificar"
+msgstr "Don't notify"
+
+msgid "explic_notificar_problemas_bloques"
+msgstr "Notifies to the students the selected problems of the blocks"
+
+msgid "menu_notificar"
+msgstr "Notify"
+
+msgid "explic_ocultar_problemas_bloques"
+msgstr "Hides the selected problems of the blocks from the students"
+
+msgid "menu_ocultar"
+msgstr "Hide"
+
+msgid "explic_mostrar_problemas_bloques"
+msgstr "Makes visible to the students the selected problems of the blocks"
+
+msgid "menu_mostrar"
+msgstr "Show"
+
+msgid "explic_desasignar_problemas_bloques"
+msgstr "Deassigns selected problems from their blocks"
+
+msgid "menu_desasignar"
+msgstr "Deassign"
+
+msgid "explic_asignar_problemas_bloque"
+msgstr "Assigns the selected problems to the destination block. Previously select only one destination block"
+
+msgid "asignaciones"
+msgstr "Assignations"
+
+msgid "explic_asignar"
+msgstr "Assigns problems to blocks"
+
+msgid "menu_asignar"
+msgstr "Assign"
+
+msgid "explic_crear_bloque"
+msgstr "Creates a new block"
+
+msgid "menu_crear_bloque"
+msgstr "Create block"
+
+msgid "explic_cambiar_orden_bloques"
+msgstr "Change the order of the blocks of the subject"
+
+msgid "compartida"
+msgstr "Shared"
+
+msgid "menu_cambiar orden"
+msgstr "Change the order"
+
+msgid "oculto"
+msgstr "Hidden"
+
+msgid "visible"
+msgstr "Visible"
+
+msgid "tiempo_limite_minutos"
+msgstr "Time limit in minutes:"
+
+msgid "dificultad"
+msgstr "Difficulty:"
+
+msgid "publicado"
+msgstr "Published:"
+
+msgid "expresiones_publicas"
+msgstr "Public expressions"
+
+msgid "modificado"
+msgstr "Modified:"
+
+msgid "bloques"
+msgstr "Blocks"
+
+msgid "externas_no_subscritas"
+msgstr "External non-subscribed"
+
+msgid "carpetas_propias"
+msgstr "Your folders"
+
+msgid "externas_subscritas"
+msgstr "External subscribed"
+
+msgid "plegar_todo"
+msgstr "Collapse all"
+
+msgid "desplegar_todo"
+msgstr "Open all"
+
+msgid "explic_alta_termino"
+msgstr "Inserts a new term from a form"
+
+msgid "menu_buscador_terminos"
+msgstr "Term search engine"
+
+msgid "explic_buscador_terminos"
+msgstr "Tool to search and manage terms"
+
+msgid "menu_alta_termino"
+msgstr "New term registration"
+
+msgid "explic_alta_excel_terminos"
+msgstr "Inserts new term labels and their texts in all the languages of the system"
+
+msgid "menu_alta_excel_terminos"
+msgstr "Register new terms"
+
+msgid "explic_generar_excel_terminos"
+msgstr "Generates an excel file with its columns ready to insert labels with their texts in all the languages of the system"
+
+msgid "gestionar_terminos"
+msgstr "Manage terms"
+
+msgid "menu_generar_excel_terminos"
+msgstr "Generate excel new terms"
+
+msgid "explic_crear_profesor"
+msgstr "Creates a new teacher"
+
+msgid "menu_crear_profesor"
+msgstr "Create teacher"
+
+msgid "explic_no_eliminables"
+msgstr "List of problems that can't be directly deleted because they are associated with subjects"
+
+msgid "profesores"
+msgstr "Teachers"
+
+msgid "explic_eliminables"
+msgstr "Deletable problem list"
+
+msgid "menu_no_eliminables"
+msgstr "No deletable "
+
+msgid "menu_eliminables"
+msgstr "Deletable"
+
+msgid "problemas"
+msgstr "Problems"
+
+msgid "explic_gestion_herencia"
+msgstr "It changes language from which a language inherits when its text is empty"
+
+msgid "explic_cambiar_lenguaje_defecto"
+msgstr "It changes the default language of the system"
+
+msgid "menu_gestion_herencia"
+msgstr "Inheritance management"
+
+msgid "menu_cambiar_lenguaje_defecto"
+msgstr "Change default language"
+
+msgid "explic_eliminar_lenguajes"
+msgstr "It deletes languages from the system"
+
+msgid "menu_eliminar_lenguajes"
+msgstr "Delete languages"
+
+msgid "explic_cargar_excel_lenguajes"
+msgstr "It registers languages"
+
+msgid "menu_cargar_excel_lenguajes"
+msgstr "Upload excel language registration"
+
+msgid "explic_generar_excel_lenguajes"
+msgstr "Generates an excel file with the labels ready to create a new language"
+
+msgid "gestionar_lenguajes"
+msgstr "Manage languages"
+
+msgid "menu_generar_excel_lenguajes"
+msgstr "Generate excel language registration"
+
+msgid "menu_crear_asignatura"
+msgstr "Create subject"
+
+msgid "explic_crear_asignatura"
+msgstr "Creates a new subject"
+
+msgid "asignaturas"
+msgstr "Subjects"
+
+msgid "explic_crear_alumno"
+msgstr "Creates a new student"
+
+msgid "menu_crear_alumno"
+msgstr "Create student"
+
+msgid "explic_crear_administrador"
+msgstr "Creates a new administrator"
+
+msgid "alumnos"
+msgstr "Students"
+
+msgid "menu_alta_excel_alumnos"
+msgstr "Excel registration"
+
+msgid "explic_alta_excel_alumnos"
+msgstr "It registers a group of students from an excel file"
+
+msgid "menu_crear_administrador"
+msgstr "Create administrator"
+
+msgid "segundos_abrev"
+msgstr "sec"
+
+msgid "administradores"
+msgstr "Administrators"
+
+msgid "minutos_abrev"
+msgstr "min"
+
+msgid "expirado"
+msgstr "expired"
+
+msgid "tiempo_limite"
+msgstr "Time limit"
+
+msgid "ejecutar_problema_con_datos"
+msgstr "Run a test with this data"
+
+msgid "resultado_guardado"
+msgstr "Result saved"
+
+msgid "ejecucion_problema"
+msgstr "Execution: %1$s"
+
+msgid "copiar_minitab_excel"
+msgstr "To copy for minitab and excel"
+
+msgid "copiar_excel"
+msgstr "To copy for excel"
+
+msgid "nota_pegar_excel"
+msgstr "To paste it in excel, you have to do a Special-Paste and select \"Unicode text\""
+
+msgid "copiar_minitab"
+msgstr "To copy for minitab"
+
+msgid "nota_copiar_minitab"
+msgstr "Important note: To copy it do a copy-paste of all data at the same time"
+
+msgid "respuesta_input"
+msgstr "Answer input"
+
+msgid "datos_minitab_excel_problema"
+msgstr "Data for minitab and excel of  %1$s"
+
+msgid "gracias"
+msgstr "Thank you"
+
+msgid "pregunta_utilidad_problema"
+msgstr "Do you think this problem has been helpful for you?"
+
+msgid "syntax_probabilidad"
+msgstr "The answer has to be a probability (real number between 0 and 1)"
+
+msgid "correccion"
+msgstr "Correction"
+
+msgid "solucion"
+msgstr "Solution"
+
+msgid "resultado"
+msgstr "Result"
+
+msgid "nota"
+msgstr "Mark"
+
+msgid "copiar_datos_minitab_excel"
+msgstr "Copy data to paste in another software"
+
+msgid "correccion_problema"
+msgstr "Correction: %1$s"
+
+msgid "guardar_orden"
+msgstr "Save order"
+
+msgid "confirmar_eliminar_bloque"
+msgstr "Are you sure you want to delete the block? "
+
+msgid "restricciones"
+msgstr "Restrictions"
+
+msgid "semana"
+msgstr "%1$s week"
+
+msgid "asignar"
+msgstr "Assign"
+
+msgid "dias"
+msgstr "%1$s days"
+
+msgid "dia"
+msgstr "%1$s day"
+
+msgid "horas"
+msgstr "%1$s hours"
+
+msgid "hora"
+msgstr "%1$s hour"
+
+msgid "minutos"
+msgstr "%1$s minutes"
+
+msgid "buscar"
+msgstr "Search"
+
+msgid "eliminar_avatar"
+msgstr "Delete avatar"
+
+msgid "descrip_formato_avatar"
+msgstr "The file format has to be JPEG and it can't be bigger than %1$s KB. The image will be scaled to 120X120 "
+
+msgid "cambiar_avatar"
+msgstr "Change avatar"
+
+msgid "descrip_avatar"
+msgstr "The avatar is a little image that is shown to the others users in some sections of the history"
+
+msgid "avatar_actual"
+msgstr "Current avatar"
+
+msgid "menu_seleccion_bloque"
+msgstr "Select block"
+
+msgid "menu_configuracion"
+msgstr "Configuration"
+
+msgid "menu_historial"
+msgstr "History"
+
+msgid "no_asigntaruas"
+msgstr "Ther are no subjects"
+
+msgid "ver_enunciado"
+msgstr "See the problem heading"
+
+msgid "ejecuciones"
+msgstr "Executions"
+
+msgid "nota_media"
+msgstr "Average mark"
+
+msgid "no_alumnos"
+msgstr "There are no students"
+
+msgid "puntuacion"
+msgstr "Score"
+
+msgid "modificar"
+msgstr "Modify"
+
+msgid "hereda_de"
+msgstr "Inherit from"
+
+msgid "confirmar_eliminar_etiqueta"
+msgstr "Are you sure you want to delete the label? "
+
+msgid "gestion_textos_etiqueta"
+msgstr "Text management of the label: %1$s"
+
+msgid "gestionar_termino"
+msgstr "Manage term"
+
+msgid "texto_en_lenguaje"
+msgstr "Text in %1$s:"
+
+msgid "confirmar_alta_terminos"
+msgstr "Are you sure you want to register the terms? "
+
+msgid "confirmar_eliminar_profesor"
+msgstr "Are you sure you want to delete the teacher? "
+
+msgid "problemas_ejecutados"
+msgstr "Executed problems (can't be deleted)"
+
+msgid "docencia"
+msgstr "Teaching"
+
+msgid "confirmar_eliminar_problema"
+msgstr "Are you sure you want to delete the problem? "
+
+msgid "ver"
+msgstr "View"
+
+msgid "texto"
+msgstr "Text"
+
+msgid "problemas_no_ejecutados"
+msgstr "Not executed problems (deletable)"
+
+msgid "si_no_texto_hereda"
+msgstr "If the text is empty it inherits from  %1$s"
+
+msgid "confimar_alta_lenguajes"
+msgstr "Are you sure you want to register these languages? "
+
+msgid "confirmar_cambiar_herencia"
+msgstr "Are you sure you want to change the inheritance of this language? "
+
+msgid "cambiar_herencia"
+msgstr "Change inheritance"
+
+msgid "lenguaje_hereda"
+msgstr "Language from which inherits"
+
+msgid "lenguaje"
+msgstr "Language"
+
+msgid "menu_texto_no_lenguajes"
+msgstr "There are no languages in the system"
+
+msgid "administracion_lenguajes"
+msgstr "Language administration"
+
+msgid "menu_cargar_excel_etiquestas"
+msgstr "Upload the excel file with the labels"
+
+msgid "menu_texto_no_etiquetas"
+msgstr "No labels have been inserted"
+
+msgid "menu_texto_no_asignatura"
+msgstr "No subjects have been selected"
+
+msgid "menu_seleccion_lenguaje"
+msgstr "Select language"
+
+msgid "menu_gestion_lenguajes"
+msgstr "Language management"
+
+msgid "menu_gestion_terminos"
+msgstr "Term management"
+
+msgid "confirm_eliminar_etiquetas"
+msgstr "Are you sure you want to delete the label? "
+
+msgid "menu_eliminar_etiquetas"
+msgstr "Delete labels"
+
+msgid "menu_alumnos"
+msgstr "Students"
+
+msgid "aceptar"
+msgstr "Accept"
+
+msgid "home_sin_etiquetas"
+msgstr "Home without labels"
+
+msgid "etiqueta"
+msgstr "Label"
+
+msgid "home_con_etiquetas"
+msgstr "Home with labels"
+
+msgid "volver_cargar"
+msgstr "Go back to upload"
+
+msgid "confimar_alta_etiquetas"
+msgstr "Are you sure you want to delete the label? "
+
+msgid "alta"
+msgstr "Register"
+
+msgid "enviar"
+msgstr "Send"
+
+msgid "confirmar_eliminar_asignatura"
+msgstr "Are you sure you want to delete the subject? "
+
+msgid "confirmar_eliminar_alumno"
+msgstr "Are you sure you want to delete the student? "
+
+msgid "confirmar_eliminar_admin"
+msgstr "Are you sure you want to delete the administrator? "
+
+msgid "eliminar"
+msgstr "Delete"
+
+msgid "editar"
+msgstr "Edit"
+
+msgid "mens_desviacion_nota"
+msgstr "Deviation mark"
+
+msgid "mens_num_ejecuciones_aprobadas"
+msgstr "Number of passed executions"
+
+msgid "mens_nota_maxima"
+msgstr "Maximum mark"
+
+msgid "mens_nota_minima"
+msgstr "Minimum mar"
+
+msgid "mens_nota_media"
+msgstr "Average mark"
+
+msgid "mens_num_ejecuciones"
+msgstr "Number of executions"
+
+msgid "mens_alumno"
+msgstr "Student"
+
+msgid "mens_grupo_nombre"
+msgstr "Group: %1$s"
+
+msgid "mens_todos_identificador"
+msgstr "All by identification"
+
+msgid "mens_todos_grupos"
+msgstr "All by group"
+
+msgid "mens_termino_insertado"
+msgstr "Text inserted"
+
+msgid "mens_email_subject_problema_nuevo"
+msgstr "e-status: new problem"
+
+msgid "mens_texto_modificado"
+msgstr "Text modified"
+
+msgid "error_texto"
+msgstr "Error in text"
+
+msgid "mens_no_resultados"
+msgstr "There are no results"
+
+msgid "mens_etiqueta_eliminada"
+msgstr "The label has been deleted successfully"
+
+msgid "error_no_cadena_busqueda"
+msgstr "Insert the string of search"
+
+msgid "error_etiqueta_existe_excel"
+msgstr "The label %1$s is repeated in the excel file"
+
+msgid "error_etiqueta_existe_sistema"
+msgstr "The label %1$s already exists in the system"
+
+msgid "error_bucle_herencia"
+msgstr "There is a loop of inheritances"
+
+msgid "mens_lenguaje_hereda_lenguaje"
+msgstr "%1$s language has %2$s as inheritance language"
+
+msgid "mens_cambio_lenguaje_defecto"
+msgstr "The default language has been changed"
+
+msgid "mens_no_lenguaje_herencia"
+msgstr "%1$s language doesn't have a default language any more"
+
+msgid "error_no_herencia_propia"
+msgstr "Languages can't inherit from themselves"
+
+msgid "mens_carga_lenguajes"
+msgstr "Upload of languages successful"
+
+msgid "error_lenguajes_existen"
+msgstr "All languages already exist in the system"
+
+msgid "error_heredar_lenguajes"
+msgstr "Error inheriting languages"
+
+msgid "error_eleccion"
+msgstr "Incompatible election"
+
+msgid "mens_etiquetas_lenguajes_eliminados"
+msgstr "The labels and the languages have been deleted"
+
+msgid "mens_carga_etiquetas"
+msgstr "Labels upload successful"
+
+msgid "error_etiqueta_repetida_excel"
+msgstr "The label %1$s is repeated in the excel file"
+
+msgid "mens_gracias_votacion"
+msgstr "Thanks for voting"
+
+msgid "error_votacion"
+msgstr "Error while voting"
+
+msgid "mens_votacion"
+msgstr "You've already voted"
+
+msgid "error_asignatura_encuesta"
+msgstr "Subject of survey incorrect"
+
+msgid "error_encuesta_noactiva"
+msgstr "Inactive survey"
+
+msgid "mens_usuario_desactivado"
+msgstr "The user is deactivated"
+
+msgid "error_usuario_no_existe"
+msgstr "The user doesn't exist"
+
+msgid "error_password_cambiado"
+msgstr "The password couldn't be changed"
+
+msgid "mens_password_cambiado"
+msgstr "The password has been changed successfully"
+
+msgid "error_password"
+msgstr "The previous password is incorrect"
+
+msgid "error_tipos"
+msgstr "Error in types"
+
+msgid "mens_sesion_cerrada"
+msgstr "The session has been closed"
+
+msgid "error_sintaxis"
+msgstr "Error in syntax"
+
+msgid "mens_restriccion_modificada"
+msgstr "Restriction modified"
+
+msgid "error_restriccion"
+msgstr "Error in restriction"
+
+msgid "mens_restriccion_eliminada"
+msgstr "Restriction deleted"
+
+msgid "mens_restriccion_creada"
+msgstr "Restriction created"
+
+msgid "error_programa"
+msgstr "Error in program"
+
+msgid "mens_programa_modificado"
+msgstr "Program modified"
+
+msgid "mens_programa_eliminado"
+msgstr "Program deleted"
+
+msgid "mens_programa_creado"
+msgstr "Program created"
+
+msgid "error_profesor_asignatura"
+msgstr "The teacher does not impart the subject"
+
+msgid "error_fichero_no_valido"
+msgstr "Invalid file: %1$s"
+
+msgid "error_problema_guardando"
+msgstr "Error while saving the problem"
+
+msgid "error_xml_no_valido"
+msgstr "Invalid file: XML Problem"
+
+msgid "error_subir_xml"
+msgstr "An XML file must be uploaded"
+
+msgid "error_problema"
+msgstr "Error in problem"
+
+msgid "mens_problema_guardado"
+msgstr "Problem created"
+
+msgid "error_preguntas"
+msgstr "Error in questions"
+
+msgid "mens_pregunta_modificada"
+msgstr "Question modified"
+
+msgid "mens_pregunta_eliminada"
+msgstr "Question deleted"
+
+msgid "mens_pregunta_creada"
+msgstr "Question created"
+
+msgid "error_opcion"
+msgstr "Error in option"
+
+msgid "mens_opcion_modificada"
+msgstr "Option modified"
+
+msgid "mens_opcion_eliminada"
+msgstr "Option deleted"
+
+msgid "error_ordenando"
+msgstr "Problems while sorting"
+
+msgid "mens_opcion_creada"
+msgstr "Option created"
+
+msgid "error_pregunta"
+msgstr "Error in the question"
+
+msgid "error_encuesta"
+msgstr "Error in the survey"
+
+msgid "error_indicar_termino"
+msgstr "A term must be selected"
+
+msgid "error_indicar_campo"
+msgstr "A field must be selected"
+
+msgid "error_encuestas"
+msgstr "Error in surveys"
+
+msgid "mens_encuesta_modificada"
+msgstr "Survey modified"
+
+msgid "mens_tipo_modificado"
+msgstr "Type modified"
+
+msgid "mens_tipo_eliminado"
+msgstr "Type deleted"
+
+msgid "mens_tipo_creado"
+msgstr "Type created"
+
+msgid "mens_asignacion_modificada"
+msgstr "Assignation modified"
+
+msgid "error_accediendo"
+msgstr "Error while accessing"
+
+msgid "error_permiso_denegado"
+msgstr "Permission denied"
+
+msgid "mens_encuesta_desasignada"
+msgstr "Unassigned survey"
+
+msgid "error_asignacion_encuesta"
+msgstr "Error while assigning"
+
+msgid "mens_encuesta_asignada"
+msgstr "Assigned survey"
+
+msgid "error_general"
+msgstr "General error"
+
+msgid "mens_tiempo_ejecucion"
+msgstr "Execution time is over"
+
+msgid "mens_copiado_carpeta"
+msgstr "Copied to the folder"
+
+msgid "mens_problemas_movidos"
+msgstr "Problems moved"
+
+msgid "mens_problemas_copiados"
+msgstr "Problems copied"
+
+msgid "error_copiar_problemas_carpeta"
+msgstr "Previously select problems you own to copy and only one destination folder you own"
+
+msgid "error_problemas_copiados"
+msgstr "Errors while copying problems"
+
+msgid "mens_subscritas_nosubscritas"
+msgstr "Subscribed/Unsubscribed"
+
+msgid "mens_eliminados_carpetas"
+msgstr "Deleted from folders"
+
+msgid "mens_publicados_despublicados"
+msgstr "Published/Unpublished"
+
+msgid "mens_marcar_carpeta_destino"
+msgstr "Select destination folder that you own"
+
+msgid "error_carpeta_creada"
+msgstr "Error while creating folder"
+
+msgid "mens_carpeta_creada"
+msgstr "Folder created"
+
+msgid "mens_desasignando"
+msgstr "Deassignation successful"
+
+msgid "error_desasignando"
+msgstr "Errors while deassigning"
+
+msgid "error_desasignar_problemas_bloque"
+msgstr "Only select the problems assigned to the blocks you want to deassign"
+
+msgid "mens_asignacion"
+msgstr "Assignation successful"
+
+msgid "error_asignacion"
+msgstr "Errors while assigning"
+
+msgid "mens_problemas_notificados_ignorados"
+msgstr "Notified/ignored problems"
+
+msgid "mens_problemas_mostrados_ocultados"
+msgstr "Shown/hidden problems"
+
+msgid "error_notificar_problemas_arbol"
+msgstr "Problems to notify/ignore from the block tree have to be previously selected"
+
+msgid "error_mostrar_problemas_arbol"
+msgstr "Problems to show/hide in the block tree have to be previously selected"
+
+msgid "error_asignar_problemas_bloque"
+msgstr "Problems to assign and one destination folder have to be previously selected"
+
+msgid "mens_bloque_modificado"
+msgstr "Block modified"
+
+msgid "error_bloque"
+msgstr "Error in block"
+
+msgid "mens_bloque_eliminado"
+msgstr "Block deleted"
+
+msgid "mens_bloque_creado"
+msgstr "Block created"
+
+msgid "mens_ordenado"
+msgstr "Sorted"
+
+msgid "error_ordenado"
+msgstr "Error while sorting"
+
+msgid "error_kb_jpg"
+msgstr "The image size can't exceed %1$s KB"
+
+msgid "error_subir_jpg"
+msgstr "A jpg image has to be uploaded"
+
+msgid "mens_config_guardada"
+msgstr "Configuration saved"
+
+msgid "mens_avatar_eliminado"
+msgstr "Avatar deleted"
+
+msgid "error_acceso_datos_alumno"
+msgstr "Error while accessing the student data"
+
+msgid "error_no_bloque_asignatura"
+msgstr "The selected subject block doesn't exist"
+
+msgid "error_alumno_no_matriculado"
+msgstr "It is not registered in the subject"
+
+msgid "error_no_acceso"
+msgstr "Access denied"
+
+msgid "mens_profesor_creado"
+msgstr "Teacher created"
+
+msgid "mens_profesor_docen_modificada"
+msgstr "Teacher's teaching modified"
+
+msgid "mens_profesor_modificado"
+msgstr "Modified teacher"
+
+msgid "error_profesor_eliminado"
+msgstr "Problems while deleting teacher"
+
+msgid "error_profesor"
+msgstr "Error in teacher"
+
+msgid "mens_profesor_eliminado"
+msgstr "Teacher deleted"
+
+msgid "error_problema_eliminado"
+msgstr "Error while deleting the problem"
+
+msgid "mens_problema_eliminado"
+msgstr "Problem deleted"
+
+msgid "mens_asignatura_seleccion"
+msgstr "The subject has been selected"
+
+msgid "mens_lenguaje_seleccion"
+msgstr "The language has been selected"
+
+msgid "error_asignatura"
+msgstr "Error in subject"
+
+msgid "error_asignatura_eliminada"
+msgstr "Problems occurred while deleting subject"
+
+msgid "mens_asignatura_eliminada"
+msgstr "Subject deleted"
+
+msgid "mens_asignatura_modificada"
+msgstr "Subject modified"
+
+msgid "mens_asignatura_creada"
+msgstr "Subject created"
+
+msgid "error_tipo_auth"
+msgstr "Auth type error"
+
+msgid "error_subir_excel"
+msgstr "An Excel file must be uploaded"
+
+msgid "error_alumno"
+msgstr "Error in student"
+
+msgid "error_alumno_eliminado"
+msgstr "Problems occurred while  deleting student"
+
+msgid "mens_alumno_modificado"
+msgstr "Student modified"
+
+msgid "mens admin_modificado"
+msgstr "Administrator modified"
+
+msgid "mens_alumno_creado"
+msgstr "Student created"
+
+msgid "mens_alumno_eliminado"
+msgstr "Student deleted"
+
+msgid "error_admin"
+msgstr "Error in administrator"
+
+msgid "mens_admin_creado"
+msgstr "Administrator created"
+
+msgid "mens_admin_eliminado"
+msgstr "Administrator deleted"
+
+msgid "error_admin_eliminado"
+msgstr "Problems occurred while deleting administrator"
+
+msgid "inv_fecha_ini_anterior_fin"
+msgstr "The initial date has to be previous to the final  "
+
+msgid "inv_profesor_no_existe"
+msgstr "The teacher can't be found"
+
+msgid "inv_profesor_existe"
+msgstr "The teacher already exists"
+
+msgid "inv_expresiones_no_validas"
+msgstr "The expressions are not correct: %1$s"
+
+msgid "inv_grupo_no_creado"
+msgstr "The group can't be created"
+
+msgid "inv_usuario_no_guardado"
+msgstr "The user couldn't be created"
+
+msgid "inv_alumno_existe_asignatura"
+msgstr "The student already exists in this subject"
+
+msgid "inv_alumno_no_existe"
+msgstr "The student can't be found."
+
+msgid "inv_administrador_existe"
+msgstr "The administrator already exists"
+
+msgid "inv_administrador_no_existe"
+msgstr "The administrator can't be found"
+
+msgid "inv_administrador_no_guardado"
+msgstr "The administrator couldn't be saved"
+
+msgid "inv_usuario_no_creado"
+msgstr "The user can not be created "
+
+msgid "form_texto"
+msgstr "Text"
+
+msgid "form_fichero_excel"
+msgstr "Excel file"
+
+msgid "form_keysensitive"
+msgstr "Key sensitive"
+
+msgid "form_lenguaje_busqueda"
+msgstr "Select the language of search"
+
+msgid "form_cadena_busqueda"
+msgstr "Insert the label search string"
+
+msgid "form_tipo_busqueda"
+msgstr "Select the type of search"
+
+msgid "form_seleccion_lenguaje_heredar"
+msgstr "Select a language to inherit"
+
+msgid "form_seleccion_lenguaje"
+msgstr "Select language"
+
+msgid "form_guardar"
+msgstr "Save"
+
+msgid "form_unico"
+msgstr "It has to be unique"
+
+msgid "form_fecha_no_valida"
+msgstr "Not a valid date. Format: YYYY-MM-DD HH:MN"
+
+msgid "form_obligatorio"
+msgstr "Required"
+
+msgid "form_passwords_no_coinciden"
+msgstr "The passwords do not match"
+
+msgid "form_direccion_valida"
+msgstr "It has to be a valid address"
+
+msgid "form_password_repetir"
+msgstr "Repeat password"
+
+msgid "semanas"
+msgstr "%1$s weeks"
+
+msgid "form_password_nuevo"
+msgstr "New password"
+
+msgid "form_password_anterior"
+msgstr "Previous password"
+
+msgid "form_password_encriptado"
+msgstr "Encrypted password"
+
+msgid "form_password_plano"
+msgstr "Password flat text "
+
+msgid "form_ldap"
+msgstr "LDAP"
+
+msgid "form_alumno_fib"
+msgstr "FIB student"
+
+msgid "problema_pesos_preguntas"
+msgstr "Question weights:"
+
+msgid "form_email"
+msgstr "Email"
+
+msgid "form_tipo_autentificacion"
+msgstr "Authentication type"
+
+msgid "form_texto_no_imagen"
+msgstr "The text does not match with the image "
+
+msgid "form_apellidos"
+msgstr "Surnames"
+
+msgid "form_texto_imagen"
+msgstr "Image text"
+
+msgid "form_password"
+msgstr "Password"
+
+msgid "form_grados_libertad_m.2"
+msgstr "Degrees of freedom m 2"
+
+msgid "form_login"
+msgstr "Login"
+
+msgid "form_grados_libertad_m.1"
+msgstr "Degrees of freedom m 1 "
+
+msgid "form_grados_libertad"
+msgstr "Degrees of freedom"
+
+msgid "form_pvalor"
+msgstr "p-value"
+
+msgid "editor_compartidodescompartido"
+msgstr "Folders shared/unshared"
+
+msgid "form_descripcion_parametro"
+msgstr "Parameter %1$s description"
+
+msgid "form_tipo_parametro"
+msgstr "Parameter %1$s type"
+
+msgid "form_valorx"
+msgstr "X value"
+
+msgid "form_publico_profesores"
+msgstr "Public for teachers"
+
+msgid "form_expresiones"
+msgstr "Expressions"
+
+msgid "form_xml"
+msgstr "XML files"
+
+msgid "form_variables_mostrar"
+msgstr "Extra variables to show"
+
+msgid "form_expresiones_publicas"
+msgstr "Public expressions"
+
+msgid "form_variables_incorrectas"
+msgstr "Wrong variables"
+
+msgid "form_dificultad"
+msgstr "Difficulty"
+
+msgid "form_entero"
+msgstr "Integer"
+
+msgid "form_mensaje_incorrecto"
+msgstr "Incorrect message"
+
+msgid "form_mensaje_regular"
+msgstr "Regular message"
+
+msgid "form_mostrar_solucion"
+msgstr "Show solution"
+
+msgid "form_mensaje_correcto"
+msgstr "Correct message"
+
+msgid "form_intentos"
+msgstr "Attempts"
+
+msgid "form_link"
+msgstr "Link %1$s"
+
+msgid "form_ayuda"
+msgstr "Contextual help"
+
+msgid "form_expresiones_resp"
+msgstr "Answer expression"
+
+msgid "form_param_expresiones"
+msgstr "Expression parameter"
+
+msgid "error_editor_compartirdescompartir"
+msgstr "Errors occurred while sharing/unsharing folders"
+
+msgid "form_plantilla_expresiones"
+msgstr "Answer expressions template"
+
+msgid "form_param_sintaxis"
+msgstr "Syntax parameter"
+
+msgid "form_resp_sintaxis"
+msgstr "Answer syntax"
+
+msgid "form_respuesta_a_pregunta"
+msgstr "Answer to the question"
+
+msgid "form_peso"
+msgstr "Weight"
+
+msgid "form_respuesta"
+msgstr "Answer"
+
+msgid "form_enunciado"
+msgstr "Problem heading"
+
+msgid "form_grupo"
+msgstr "Group"
+
+msgid "form_activo"
+msgstr "Active"
+
+msgid "form_encuesta"
+msgstr "Survey"
+
+msgid "form_contenido"
+msgstr "Content"
+
+msgid "form_compartida"
+msgstr "Shared"
+
+msgid "form_seleccion_bloque"
+msgstr "Select block "
+
+msgid "form_fecha_fin"
+msgstr "Final date"
+
+msgid "form_restringir_fecha_fin"
+msgstr "Restrict final date"
+
+msgid "form_fecha_inicio"
+msgstr "Initial date"
+
+msgid "form_restringir_fecha_inicio"
+msgstr "Restrict initial date"
+
+msgid "form_seleccion_asignatura"
+msgstr "Select subject"
+
+msgid "error_no_carpeta_propia"
+msgstr "There isn't any folder that you own selected"
+
+msgid "form_nombre"
+msgstr "Name"
+
+msgid "form_descripcion"
+msgstr "Description"
+
+msgid "form_asignar_auto_problemas"
+msgstr "Automatically assign published problems "
+
+msgid "form_buscar_campos"
+msgstr "Search in the fields"
+
+msgid "form_campos"
+msgstr "Fields"
+
+msgid "form_desviacion"
+msgstr "Deviation"
+
+msgid "form_buscar"
+msgstr "Search"
+
+msgid "form_n_ejecuciones"
+msgstr "N. executions"
+
+msgid "form_minima"
+msgstr "Minimum"
+
+msgid "form_maxima"
+msgstr "Maximum "
+
+msgid "form_media"
+msgstr "Average "
+
+msgid "form_estadisticas"
+msgstr "Statistics"
+
+msgid "form_seleccion"
+msgstr "Selection"
+
+msgid "form_avatar"
+msgstr "Avatar"
+
+msgid "form_alias"
+msgstr "Alias"
+
+msgid "form_repetidor"
+msgstr "Repeater"
+
+msgid "enviar_password"
+msgstr "Send password"
+
+msgid "password_enviado"
+msgstr "Password sent"
+
+msgid "confirmar_enviar_password"
+msgstr "Do you want to send this user's password?"
+
+msgid "error_enviar_password"
+msgstr "Error sending password"
+
+msgid "usuario_no_auth_estatus"
+msgstr "This user's password is not authentified in the estatus repository"
+
+msgid "nota_notificaciones_error_trad"
+msgstr "Attention: Use this form to notify language errors in the application texts.
+
+msgid Do not use this form to notify general errors or translation errors related with problem texts. These notifications are welcome but have to be addressed to its corresponding teacher."
+
+msgid "problema_mas_10"
+msgstr "Problems evaluated at least ten times"
+
+msgid "problema_menos_10"
+msgstr "Problems rated less than ten times
+
+msgid "
+
+msgid "cantidad"
+msgstr "Quantity"
+
+msgid "fecha_invalida"
+msgstr "Invalid date(s)"
+
+msgid "facil"
+msgstr "Easy"
+
+msgid "medio"
+msgstr "Medium"
+
+msgid "dificil"
+msgstr "Hard"
+
+msgid "dificultad_"
+msgstr "Difficulty"
+
+msgid "reasignar"
+msgstr "Reassign"
+
+msgid "explic_modificar_problemas_bloques"
+msgstr "It lets you modify the execution time of assigned problems. You have to have assigned problems selected.
+
+msgid "
+
+msgid "explic_reasignar_problemas_bloques"
+msgstr "Modifies the assignation of a problem from one block to another. You have to select one assigned problem and one destination folder."
+
+msgid "listado_valoracion_problemas"
+msgstr "Problem evaluation"
+
+msgid "numero_valoraciones"
+msgstr "Number of assesments"
+
+msgid "num_ejecuciones_sa "
+msgstr "Number of executions
+
+msgid "
+
+msgid "idiomas"
+msgstr "Languages"
+
+msgid "avanzado"
+msgstr "Customize"
+
+msgid "hora_header"
+msgstr "Time"
+
+msgid "ayuda_"
+msgstr "Help"
+
+msgid "graficos"
+msgstr "Charts"
+
+msgid "asignatura"
+msgstr "Subject"
+
+msgid "orden_alfabetico "
+msgstr "Alphabetic order "
+
+msgid "orden_creacion"
+msgstr "Creation order"
+
+msgid "envio_passwords"
+msgstr "Password sending"
+
+msgid "orden_apellidos"
+msgstr "Last name ordered"
+
+msgid "orden_login"
+msgstr "Login ordered"
+
+msgid "porcentaje_obs"
+msgstr "Observed percentage"
+
+msgid "porcentaje_real"
+msgstr "Real percentage"
+
+msgid "mis_encuestas"
+msgstr "My surveys"
+
+msgid "todas_las_encuestas"
+msgstr "All surveys"
+
+msgid "asociar"
+msgstr "Associate"
+
+msgid "encuestas_asociadas"
+msgstr "Associated surveys"
+
+msgid "si"
+msgstr "Yes"
+
+msgid "no"
+msgstr "No"
+
+msgid "clonar"
+msgstr "Clone"
+
+msgid "info_max_altes_suhosin"
+msgstr "%1$s registers read. '%2$s' has been the last student loaded."
+
+msgid "error_max_altes_suhosin"
+msgstr "The students limit for a single Excel file has been exceeded. Perform a new load removing the first %1$s students."
+
+msgid "form_simbolo_decimal"
+msgstr "Decimal symbol"
+
+msgid "form_simbolo_punto"
+msgstr "Period"
+
+msgid "form_simbolo_coma"
+msgstr "Comma"
+
+msgid "form_separador_columnas"
+msgstr "Column divider"
+
+msgid "form_separador_tabulador"
+msgstr "Minitab/Excel (tab)"
+
+msgid "form_separador_espacio"
+msgstr "R (blank space)"
+
+msgid "form_separador_puntocoma"
+msgstr "Semicolon"
+
+msgid "form_separador_dospuntos"
+msgstr "Colon"
+
+msgid "form_separador_dolar"
+msgstr "Dollar"
+
+msgid "form_separador_barra"
+msgstr "Vertical bar"
+
+msgid "notificacion"
+msgstr "Notification"
+
+msgid "notificacion_problema_info"
+msgstr "The problem %1$s has been added in the block %2$s"
+
+msgid "notificacion_problema_desc"
+msgstr "It has been rated as difficulty %1$s and consists on"
+
+msgid "notificacion_problema_restricciones"
+msgstr "Note: this problem will be enabled"
+
+msgid 

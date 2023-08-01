@@ -1,0 +1,2497 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-03-03 03:01+0100\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+
+
+msgid "syntax_probabilidad"
+msgstr "La respuesta debe ser una probabilidad (un real entre 0 y 1)"
+
+msgid "syntax_natural"
+msgstr "La respuesta es un número natural"
+
+msgid "syntax_real"
+msgstr "La respuesta debe ser un número real"
+
+msgid "syntax_real_positivo"
+msgstr "La respuesta debe ser un número real positivo"
+
+msgid "syntax_entero"
+msgstr "La respuesta debe ser un número entero"
+
+msgid "ver_todas"
+msgstr "Ver todas"
+
+msgid "aceptar_nota"
+msgstr "Aceptar nota"
+
+msgid "buscar_textos"
+msgstr "Buscar en textos"
+
+msgid "revisada"
+msgstr "Revisada"
+
+msgid "no_revisada"
+msgstr "No revisada"
+
+msgid "eliminar_notificacion"
+msgstr "Eliminar notificación"
+
+msgid "buscar_etiquetas"
+msgstr "Buscar en etiquetas"
+
+msgid "estado_notificacion"
+msgstr "Estado notificación"
+
+msgid "administrar_notificacion"
+msgstr "Administrar notificacion"
+
+msgid "mens_notificacion_eliminada"
+msgstr "Se ha eliminado la notificación"
+
+msgid "mens_notificacion_revisada"
+msgstr "Se ha marcado la notificación como revisada"
+
+msgid "ver_todas_notificaciones"
+msgstr "Ver todas las notificaciones"
+
+msgid "ver_notificaciones_no_revisadas"
+msgstr "Ver notificaciones no revisadas"
+
+msgid "form_sugerencia"
+msgstr "Sugerencia"
+
+msgid "form_notas_adicionales"
+msgstr "Notas adicionales"
+
+msgid "form_seleccione_tipo_busqueda"
+msgstr "Seleccione tipo de búsqueda"
+
+msgid "titulo_administrar_terminos"
+msgstr "Administrar términos"
+
+msgid "titulo_votar_encuestas"
+msgstr "Votar encuestas"
+
+msgid "mens_notificacion_insertada"
+msgstr "La notifiación se ha realizado correctamente"
+
+msgid "titulo_administrar_lenguajes"
+msgstr "Administrar lenguajes"
+
+msgid "titulo_usuarios"
+msgstr "Usuarios"
+
+msgid "titulo_administrar_etiquetas"
+msgstr "Administrar etiquetas"
+
+msgid "titulo_tipos_respuestas"
+msgstr "Tipos de respuestas"
+
+msgid "titulo_tablas_estadisticas"
+msgstr "Tablas estadísticas"
+
+msgid "titulo_sintaxis_respuestas"
+msgstr "Sintaxis de respuestas"
+
+msgid "titulo_restricciones_bloques"
+msgstr "Restricciones de bloques"
+
+msgid "titulo_programas"
+msgstr "Programas"
+
+msgid "titulo_profesores"
+msgstr "Profesores"
+
+msgid "titulo_problemas"
+msgstr "Problemas"
+
+msgid "titulo_preguntas"
+msgstr "Preguntas"
+
+msgid "titulo_preguntas_encuestas"
+msgstr "Preguntas de encuestas"
+
+msgid "titulo_opciones_preguntas"
+msgstr "Opciones de las preguntas"
+
+msgid "titulo_listados_alumnos"
+msgstr "Listados de los alumnos"
+
+msgid "titulo_historial"
+msgstr "Historial"
+
+msgid "titulo_estadisticas_problemas"
+msgstr "Estadísticas de los problemas"
+
+msgid "titulo_estadisticas_grupos"
+msgstr "Estadísticas de los grupos"
+
+msgid "titulo_estadisticas"
+msgstr "Estadísticas"
+
+msgid "titulo_encuestas"
+msgstr "Encuestas"
+
+msgid "titulo_estadisticas_alumnos"
+msgstr "Estadísticas de alumnos"
+
+msgid "titulo_asignar_encuestas"
+msgstr "Asignar encuestas"
+
+msgid "titulo_ejecuciones"
+msgstr "Ejecuciones"
+
+msgid "titulo_editor"
+msgstr "Editor"
+
+msgid "titulo_bloques"
+msgstr "Bloques"
+
+msgid "titulo_alumnos"
+msgstr "Alumnos"
+
+msgid "titulo_administradores"
+msgstr "Administradores"
+
+msgid "titulo_administrar_profesores"
+msgstr "Administrar profesores"
+
+msgid "titulo_administrar_problemas"
+msgstr "Administrar problemas"
+
+msgid "titulo_administrar_asignaturas"
+msgstr "Administrar asignaturas"
+
+msgid "titulo_administrar_alumnos"
+msgstr "Administrar alumnos"
+
+msgid "titulo_administrar_administradores"
+msgstr "Administrar administradores"
+
+msgid "error_admin_modificado"
+msgstr "Problemas modificando el administrador"
+
+msgid "confirmar_alta_lenguajes"
+msgstr "¿Seguro que quieres dar de alta los lenguajes?"
+
+msgid "notificaciones_correcciones"
+msgstr "Notificaciones de correcciones realizadas por los usuarios:"
+
+msgid "form_texto_actual"
+msgstr "Texto Actual"
+
+msgid "marcar_como_revisada"
+msgstr "Marcar como revisada"
+
+msgid "url"
+msgstr "URL"
+
+msgid "ver_notificacion_correcciones"
+msgstr "Ver notificación correcciones lenguajes"
+
+msgid "notificar_error_traduccion"
+msgstr "Notificar error de traducción"
+
+msgid "no_quitar_herencia"
+msgstr "No se puede quitar la herencia porque existen etiquetas sin texto asignado en este lenguaje."
+
+msgid "lenguaje_lenguaje"
+msgstr "Idioma: %1$s"
+
+msgid "administrador"
+msgstr "Administrador"
+
+msgid "cambiar_password"
+msgstr "Cambiar password"
+
+msgid "ultimo_problema_probado"
+msgstr "Último problema aprobado"
+
+msgid "numero_registros"
+msgstr "Número registros"
+
+msgid "gestionar_bloques"
+msgstr "Gestionar bloques"
+
+msgid "salida"
+msgstr "Salida"
+
+msgid "titulo_pagina_principal"
+msgstr "Página principal"
+
+msgid "confirm_eliminar_pregunta"
+msgstr "¿Está seguro que desea eliminar la pregunta?"
+
+msgid "no_ejecuciones"
+msgstr "No hay ejecuciones"
+
+msgid "total_problemas"
+msgstr "Total problemas"
+
+msgid "grafico_nota_vs_tiempo"
+msgstr "Gráfico nota vs tiempo"
+
+msgid "grafico_nota_vs_orden_ejecucion"
+msgstr "Gráfico nota vs orden ejecución"
+
+msgid "pregunta"
+msgstr "Pregunta"
+
+msgid "numero_alumnos"
+msgstr "Número de alumnos"
+
+msgid "problema"
+msgstr "Problema"
+
+msgid "estadisticas_asignatura"
+msgstr "Estadísticas de la asignatura"
+
+msgid "no_login_sistema"
+msgstr "No ha habido ningún login en el sistema"
+
+msgid "explic_listado_ejecuciones_problema"
+msgstr "Listado de ejecuciones del problema"
+
+msgid "explic_crear_asignacion_encuesta"
+msgstr "Crea una nueva asignación de encuesta"
+
+msgid "menu_crear_asignacion_encuesta"
+msgstr "Crear asignación"
+
+msgid "menu_editar_encuestas"
+msgstr "Editar encuestas"
+
+msgid "explic_editar_encuestas"
+msgstr "Vuelve a la edición de encuestas"
+
+msgid "profesor"
+msgstr "Profesor"
+
+msgid "asignacion_encuesta"
+msgstr "Asignación encuesta "
+
+msgid "resolver"
+msgstr "Resolver"
+
+msgid "volver"
+msgstr "Volver"
+
+msgid "busqueda_todas_entradas"
+msgstr "Todas las entradas:"
+
+msgid "busqueda_textos_cadena"
+msgstr "Búsqueda por textos de la cadena: %1$s"
+
+msgid "busqueda_etiquetas_cadena"
+msgstr "Búsqueda por etiquetas de la cadena: %1$s"
+
+msgid "estado_alta"
+msgstr "Estado alta"
+
+msgid "seleccionar_asignatura"
+msgstr "Seleccionar asignatura"
+
+msgid "programas"
+msgstr "Programas"
+
+msgid "saludo"
+msgstr "Bienvenido"
+
+msgid "sintaxis_respuestas"
+msgstr "Sintaxis de respuestas"
+
+msgid "login"
+msgstr "Login"
+
+msgid "invitado"
+msgstr "Invitado"
+
+msgid "cerrar_sesion"
+msgstr "Cerrar sesión"
+
+msgid "saludo_usuario"
+msgstr "Bienvenido %1$s"
+
+msgid "calculadora_tstudent"
+msgstr "Calculadora: t-Student"
+
+msgid "calculadora_normal"
+msgstr "Calculadora: Normal"
+
+msgid "cerrar"
+msgstr "Cerrar"
+
+msgid "calculadora_fisher"
+msgstr "Calculadora: F de Fisher"
+
+msgid "calcular"
+msgstr "Calcular"
+
+msgid "calculadora_chicuadrado"
+msgstr "Calculadora: Chi-cuadrado"
+
+msgid "confirm_eliminar_tipo"
+msgstr "¿Está seguro que desea eliminar el tipo?"
+
+msgid "condicion_grafico"
+msgstr "la variable debe llamarse exactamente 'grafico'"
+
+msgid "confirm_eliminar_restriccion"
+msgstr "¿Está seguro que desea eliminar la restricción?"
+
+msgid "devolver_grafico"
+msgstr "Devolver un gráfico:"
+
+msgid "devolver_mensaje"
+msgstr "Devolver un mensaje:"
+
+msgid "consulta_sql"
+msgstr "Consulta SQL:"
+
+msgid "ayuda"
+msgstr "Ayuda:"
+
+msgid "acceso_parametros"
+msgstr "Acceso parámetros:"
+
+msgid "variables_parametros"
+msgstr "variables param1_, param2_, ..."
+
+msgid "ejecutar"
+msgstr "Ejecutar"
+
+msgid "confirm_eliminar_programa"
+msgstr "¿Está seguro que desea eliminar el programa?"
+
+msgid "asignatura_asignatura"
+msgstr "Asignatura: %1$s"
+
+msgid "problema_problema"
+msgstr "Problema: %1$s"
+
+msgid "restaurar_xml"
+msgstr "Restaurar XML"
+
+msgid "explic_restaurar_xml"
+msgstr "Se restaura el problema desde un fichero XML"
+
+msgid "indicar_xml_restaurar_problema"
+msgstr "Indique el fichero XML que se usará para restaurar el problema."
+
+msgid "aviso_sobreescritura_problema"
+msgstr "Atención: se sobreescribirá el problema actual"
+
+msgid "explic_generar_xml"
+msgstr "Se guarda el problema en un fichero XML para su posterior restauración. Se guardarán los cambios efectuados en el problema automáticamente"
+
+msgid "generar_xml"
+msgstr "Generar XML"
+
+msgid "explic_prueba_problema"
+msgstr "Ejecuta el problema para realizar pruebas. Se guardarán los cambios efectuados en el problema automáticamente."
+
+msgid "prueba_problema"
+msgstr "Prueba del problema"
+
+msgid "explic_editar_preguntas_problema"
+msgstr "Edita las preguntas del problema. Se guardarán los cambios efectuados en el problema automáticamente"
+
+msgid "editar_preguntas"
+msgstr "Editar Preguntas"
+
+msgid "explic_guardar_cambios_problema"
+msgstr "Guardar los cambios efectuados en el problema"
+
+msgid "habilitado_en_paginas"
+msgstr "Se ha habilitado %1$s en la página web."
+
+msgid "atencion"
+msgstr "Atención"
+
+msgid "logo_estatus_creador"
+msgstr "El logo de e-status es un diseño de %1$s"
+
+msgid "contactar_con_nosotros"
+msgstr "Para contactar con nosotros:"
+
+msgid "edificio_despacho"
+msgstr "Edificio %1$s - Despacho %2$s"
+
+msgid "alumnos_destacados"
+msgstr "Alumnos destacados"
+
+msgid "noticias_destacadas"
+msgstr "Noticias destacadas"
+
+msgid "password_password"
+msgstr "Su password es: %1$s"
+
+msgid "confirm_eliminar_opcion"
+msgstr "¿Está seguro que desea eliminar la opción?"
+
+msgid "cabecera_acercade"
+msgstr "e-status es un producto educativo concebido en el Departamento de Estadística
+y Investigación Operativa (DEIO) de la UPC. Diversos alumnos de la
+Facultad de Informática han participado, bajo la dirección de
+José Antonio González, profesor titular del DEIO, en el desarrollo de las funcionalidades actuales de e-status, como parte de sus respectivos Proyectos Finales de Carrera:"
+
+msgid "restriccion_hasta_dia"
+msgstr "hasta %1$s"
+
+msgid "saludo_estatus"
+msgstr "Bienvenido a e-status"
+
+msgid "login_usuario"
+msgstr "Su login es: %1$s"
+
+msgid "restriccion_desde_dia"
+msgstr "desde %1$s"
+
+msgid "habilitado"
+msgstr "Habilitado:"
+
+msgid "no_restriccion_fecha"
+msgstr "sin restricción de fecha"
+
+msgid "saludo_usuario_problema"
+msgstr "Hola %1$s"
+
+msgid "acerca_de"
+msgstr "Acerca de"
+
+msgid "contacto"
+msgstr "Contacto"
+
+msgid "inicio"
+msgstr "Inicio"
+
+msgid "nombre_bloque"
+msgstr "Nombre bloque"
+
+msgid "puesto_ranking_puntuacion"
+msgstr "Puesto en ranking por puntuación"
+
+msgid "nombre_problema"
+msgstr "Nombre problema"
+
+msgid "puesto_ranking_nota"
+msgstr "Puesto en ranking por nota"
+
+msgid "puesto_ranking_ejecuciones"
+msgstr "Puesto en ranking por ejecuciones"
+
+msgid "grafico_ejecuciones_vs_puntuacion"
+msgstr "Gráfico ejecuciones vs puntuación"
+
+msgid "grafico_alumnos_activos"
+msgstr "Gráfico alumnos más activos"
+
+msgid "desviacion_resultado"
+msgstr "Desviación resultado"
+
+msgid "media_resultado"
+msgstr "Media resultado"
+
+msgid "estadisticas_preguntas_problema"
+msgstr "Estadística de las preguntas del problema: %1$s"
+
+msgid "numero_respuestas"
+msgstr "Número respuestas"
+
+msgid "fecha"
+msgstr "Fecha"
+
+msgid "alumno"
+msgstr "Alumno"
+
+msgid "ejecuciones_problema"
+msgstr "Ejecución"
+
+msgid "estadisticas_problema_problema"
+msgstr "Estadísticas del problema: %1$s"
+
+msgid "ejecuciones_problema_problema"
+msgstr "Ejecuciones del problema: %1$s"
+
+msgid "grafico_repeticiones_problema"
+msgstr "Gráfico con la distribución del número de repeticiones del problema: %1$s"
+
+msgid "grafico_opiniones_problema"
+msgstr "Histograma de la opinión de los alumnos sobre la utilidad del problema: %1$s"
+
+msgid "media"
+msgstr "Media"
+
+msgid "porcentaje_usuarios"
+msgstr "usuarios"
+
+msgid "suma"
+msgstr "Suma"
+
+msgid "total_usuarios"
+msgstr "Total usuarios"
+
+msgid "total_ejecuciones"
+msgstr "Total ejecuciones"
+
+msgid "puntuacion_total"
+msgstr "Puntuación total"
+
+msgid "total_alumnos"
+msgstr "Total alumnos"
+
+msgid "total_problemas_utilizados"
+msgstr "Total problemas utilizados"
+
+msgid "total_problemas_disponibles"
+msgstr "Total problemas disponibles"
+
+msgid "grafico_boxplot_puntuacion"
+msgstr "Gráfico boxplot puntuación"
+
+msgid "estadisticas_grupo"
+msgstr "Estadísticas del grupo %1$s"
+
+msgid "grafico_boxplot_nota"
+msgstr "Gráfico boxplot nota"
+
+msgid "grafico_nota_vs_puntuacion"
+msgstr "Gráfico nota vs puntuación de los grupos"
+
+msgid "email"
+msgstr "Email"
+
+msgid "usuario"
+msgstr "Usuario"
+
+msgid "grafico_problemas_alumno"
+msgstr "Gráfico problemas por alumno"
+
+msgid "listado_alumnos_asignatura"
+msgstr "Listado de todos los alumnos de la asignatura"
+
+msgid "estadisticas_de_los_problemas"
+msgstr "Estadísticas de los problemas"
+
+msgid "grafico_nota_vs_ejecuciones"
+msgstr "Gráfico nota vs ejecuciones"
+
+msgid "alumnos_diferentes"
+msgstr "Alumnos diferentes"
+
+msgid "numero_logins"
+msgstr "Número de logins"
+
+msgid "nota_media_ejecuciones"
+msgstr "Nota media ejecuciones"
+
+msgid "media_ejecuciones_problemas_utilizados"
+msgstr "Media ejecuciones por problemas utilizados"
+
+msgid "numero_ejecuciones"
+msgstr "Número de ejecuciones"
+
+msgid "n"
+msgstr "N"
+
+msgid "grupo"
+msgstr "Grupo"
+
+msgid "total"
+msgstr "Total"
+
+msgid "opciones"
+msgstr "Opciones"
+
+msgid "proporcion"
+msgstr "Proporción"
+
+msgid "numero_votos"
+msgstr "Número de votos"
+
+msgid "opcion"
+msgstr "Opción "
+
+msgid "confirm_eliminar_asignacion"
+msgstr "¿Está seguro que desea eliminar la asignación?"
+
+msgid "resultados"
+msgstr "Resultados"
+
+msgid "confirm_eliminar_encuesta"
+msgstr "¿Está seguro que desea eliminar la encuesta?"
+
+msgid "votar"
+msgstr "Votar"
+
+msgid "menu_crear_tipo"
+msgstr "Crear tipo"
+
+msgid "explic_crear_tipo_respuesta"
+msgstr "Crea un nuevo tipo de respuesta"
+
+msgid "fecha_limite"
+msgstr "Fecha límite:"
+
+msgid "explic_cambiar_orden_tipos_respuestas"
+msgstr "Cambiar el orden de los tipos de respuestas"
+
+msgid "tipos_respuestas"
+msgstr "Tipos Respuestas"
+
+msgid "explic_fisher"
+msgstr "Calcular el valor de la función de distribución de la F de Fisher"
+
+msgid "menu_fisher"
+msgstr "F de Fisher"
+
+msgid "explic_chiquadrado"
+msgstr "Calcular el valor de la función de distribución de la Chi-cuadrado"
+
+msgid "menu_chiquadrado"
+msgstr "Chi-cuadrado"
+
+msgid "explic_tstudent"
+msgstr "Calcular el valor de la función de distribución de la t-Student"
+
+msgid "menu_tstudent"
+msgstr "t-Student"
+
+msgid "explic_normal"
+msgstr "Calcular el valor de la función de distribución de la Normal"
+
+msgid "explic_crear_sintaxis_respuesta"
+msgstr "Crea un nuevo tipo de sintaxis de respuestas"
+
+msgid "calculadora"
+msgstr "Calculadora"
+
+msgid "menu_normal"
+msgstr "Normal"
+
+msgid "menu_crear_sintaxis_respuesta"
+msgstr "Crear sintaxis"
+
+msgid "explic_cambiar_orden_sintaxis_respuesta"
+msgstr "Cambiar el orden de los tipos de sintaxis de respuestas"
+
+msgid "explic_crear_restriccion_bloque"
+msgstr "Crea una nueva restricción del bloque"
+
+msgid "sintaxis_respuesta"
+msgstr "Sintaxis Respuesta"
+
+msgid "menu_crear_restriccion"
+msgstr "Crear restricción"
+
+msgid "explic_editar_bloques"
+msgstr "Vuelve a la edición de bloques"
+
+msgid "menu_editar_bloques"
+msgstr "Editar bloques"
+
+msgid "restricciones_bloque"
+msgstr "Restricciones bloque"
+
+msgid "explic_crear_programa"
+msgstr "Crea un nuevo programa R"
+
+msgid "explic_cambiar_orden_programas"
+msgstr "Cambiar el orden de los programas"
+
+msgid "menu_crear_programa"
+msgstr "Crear programa"
+
+msgid "explic_crear_pregunta_encuesta"
+msgstr "Crea una nueva pregunta para la encuesta"
+
+msgid "explic_cambiar_orden_preguntas_encuesta"
+msgstr "Cambiar el orden de las preguntas de la encuesta"
+
+msgid "preguntas_encuesta"
+msgstr "Preguntas encuesta"
+
+msgid "explic_crear_pregunta"
+msgstr "Crea una nueva pregunta"
+
+msgid "menu_crear_pregunta"
+msgstr "Crear pregunta"
+
+msgid "explic_editar_problema"
+msgstr "Vuelve a la edición del problema"
+
+msgid "explic_cambiar_orden_preguntas"
+msgstr "Cambiar el orden de las preguntas del problema"
+
+msgid "explic_crear_opcion"
+msgstr "Crea una nueva opción para la pregunta"
+
+msgid "menu_editar_problema"
+msgstr "Editar problema"
+
+msgid "menu_crear_opcion"
+msgstr "Crear opción"
+
+msgid "explic_cambiar_orden_opciones"
+msgstr "Cambiar el orden de las opciones de la pregunta"
+
+msgid "menu_cambiar_orden"
+msgstr "Cambiar orden"
+
+msgid "explic_encuestas"
+msgstr "Vuelve a la edición de encuestas"
+
+msgid "explic_preguntas"
+msgstr "Vuelve a la edición de preguntas"
+
+msgid "menu_encuestas"
+msgstr "Encuestas"
+
+msgid "opciones_encuestas"
+msgstr "Opciones Encuesta"
+
+msgid "explic_ranking_puntuacion"
+msgstr "Ranking de alumnos por puntuación total"
+
+msgid "explic_ranking_nota"
+msgstr "Ranking de alumnos por nota media"
+
+msgid "explic_ranking_ejecuciones"
+msgstr "Ranking de alumnos por número de ejecuciones"
+
+msgid "explic_grafico_ejecuciones_orden"
+msgstr "Muestra un gráfico con la nota de las ejecuciones en orden de ejecución"
+
+msgid "menu_grafico_ejecuciones_orden"
+msgstr "Gráfico historial ejecuciones orden"
+
+msgid "explic_grafico_puntuaciones"
+msgstr "Muestra un gráfico ejecuciones vs puntuación"
+
+msgid "menu_grafico_ejecuciones_tiempo"
+msgstr "Gráfico historial ejecuciones tiempo"
+
+msgid "explic_grafico_ejecuciones_tiempo"
+msgstr "Muestra un gráfico con la nota de las ejecuciones en el tiempo"
+
+msgid "menu_puntuacion_bloques"
+msgstr "Puntuación bloques"
+
+msgid "explic_puntuacion_bloques"
+msgstr "Muestra la puntuación de las ejecuciones agrupada por bloques"
+
+msgid "menu_grafico_puntuaciones"
+msgstr "Gráfico puntuaciones"
+
+msgid "explic_ejecuciones_realizadas"
+msgstr "Muestra un listado con el historial de ejecuciones"
+
+msgid "menu_ejecuciones_realizadas"
+msgstr "Ejecuciones realizadas"
+
+msgid "historial_alumno"
+msgstr "Historial: %1$s"
+
+msgid "historial_pagina_principal"
+msgstr "Página principal del historial"
+
+msgid "alias"
+msgstr "Alias"
+
+msgid "explic_grafico_opiniones"
+msgstr "Histograma de la opinión de los alumnos sobre la utilidad del problema"
+
+msgid "explic_grafico_repeticiones"
+msgstr "Gráfico con la distribución del número de repeticiones"
+
+msgid "menu_grafico_opiniones"
+msgstr "Gráfico opiniones"
+
+msgid "menu_grafico_repeticiones"
+msgstr "Gráfico repeticiones"
+
+msgid "explic_estadisticas_preguntas"
+msgstr "Estadísticas de las preguntas del problema"
+
+msgid "menu_estadisticas_generales"
+msgstr "Estadísticas generales"
+
+msgid "explic_estadisticas_generales"
+msgstr "Estadísticas generales del problema"
+
+msgid "menu_preguntas"
+msgstr "Preguntas"
+
+msgid "estadisticas_problema"
+msgstr "Estadisticas problema"
+
+msgid "explic_grafico_problemas_alumno"
+msgstr "Barplot de número de problemas por alumno de los grupos"
+
+msgid "menu_grafico_problemas_alumno"
+msgstr "Gráfico problemas por alumno"
+
+msgid "explic_grafico_puntuacion"
+msgstr "Boxplot de la puntuación de los grupos"
+
+msgid "menu_grafico_puntuacion"
+msgstr "Gráfico puntuación"
+
+msgid "explic_grafico_nota"
+msgstr "Boxplot de la nota de los grupos"
+
+msgid "menu_grafico_nota"
+msgstr "Gráfico nota"
+
+msgid "explic_grafico_nota_vs_puntuacion"
+msgstr "Gráfico de la nota vs puntuación de los grupos"
+
+msgid "menu_grafico_nota_vs_puntuacion"
+msgstr "Gráfico nota vs puntuación"
+
+msgid "explic_estadisticas_grupos"
+msgstr "Estadísticas de los grupos de la asignatura"
+
+msgid "estadisticas_grupos"
+msgstr "Estadísticas grupos"
+
+msgid "explic_ranking_puntuacion_alumnos"
+msgstr "Ranking de alumnos por puntuación total"
+
+msgid "explic_ranking_nota_alumnos"
+msgstr "Ranking de alumnos por nota media"
+
+msgid "menu_ranking_puntuacion"
+msgstr "Ranking Puntuación"
+
+msgid "menu_ranking_nota"
+msgstr "Ranking Nota"
+
+msgid "menu_buscar_alumnos"
+msgstr "Buscar alumnos"
+
+msgid "explic_buscar_alumnos"
+msgstr "Consultar alumnos mediante búsquedas"
+
+msgid "menu_listado_excel"
+msgstr "Listado excel"
+
+msgid "explic_listado_excel_alumnos"
+msgstr "Extraer listados en Excel con estadísticas de los alumnos"
+
+msgid "menu_ranking_ejecuciones"
+msgstr "Ranking Ejecuciones"
+
+msgid "explic_ranking_ejecuciones_alumnos"
+msgstr "Ranking de alumnos por número de ejecuciones"
+
+msgid "explic_listado_alumnos"
+msgstr "Listado de todos los alumnos de la asignatura"
+
+msgid "estadisticas_alumnos"
+msgstr "Estadísticas alumnos"
+
+msgid "menu_listado_alumnos"
+msgstr "Listado alumnos"
+
+msgid "apellidos"
+msgstr "Apellidos"
+
+msgid "posicion"
+msgstr "Posición"
+
+msgid "nombre"
+msgstr "Nombre"
+
+msgid "volver_estadisticas"
+msgstr "Volver a Estadísticas"
+
+msgid "explic_listado_ejecuciones"
+msgstr "Listado de problemas ordenado por número de ejecuciones"
+
+msgid "menu_listado_nota"
+msgstr "Listado nota"
+
+msgid "explic_listado_problemas_nota"
+msgstr "Listado de problemas ordenado por nota"
+
+msgid "menu_listado_ejecuciones"
+msgstr "Listado ejecuciones"
+
+msgid "explic_grafico_nota_vs_ejecuciones"
+msgstr "Gráfico de la nota vs número de ejecuciones"
+
+msgid "menu_grafico"
+msgstr "Gráfico"
+
+msgid "estadisticas_problemas"
+msgstr "Estadísticas Problemas"
+
+msgid "explic_historial_login_estadisticas"
+msgstr "Muestra el historial de logins en el sistema"
+
+msgid "menu_historial_login"
+msgstr "Historial login"
+
+msgid "explic_alumnos_estadisticas"
+msgstr "Estadístias de alumnos: búsquedas, listados y rankings"
+
+msgid "menu_grupos"
+msgstr "Grupos"
+
+msgid "explic_grupos_estadisticas"
+msgstr "Estadísticas de los grupos de la asignatura"
+
+msgid "menu_problemas"
+msgstr "Problemas"
+
+msgid "explic_problemas_estadisticas"
+msgstr "Estadísticas de los problemas de la asignatura"
+
+msgid "estadisticas"
+msgstr "Estadísticas"
+
+msgid "menu_asignatura"
+msgstr "Asignatura"
+
+msgid "explic_asignatura_estadisticas"
+msgstr "Estadísticas generales de la asignatura"
+
+msgid "explic_puntuaciones_encuesta"
+msgstr "Amplía la información mostrando la media y desviación de las puntuaciones de los votantes de cada pregunta"
+
+msgid "menu_puntuaciones"
+msgstr "Puntuaciones"
+
+msgid "explic_resultados_encuesta"
+msgstr "Información básica del resultado de la encuesta"
+
+msgid "menu_grupo"
+msgstr "Grupos"
+
+msgid "explic_grupo_encuesta"
+msgstr "Amplía la información mostrando el número de votantes de cada pregunta en función del grupo"
+
+msgid "menu_resultados"
+msgstr "Resultados"
+
+msgid "resultados_encuesta"
+msgstr "Resultados encuesta"
+
+msgid "menu_asignar_encuesta"
+msgstr "Asignar encuestas"
+
+msgid "explic_asignar_encuesta"
+msgstr "Asigna encuestas a la asignatura"
+
+msgid "explic_crear_encuesta"
+msgstr "Crea una nueva encuesta"
+
+msgid "encuestas"
+msgstr "Encuestas"
+
+msgid "menu_crear_encuesta"
+msgstr "Crear encuesta"
+
+msgid "syntax_alfanumerico"
+msgstr "La respuesta debe ser un valor alfanumérico"
+
+msgid "explic_eliminar_carpetas_problemas"
+msgstr "Eliminar carpetas y problemas propios. Es necesario marcar previamente las carpetas y/o problemas propios a eliminar. Si se elimina una carpeta con problemas, todos los problemas de dicha carpeta (excepto los alias) serán eliminados"
+
+msgid "explic_subscribir_carpetas"
+msgstr "Subscribir carpetas ajenas. Es necesario marcar previamente las carpetas ajenas a subscribir. Se subscribirán las no-subscritas y viceversa"
+
+msgid "menu_subscribir_carpetas"
+msgstr "Subscribir carpetas"
+
+msgid "syntax_numeros_separados"
+msgstr "Debe entrar %1$s números separados por espacios"
+
+msgid "menu_compartir_carpetas"
+msgstr "Compartir carpetas"
+
+msgid "explic_compartir_carpetas"
+msgstr "Compartir carpetas propias. Es necesario marcar previamente las carpetas propias a compartir. Se compartirán las no-compartidas y viceversa"
+
+msgid "explic_publicar_problemas"
+msgstr "Publicar Problemas. Es necesario marcar previamente los problemas propios a publicar. Se publicarán los no-publicados y viceversa"
+
+msgid "menu_publicar_problemas"
+msgstr "Publicar problemas"
+
+msgid "menu_crear_alias_problemas"
+msgstr "Crear alias problemas"
+
+msgid "explic_crear_alias_problemas"
+msgstr "Crear alias de los problemas. Es necesario marcar previamente las carpetas propias de destino"
+
+msgid "explic_mover_problemas"
+msgstr "Mover problemas entre carpetas. Es necesario marcar previamente los problemas y la carpeta propia de destino"
+
+msgid "menu_mover_problemas"
+msgstr "Mover problemas"
+
+msgid "explic_copiar_problemas"
+msgstr "Copiar problemas. Es necesario marcar previamente los problemas a copiar y la carpeta propia de destino"
+
+msgid "menu_copiar_problemas"
+msgstr "Copiar problemas"
+
+msgid "explic_crear_carpeta"
+msgstr "Crear una nueva carpeta"
+
+msgid "menu_crear_problema"
+msgstr "Crear problema"
+
+msgid "explic_crear_problema"
+msgstr "Crear un nuevo problema. Es necesario marcar previamente una sola carpeta propia de destino"
+
+msgid "menu_crear_carpeta"
+msgstr "Crear carpeta"
+
+msgid "explic_refrescar_carpetas_problemas"
+msgstr "Actualizar la lista de carpetas y problemas"
+
+msgid "menu_refrescar"
+msgstr "Refrescar"
+
+msgid "editor"
+msgstr "Editor"
+
+msgid "carpetas"
+msgstr "Carpetas"
+
+msgid "explic_volver_bloques"
+msgstr "Vuelve a la gestión de los bloques de la asignatura"
+
+msgid "explic_buscar_problemas"
+msgstr "Busca problemas que cumplan ciertos criterios"
+
+msgid "menu_volver_bloques"
+msgstr "Volver a bloques"
+
+msgid "menu_buscar_problemas"
+msgstr "Buscar problemas"
+
+msgid "menu_no_notificar"
+msgstr "No notificar"
+
+msgid "explic_no_notificar_problemas_bloques"
+msgstr "Ignora las notificaciones pendientes de los problemas seleccionados de los bloques"
+
+msgid "explic_notificar_problemas_bloques"
+msgstr "Notifica a los alumnos los problemas seleccionados de los bloques"
+
+msgid "menu_notificar"
+msgstr "Notificar"
+
+msgid "explic_ocultar_problemas_bloques"
+msgstr "Hacer no visibles a los alumnos los problemas seleccionados de los bloques"
+
+msgid "menu_ocultar"
+msgstr "Ocultar"
+
+msgid "menu_mostrar"
+msgstr "Mostrar"
+
+msgid "explic_mostrar_problemas_bloques"
+msgstr "Hacer visibles a los alumnos los problemas seleccionados de los bloques"
+
+msgid "explic_desasignar_problemas_bloques"
+msgstr "Desasigna los problemas seleccionados de los bloques"
+
+msgid "menu_desasignar"
+msgstr "Desasignar"
+
+msgid "asignaciones"
+msgstr "Asignaciones"
+
+msgid "explic_asignar_problemas_bloque"
+msgstr "Asigna los problemas seleccionados al bloque de destino. Es necesario marcar previamente un solo bloque de destino"
+
+msgid "explic_asignar"
+msgstr "Asignar problemas a los bloques"
+
+msgid "menu_asignar"
+msgstr "Asignar"
+
+msgid "explic_crear_bloque"
+msgstr "Crea un nuevo bloque"
+
+msgid "menu_crear_bloque"
+msgstr "Crear bloque"
+
+msgid "explic_cambiar_orden_bloques"
+msgstr "Cambiar el orden de los bloques de la asignatura"
+
+msgid "compartida"
+msgstr "Compartida"
+
+msgid "menu_cambiar orden"
+msgstr "Cambiar orden"
+
+msgid "oculto"
+msgstr "Oculto"
+
+msgid "visible"
+msgstr "Visible"
+
+msgid "tiempo_limite_minutos"
+msgstr "Tiempo límite en minutos: "
+
+msgid "publicado"
+msgstr "Publicado:"
+
+msgid "expresiones_publicas"
+msgstr "Expresiones públicas"
+
+msgid "dificultad"
+msgstr "Dificultad:"
+
+msgid "modificado"
+msgstr "Modificado:"
+
+msgid "bloques"
+msgstr "Bloques"
+
+msgid "externas_no_subscritas"
+msgstr "Externas no subscritas"
+
+msgid "carpetas_propias"
+msgstr "Carpetas propias"
+
+msgid "externas_subscritas"
+msgstr "Externas subscritas"
+
+msgid "plegar_todo"
+msgstr "Plegar todo"
+
+msgid "desplegar_todo"
+msgstr "Desplegar todo"
+
+msgid "explic_alta_termino"
+msgstr "Inserta mediante un formulario un nuevo término"
+
+msgid "explic_buscador_terminos"
+msgstr "Herramienta para buscar términos y poder gestionarlos"
+
+msgid "menu_alta_termino"
+msgstr "Alta nuevo termino"
+
+msgid "menu_buscador_terminos"
+msgstr "Buscador de términos"
+
+msgid "explic_alta_excel_terminos"
+msgstr "Inserta las etiquetas de los nuevos terminos y sus textos en todos los lenguajes del sistema"
+
+msgid "menu_alta_excel_terminos"
+msgstr "Alta excel nuevos terminos"
+
+msgid "gestionar_terminos"
+msgstr "Gestionar terminos"
+
+msgid "menu_generar_excel_terminos"
+msgstr "Generar excel nuevos terminos"
+
+msgid "explic_generar_excel_terminos"
+msgstr "Genera un excel con columnas para insertar etiquetas y sus textos en todos los idiomas del sistema"
+
+msgid "explic_crear_profesor"
+msgstr "Crea un nuevo profesor"
+
+msgid "menu_crear_profesor"
+msgstr "Crear profesor"
+
+msgid "profesores"
+msgstr "Profesores"
+
+msgid "explic_no_eliminables"
+msgstr "Lista de problemas que no pueden ser eliminados directamente al estar asociados a asignaturas"
+
+msgid "explic_eliminables"
+msgstr "Lista de problemas que pueden ser eliminados"
+
+msgid "menu_no_eliminables"
+msgstr "No eliminables"
+
+msgid "menu_eliminables"
+msgstr "Eliminables"
+
+msgid "problemas"
+msgstr "Problemas"
+
+msgid "explic_gestion_herencia"
+msgstr "Cambia el lenguaje del que hereda un lenguaje cuando su texto esta vacío"
+
+msgid "menu_gestion_herencia"
+msgstr "Gestión herencia"
+
+msgid "explic_cambiar_lenguaje_defecto"
+msgstr "Cambia el lenguaje por defecto del sistema"
+
+msgid "explic_eliminar_lenguajes"
+msgstr "Elimina lenguajes del sistema"
+
+msgid "menu_cambiar_lenguaje_defecto"
+msgstr "Cambiar lenguaje por defecto"
+
+msgid "menu_eliminar_lenguajes"
+msgstr "Eliminar lenguajes"
+
+msgid "explic_cargar_excel_lenguajes"
+msgstr "Da de alta lenguajes mediante la inserción de un excel"
+
+msgid "menu_cargar_excel_lenguajes"
+msgstr "Cargar excel alta lenguajes"
+
+msgid "explic_generar_excel_lenguajes"
+msgstr "Genera un excel con las etiquetas para crear un nuevo lenguaje"
+
+msgid "menu_generar_excel_lenguajes"
+msgstr "Generar excel alta lenguajes"
+
+msgid "gestionar_lenguajes"
+msgstr "Gestionar lenguajes"
+
+msgid "menu_crear_asignatura"
+msgstr "Crear asignatura"
+
+msgid "explic_crear_asignatura"
+msgstr "Crea una nueva asignatura"
+
+msgid "asignaturas"
+msgstr "Asignaturas"
+
+msgid "explic_crear_alumno"
+msgstr "Crea un nuevo alumno"
+
+msgid "alumnos"
+msgstr "Alumnos"
+
+msgid "menu_alta_excel_alumnos"
+msgstr "Alta excel"
+
+msgid "explic_alta_excel_alumnos"
+msgstr "Da de alta un conjunto de alumnos desde una hoja excel"
+
+msgid "menu_crear_alumno"
+msgstr "Crear alumno"
+
+msgid "explic_crear_administrador"
+msgstr "Crea un nuevo administrador"
+
+msgid "segundos_abrev"
+msgstr "sec"
+
+msgid "administradores"
+msgstr "Administradores"
+
+msgid "menu_crear_administrador"
+msgstr "Crear administrador"
+
+msgid "minutos_abrev"
+msgstr "min"
+
+msgid "expirado"
+msgstr "expirado"
+
+msgid "tiempo_limite"
+msgstr "Tiempo límite"
+
+msgid "resultado_guardado"
+msgstr "Resultado guardado"
+
+msgid "ejecutar_problema_con_datos"
+msgstr "Ejecutar una prueba con estos datos"
+
+msgid "ejecucion_problema"
+msgstr "Ejecución: %1$s"
+
+msgid "copiar_minitab_excel"
+msgstr "Para copiar a minitab y a excel"
+
+msgid "copiar_excel"
+msgstr "Para copiar a excel"
+
+msgid "copiar_minitab"
+msgstr "Para copiar a minitab"
+
+msgid "nota_pegar_excel"
+msgstr "Para pegarlos en Excel, haced Edición-Pegado especial y seleccionad \"Texto Unicode\""
+
+msgid "nota_copiar_minitab"
+msgstr "Nota importante: Para poderlas copiar haced un copy-paste de todos los datos a la vez."
+
+msgid "respuesta_input"
+msgstr "respuesta input"
+
+msgid "datos_minitab_excel_problema"
+msgstr "Datos para el minitab y excel de %1$s"
+
+msgid "gracias"
+msgstr "Gracias"
+
+msgid "pregunta_utilidad_problema"
+msgstr "¿Le ha sido de ayuda el problema?"
+
+msgid "correccion"
+msgstr "Corrección"
+
+msgid "solucion"
+msgstr "Solución"
+
+msgid "resultado"
+msgstr "Resultado"
+
+msgid "nota"
+msgstr "Nota"
+
+msgid "copiar_datos_minitab_excel"
+msgstr "Copiar datos para pegar en otro programa"
+
+msgid "correccion_problema"
+msgstr "Corrección: %1$s"
+
+msgid "guardar_orden"
+msgstr "Guardar orden"
+
+msgid "confirmar_eliminar_bloque"
+msgstr "¿Está seguro de que desea eliminar el bloque?"
+
+msgid "restricciones"
+msgstr "Restricciones"
+
+msgid "asignar"
+msgstr "Asignar"
+
+msgid "semana"
+msgstr "%1$s semana"
+
+msgid "dias"
+msgstr "%1$s días"
+
+msgid "dia"
+msgstr "%1$s día"
+
+msgid "horas"
+msgstr "%1$s horas"
+
+msgid "hora"
+msgstr "%1$s hora"
+
+msgid "minutos"
+msgstr "%1$s minutos"
+
+msgid "buscar"
+msgstr "Buscar"
+
+msgid "eliminar_avatar"
+msgstr "Eliminar avatar"
+
+msgid "descrip_formato_avatar"
+msgstr "El formato del archivo debe ser JPEG y no debe ocupar mas de %1$s KB. La imagen será escalada a 120X120"
+
+msgid "avatar_actual"
+msgstr "Avatar actual"
+
+msgid "cambiar_avatar"
+msgstr "Cambiar avatar"
+
+msgid "descrip_avatar"
+msgstr "El avatar se trata de una pequeña imagen que se muestra a los otros alumnos en ciertos apartados del historial."
+
+msgid "menu_configuracion"
+msgstr "Configuración"
+
+msgid "menu_seleccion_bloque"
+msgstr "Seleccionar bloque"
+
+msgid "menu_historial"
+msgstr "Historial"
+
+msgid "no_asigntaruas"
+msgstr "No hay asignaturas"
+
+msgid "ver_enunciado"
+msgstr "Ver enunciado"
+
+msgid "ejecuciones"
+msgstr "Ejecuciones"
+
+msgid "puntuacion"
+msgstr "Puntuación"
+
+msgid "nota_media"
+msgstr "Nota media"
+
+msgid "no_alumnos"
+msgstr "No hay alumnos"
+
+msgid "modificar"
+msgstr "Modificar"
+
+msgid "hereda_de"
+msgstr "Hereda de"
+
+msgid "confirmar_eliminar_etiqueta"
+msgstr "¿Está seguro de que desea eliminar la etiqueta?"
+
+msgid "gestion_textos_etiqueta"
+msgstr "Gestión de los textos de la etiqueta: %1$s"
+
+msgid "gestionar_termino"
+msgstr "Gestionar el término"
+
+msgid "confirmar_alta_terminos"
+msgstr "¿Seguro que quieres dar de alta los terminos?"
+
+msgid "texto_en_lenguaje"
+msgstr "Texto en %1$s:"
+
+msgid "confirmar_eliminar_profesor"
+msgstr "¿Está seguro de que desea eliminar el profesor?"
+
+msgid "docencia"
+msgstr "Docencia"
+
+msgid "problemas_ejecutados"
+msgstr "Problemas ejecutados (no eliminables)"
+
+msgid "confirmar_eliminar_problema"
+msgstr "¿Está seguro de que desea eliminar el problema?"
+
+msgid "ver"
+msgstr "Ver"
+
+msgid "texto"
+msgstr "Texto"
+
+msgid "problemas_no_ejecutados"
+msgstr "Problemas no ejecutados (eliminables)"
+
+msgid "si_no_texto_hereda"
+msgstr "Si el texto esta vacío hereda de %1$s"
+
+msgid "confimar_alta_lenguajes"
+msgstr "¿Seguro que quieres dar de alta los lenguajes?"
+
+msgid "confirmar_cambiar_herencia"
+msgstr "¿Seguro que quieres cambiar la herencia de este lenguaje?"
+
+msgid "cambiar_herencia"
+msgstr "Cambiar herencia"
+
+msgid "lenguaje_hereda"
+msgstr "Lenguaje del que hereda"
+
+msgid "menu_texto_no_lenguajes"
+msgstr "No existen lenguajes en el sistema"
+
+msgid "administracion_lenguajes"
+msgstr "Administración de lenguajes"
+
+msgid "lenguaje"
+msgstr "Lenguaje"
+
+msgid "menu_cargar_excel_etiquestas"
+msgstr "Cargar excel de etiquetas"
+
+msgid "menu_texto_no_etiquetas"
+msgstr "No se han insertado etiquetas"
+
+msgid "menu_texto_no_asignatura"
+msgstr "No se ha seleccionado ninguna asignatura"
+
+msgid "menu_seleccion_lenguaje"
+msgstr "Seleccionar idioma"
+
+msgid "menu_gestion_terminos"
+msgstr "Gestión de términos"
+
+msgid "menu_gestion_lenguajes"
+msgstr "Gestión de lenguajes"
+
+msgid "confirm_eliminar_etiquetas"
+msgstr "¿Seguro que quieres eliminar las etiquetas?"
+
+msgid "menu_alumnos"
+msgstr "Alumnos"
+
+msgid "menu_eliminar_etiquetas"
+msgstr "Eliminar etiquetas"
+
+msgid "home_sin_etiquetas"
+msgstr "Home sin etiquetas"
+
+msgid "aceptar"
+msgstr "Aceptar"
+
+msgid "etiqueta"
+msgstr "Etiqueta"
+
+msgid "home_con_etiquetas"
+msgstr "Home con etiquetas"
+
+msgid "volver_cargar"
+msgstr "Volver a cargar"
+
+msgid "alta"
+msgstr "Dar de alta"
+
+msgid "confimar_alta_etiquetas"
+msgstr "¿Seguro que quieres dar de alta las etiquetas?"
+
+msgid "enviar"
+msgstr "Enviar"
+
+msgid "confirmar_eliminar_asignatura"
+msgstr "¿Está seguro de que desea eliminar la asignatura?"
+
+msgid "confirmar_eliminar_alumno"
+msgstr "¿Está seguro de que desea eliminar el alumno?"
+
+msgid "confirmar_eliminar_admin"
+msgstr "¿Está seguro de que desea eliminar el administrador?"
+
+msgid "eliminar"
+msgstr "Eliminar"
+
+msgid "editar"
+msgstr "Editar"
+
+msgid "mens_desviacion_nota"
+msgstr "Desviación nota"
+
+msgid "mens_nota_minima"
+msgstr "Mínima nota"
+
+msgid "mens_num_ejecuciones_aprobadas"
+msgstr "Número ejecuciones aprobadas"
+
+msgid "mens_nota_maxima"
+msgstr "Máxima nota"
+
+msgid "mens_nota_media"
+msgstr "Nota media"
+
+msgid "mens_num_ejecuciones"
+msgstr "Número de ejecuciones"
+
+msgid "mens_alumno"
+msgstr "Alumno"
+
+msgid "mens_grupo_nombre"
+msgstr "Grupo: %1$s"
+
+msgid "mens_todos_grupos"
+msgstr "Todos por grupo"
+
+msgid "mens_todos_identificador"
+msgstr "Todos por identificador"
+
+msgid "mens_email_subject_problema_nuevo"
+msgstr "e-status: problema nuevo"
+
+msgid "mens_termino_insertado"
+msgstr "Termino insertado"
+
+msgid "mens_texto_modificado"
+msgstr "Texto modificado"
+
+msgid "mens_etiqueta_eliminada"
+msgstr "La etiqueta se ha eliminado correctamente"
+
+msgid "error_texto"
+msgstr "Error en texto"
+
+msgid "mens_no_resultados"
+msgstr "No se han obtenido resultados"
+
+msgid "error_no_cadena_busqueda"
+msgstr "Inserta la cadena de búsqueda"
+
+msgid "error_etiqueta_existe_excel"
+msgstr "La etiqueta %1$s está repetida en el excel"
+
+msgid "error_etiqueta_existe_sistema"
+msgstr "La etiqueta %1$s ya existe en el sistema"
+
+msgid "mens_lenguaje_hereda_lenguaje"
+msgstr "El lenguaje %1$s tiene al %2$s como lenguaje de herencia"
+
+msgid "error_bucle_herencia"
+msgstr "Se produce un bucle de herencia"
+
+msgid "mens_no_lenguaje_herencia"
+msgstr "El lenguaje %1$s ya no tiene lenguaje de herencia"
+
+msgid "error_no_herencia_propia"
+msgstr "No puede heredar de el mismo lenguaje"
+
+msgid "mens_cambio_lenguaje_defecto"
+msgstr "Se ha cambiado el lenguaje por defecto"
+
+msgid "mens_carga_lenguajes"
+msgstr "Carga de lenguajes satisfactoria"
+
+msgid "error_lenguajes_existen"
+msgstr "Todos los lenguajes ya existen en el sistema"
+
+msgid "error_eleccion"
+msgstr "La elección es incompatible"
+
+msgid "error_heredar_lenguajes"
+msgstr "Error al heredar lenguajes"
+
+msgid "mens_etiquetas_lenguajes_eliminados"
+msgstr "Se han eliminado las etiquetas y los lenguajes"
+
+msgid "error_etiqueta_repetida_excel"
+msgstr "La etiqueta %1$s esta repetida en el excel"
+
+msgid "mens_carga_etiquetas"
+msgstr "Carga de etiquetas satisfactoria"
+
+msgid "mens_gracias_votacion"
+msgstr "Gracias por votar"
+
+msgid "error_votacion"
+msgstr "Error votando"
+
+msgid "mens_votacion"
+msgstr "Ya ha votado"
+
+msgid "error_asignatura_encuesta"
+msgstr "Asignatura de encuesta no válida"
+
+msgid "error_encuesta_noactiva"
+msgstr "Encuesta no activa"
+
+msgid "error_usuario_no_existe"
+msgstr "El usuario no existe"
+
+msgid "mens_usuario_desactivado"
+msgstr "El usuario está desactivado"
+
+msgid "error_password_cambiado"
+msgstr "No se pudo cambiar el password"
+
+msgid "mens_password_cambiado"
+msgstr "Se ha cambiado correctamente el password"
+
+msgid "error_password"
+msgstr "El password anterior es incorrecto"
+
+msgid "mens_sesion_cerrada"
+msgstr "Se ha cerrado la sesión"
+
+msgid "error_tipos"
+msgstr "Error en los tipos"
+
+msgid "error_sintaxis"
+msgstr "Error en la sintaxis"
+
+msgid "mens_restriccion_modificada"
+msgstr "Restricción modificada"
+
+msgid "error_restriccion"
+msgstr "Error en la restricción"
+
+msgid "mens_restriccion_eliminada"
+msgstr "Restricción eliminada"
+
+msgid "mens_restriccion_creada"
+msgstr "Restricción creada"
+
+msgid "error_programa"
+msgstr "Error en el programa"
+
+msgid "mens_programa_modificado"
+msgstr "Programa modificado"
+
+msgid "mens_programa_eliminado"
+msgstr "Programa eliminado"
+
+msgid "mens_programa_creado"
+msgstr "Programa creado"
+
+msgid "error_profesor_asignatura"
+msgstr "No es profesor de la asignatura"
+
+msgid "error_problema_guardando"
+msgstr "Error guardando el problema"
+
+msgid "error_fichero_no_valido"
+msgstr "Fichero no válido: %1$s"
+
+msgid "error_subir_xml"
+msgstr "Se debe subir un fichero XML"
+
+msgid "error_xml_no_valido"
+msgstr "Fichero no válido: problema XML"
+
+msgid "error_problema"
+msgstr "Error en el problema"
+
+msgid "mens_problema_guardado"
+msgstr "Problema guardado"
+
+msgid "error_preguntas"
+msgstr "Error en preguntas"
+
+msgid "mens_pregunta_modificada"
+msgstr "Pregunta modificada"
+
+msgid "mens_pregunta_creada"
+msgstr "Pregunta creada"
+
+msgid "mens_pregunta_eliminada"
+msgstr "Pregunta eliminada"
+
+msgid "error_opcion"
+msgstr "Error en la opción"
+
+msgid "mens_opcion_modificada"
+msgstr "Opción modificada"
+
+msgid "mens_opcion_eliminada"
+msgstr "Opción eliminada"
+
+msgid "error_ordenando"
+msgstr "Problemas ordenando"
+
+msgid "mens_opcion_creada"
+msgstr "Opción creada"
+
+msgid "error_encuesta"
+msgstr "Error en la encuesta"
+
+msgid "error_pregunta"
+msgstr "Error en la pregunta"
+
+msgid "error_indicar_termino"
+msgstr "Debe indicar algún término"
+
+msgid "error_encuestas"
+msgstr "Error en las encuestas"
+
+msgid "mens_encuesta_modificada"
+msgstr "Encuesta modificada"
+
+msgid "error_indicar_campo"
+msgstr "Debe indicar algún campo"
+
+msgid "mens_tipo_modificado"
+msgstr "Tipo modificado"
+
+msgid "mens_tipo_creado"
+msgstr "Tipo creado"
+
+msgid "mens_tipo_eliminado"
+msgstr "Tipo eliminado"
+
+msgid "mens_asignacion_modificada"
+msgstr "Asignación modificada"
+
+msgid "error_accediendo"
+msgstr "Error accediendo"
+
+msgid "error_permiso_denegado"
+msgstr "Permiso denegado"
+
+msgid "error_asignacion_encuesta"
+msgstr "Error en asignación"
+
+msgid "mens_encuesta_asignada"
+msgstr "Encuesta asignada"
+
+msgid "mens_encuesta_desasignada"
+msgstr "Encuesta desasignada"
+
+msgid "error_general"
+msgstr "Error general"
+
+msgid "mens_tiempo_ejecucion"
+msgstr "El tiempo de ejecución ha expirado"
+
+msgid "mens_copiado_carpeta"
+msgstr "Copiado a la carpeta"
+
+msgid "mens_problemas_movidos"
+msgstr "Problemas movidos"
+
+msgid "mens_problemas_copiados"
+msgstr "Problemas copiados"
+
+msgid "error_problemas_copiados"
+msgstr "Ocurrieron errores copiando problemas"
+
+msgid "error_copiar_problemas_carpeta"
+msgstr "Debe marcar previamente los problemas propios a copiar y una única carpeta propia de destino"
+
+msgid "mens_subscritas_nosubscritas"
+msgstr "Subscritas / No subscritas"
+
+msgid "mens_eliminados_carpetas"
+msgstr "Eliminados de las carpetas"
+
+msgid "mens_publicados_despublicados"
+msgstr "Publicados / despublicados"
+
+msgid "error_carpeta_creada"
+msgstr "Error creando la carpeta"
+
+msgid "mens_marcar_carpeta_destino"
+msgstr "Debe marcar una carpeta propia de destino"
+
+msgid "mens_carpeta_creada"
+msgstr "Se ha creado la carpeta"
+
+msgid "mens_desasignando"
+msgstr "Se han desasignado correctamente"
+
+msgid "error_desasignando"
+msgstr "Ocurrieron errores desasignando"
+
+msgid "error_desasignar_problemas_bloque"
+msgstr "Debe marcar únicamente los problemas asignados a bloques que se desean desasignar"
+
+msgid "error_asignacion"
+msgstr "Ocurrieron errores asignando"
+
+msgid "mens_asignacion"
+msgstr "Se ha asignado correctamente"
+
+msgid "mens_problemas_notificados_ignorados"
+msgstr "Problemas notificados/ignorados"
+
+msgid "mens_problemas_mostrados_ocultados"
+msgstr "Problemas mostrados/ocultados'"
+
+msgid "error_notificar_problemas_arbol"
+msgstr "Debe marcar previamente los problemas a notificar/ignorar del árbol de bloques"
+
+msgid "error_mostrar_problemas_arbol"
+msgstr "Debe marcar previamente los problemas a mostrar/ocultar del árbol de bloques"
+
+msgid "error_asignar_problemas_bloque"
+msgstr "Debe marcar previamente los problemas a asignar y un único bloque de destino"
+
+msgid "error_bloque"
+msgstr "Error en bloque"
+
+msgid "mens_bloque_modificado"
+msgstr "Bloque modificado"
+
+msgid "mens_bloque_eliminado"
+msgstr "Bloque eliminado"
+
+msgid "mens_ordenado"
+msgstr "Ordenado"
+
+msgid "error_ordenado"
+msgstr "Error ordenando"
+
+msgid "mens_bloque_creado"
+msgstr "Bloque creado"
+
+msgid "error_kb_jpg"
+msgstr "La imagen no puede ocupar más de %1$s KBKB'"
+
+msgid "error_subir_jpg"
+msgstr "Se debe subir una imagen jpg"
+
+msgid "mens_config_guardada"
+msgstr "Configuración guardada"
+
+msgid "mens_avatar_eliminado"
+msgstr "Avatar eliminado"
+
+msgid "error_acceso_datos_alumno"
+msgstr "Error accediendo a los datos de alumno"
+
+msgid "error_no_bloque_asignatura"
+msgstr "No existe el bloque indicado en la asignatura"
+
+msgid "error_alumno_no_matriculado"
+msgstr "No está matriculado en la asignatura"
+
+msgid "mens_profesor_creado"
+msgstr "Profesor creado"
+
+msgid "error_no_acceso"
+msgstr "Acceso denegado"
+
+msgid "mens_profesor_docen_modificada"
+msgstr "Docencia del profesor modificada"
+
+msgid "mens_profesor_modificado"
+msgstr "Profesor modificado"
+
+msgid "error_profesor"
+msgstr "Error en profesor"
+
+msgid "error_profesor_eliminado"
+msgstr "Problemas eliminando professor"
+
+msgid "mens_profesor_eliminado"
+msgstr "Profesor eliminado"
+
+msgid "mens_problema_eliminado"
+msgstr "Problema eliminado"
+
+msgid "error_problema_eliminado"
+msgstr "Error eliminando el problema"
+
+msgid "mens_lenguaje_seleccion"
+msgstr "Se ha seleccionado el idioma"
+
+msgid "mens_asignatura_seleccion"
+msgstr "Se ha seleccionado la asignatura"
+
+msgid "error_asignatura_eliminada"
+msgstr "Problemas eliminando la asignatura"
+
+msgid "error_asignatura"
+msgstr "Error en asignatura"
+
+msgid "mens_asignatura_modificada"
+msgstr "Asignatura modificada"
+
+msgid "mens_asignatura_eliminada"
+msgstr "Asignatura eliminada"
+
+msgid "mens_asignatura_creada"
+msgstr "Asignatura creada"
+
+msgid "error_tipo_auth"
+msgstr "Error tipo auth"
+
+msgid "error_subir_excel"
+msgstr "Se debe subir un archivo excel"
+
+msgid "error_alumno"
+msgstr "Error en alumno"
+
+msgid "error_alumno_eliminado"
+msgstr "Problemas eliminando el alumno"
+
+msgid "mens_alumno_modificado"
+msgstr "Alumno modificado"
+
+msgid "mens_alumno_creado"
+msgstr "Alumno creado"
+
+msgid "mens_alumno_eliminado"
+msgstr "Alumno eliminado"
+
+msgid "mens admin_modificado"
+msgstr "Administrador modificado"
+
+msgid "error_admin"
+msgstr "Error en administrador"
+
+msgid "mens_admin_eliminado"
+msgstr "Administrador eliminado"
+
+msgid "error_admin_eliminado"
+msgstr "Problemas eliminando el administrador"
+
+msgid "mens_admin_creado"
+msgstr "Administrador creado"
+
+msgid "inv_fecha_ini_anterior_fin"
+msgstr "La fecha inicial debe ser anterior a la final"
+
+msgid "inv_profesor_existe"
+msgstr "Ya existe el profesor"
+
+msgid "inv_profesor_no_existe"
+msgstr "No se encuentra el profesor"
+
+msgid "inv_expresiones_no_validas"
+msgstr "Las expresiones no son correctas: %1$s"
+
+msgid "inv_grupo_no_creado"
+msgstr "No se puede crear el grupo"
+
+msgid "inv_alumno_existe_asignatura"
+msgstr "Ya existe el alumno en la asignatura"
+
+msgid "inv_usuario_no_guardado"
+msgstr "No se pudo guardar el usuario"
+
+msgid "inv_alumno_no_existe"
+msgstr "No se encuentra el alumno."
+
+msgid "inv_administrador_no_existe"
+msgstr "No se encuentra el administrador"
+
+msgid "inv_administrador_no_guardado"
+msgstr "No se pudo guardar el administrador"
+
+msgid "inv_administrador_existe"
+msgstr "Ya existe el administrador"
+
+msgid "inv_usuario_no_creado"
+msgstr "No se puede crear el usuario"
+
+msgid "form_fichero_excel"
+msgstr "Fichero excel"
+
+msgid "form_texto"
+msgstr "Texto"
+
+msgid "form_keysensitive"
+msgstr "Sensible a mayúsculas"
+
+msgid "form_lenguaje_busqueda"
+msgstr "Seleccione el idioma de búsqueda"
+
+msgid "form_tipo_busqueda"
+msgstr "Seleccione el tipo de búsqueda"
+
+msgid "form_cadena_busqueda"
+msgstr "Inserte la cadena de búsqueda de etiqueta"
+
+msgid "form_seleccion_lenguaje"
+msgstr "Seleccione un idioma"
+
+msgid "form_seleccion_lenguaje_heredar"
+msgstr "Seleccione un idioma para heredar"
+
+msgid "form_guardar"
+msgstr "Guardar"
+
+msgid "form_unico"
+msgstr "Debe ser único"
+
+msgid "form_fecha_no_valida"
+msgstr "Fecha no válida. Formato: YYYY-MM-DD HH:MN"
+
+msgid "form_obligatorio"
+msgstr "Obligatorio"
+
+msgid "form_passwords_no_coinciden"
+msgstr "Los passwords no coinciden"
+
+msgid "form_direccion_valida"
+msgstr "Debe ser una dirección válida"
+
+msgid "form_password_repetir"
+msgstr "Repetir password"
+
+msgid "form_password_nuevo"
+msgstr "Nuevo Password"
+
+msgid "form_password_anterior"
+msgstr "Password anterior"
+
+msgid "form_password_encriptado"
+msgstr "Password encriptado"
+
+msgid "semanas"
+msgstr "%1$s semanas"
+
+msgid "form_ldap"
+msgstr "LDAP"
+
+msgid "form_alumno_fib"
+msgstr "Alumno FIB"
+
+msgid "form_password_plano"
+msgstr "Password texto plano"
+
+msgid "form_tipo_autentificacion"
+msgstr "Tipo autentificación"
+
+msgid "form_apellidos"
+msgstr "Apellidos"
+
+msgid "form_email"
+msgstr "Email"
+
+msgid "form_texto_no_imagen"
+msgstr "El texto no coincide con la imagen"
+
+msgid "form_texto_imagen"
+msgstr "Texto de la imagen"
+
+msgid "form_password"
+msgstr "Password"
+
+msgid "form_login"
+msgstr "Login"
+
+msgid "form_grados_libertad_m.1"
+msgstr "Grados libertad m.1"
+
+msgid "problema_pesos_preguntas"
+msgstr "Pesos de las preguntas:"
+
+msgid "form_grados_libertad_m.2"
+msgstr "Grados libertad m.2"
+
+msgid "form_grados_libertad"
+msgstr "Grados libertad"
+
+msgid "form_pvalor"
+msgstr "p-valor"
+
+msgid "form_descripcion_parametro"
+msgstr "Descripción parámetro %1$s"
+
+msgid "form_tipo_parametro"
+msgstr "Tipo parámetro %1$s"
+
+msgid "form_valorx"
+msgstr "Valor X"
+
+msgid "form_expresiones"
+msgstr "Expresiones"
+
+msgid "form_publico_profesores"
+msgstr "Público para los profesores"
+
+msgid "form_xml"
+msgstr "Archivos XML"
+
+msgid "form_expresiones_publicas"
+msgstr "Expresiones Públicas"
+
+msgid "form_variables_mostrar"
+msgstr "Variables extras a mostrar"
+
+msgid "form_dificultad"
+msgstr "Dificultad"
+
+msgid "form_variables_incorrectas"
+msgstr "Variables incorrectas"
+
+msgid "form_entero"
+msgstr "Entero"
+
+msgid "editor_compartidodescompartido"
+msgstr "Carpeta(s) compartidas/descompartidas"
+
+msgid "form_mensaje_incorrecto"
+msgstr "Mensaje incorrecto"
+
+msgid "form_mensaje_regular"
+msgstr "Mensaje regular"
+
+msgid "form_mostrar_solucion"
+msgstr "Mostrar solución"
+
+msgid "form_mensaje_correcto"
+msgstr "Mensaje correcto"
+
+msgid "form_intentos"
+msgstr "Intentos"
+
+msgid "form_ayuda"
+msgstr "Ayuda contextual"
+
+msgid "form_link"
+msgstr "Link %1$s"
+
+msgid "form_expresiones_resp"
+msgstr "Expresiones de respuesta"
+
+msgid "form_param_expresiones"
+msgstr "Parámetro de expresiones"
+
+msgid "form_param_sintaxis"
+msgstr "Parámetro de sintaxis"
+
+msgid "form_resp_sintaxis"
+msgstr "Sintaxis de la  respuesta"
+
+msgid "form_plantilla_expresiones"
+msgstr "Plantilla de expresiones de la respuesta"
+
+msgid "form_respuesta_a_pregunta"
+msgstr "Solución a la pregunta"
+
+msgid "form_peso"
+msgstr "Peso"
+
+msgid "form_respuesta"
+msgstr "Respuesta"
+
+msgid "form_enunciado"
+msgstr "Enunciado"
+
+msgid "form_grupo"
+msgstr "Grupo"
+
+msgid "form_activo"
+msgstr "Activo"
+
+msgid "form_encuesta"
+msgstr "Encuesta"
+
+msgid "form_contenido"
+msgstr "Contenido"
+
+msgid "error_editor_compartirdescompartir"
+msgstr "Errores compartiendo/descompartiendo carpeta(s)"
+
+msgid "form_compartida"
+msgstr "Compartida"
+
+msgid "form_seleccion_bloque"
+msgstr "Seleccione bloque"
+
+msgid "form_fecha_fin"
+msgstr "Fecha de finalización"
+
+msgid "form_fecha_inicio"
+msgstr "Fecha de inicio"
+
+msgid "form_restringir_fecha_fin"
+msgstr "Restringir fecha de finalización"
+
+msgid "form_restringir_fecha_inicio"
+msgstr "Restringir fecha de inicio"
+
+msgid "form_seleccion_asignatura"
+msgstr "Seleccione asignatura"
+
+msgid "form_nombre"
+msgstr "Nombre"
+
+msgid "form_descripcion"
+msgstr "Descripción"
+
+msgid "form_asignar_auto_problemas"
+msgstr "Asignar automáticamente problemas publicados"
+
+msgid "form_buscar_campos"
+msgstr "Buscar en los campos"
+
+msgid "form_campos"
+msgstr "Campos"
+
+msgid "form_desviacion"
+msgstr "Desviación"
+
+msgid "form_buscar"
+msgstr "Buscar"
+
+msgid "form_n_ejecuciones"
+msgstr "N. ejecuciones"
+
+msgid "form_minima"
+msgstr "Mínima"
+
+msgid "form_maxima"
+msgstr "Máxima"
+
+msgid "form_media"
+msgstr "Media"
+
+msgid "error_no_carpeta_propia"
+msgstr "No hay carpetas propias seleccionadas"
+
+msgid "form_seleccion"
+msgstr "Selección"
+
+msgid "form_estadisticas"
+msgstr "Estadísticas"
+
+msgid "form_avatar"
+msgstr "Avatar"
+
+msgid "form_alias"
+msgstr "Alias"
+
+msgid "form_repetidor"
+msgstr "Repetidor"
+
+msgid "enviar_password"
+msgstr "Enviar password"
+
+msgid "password_enviado"
+msgstr "Password enviado"
+
+msgid "confirmar_enviar_password"
+msgstr "Quiere reenviar el password a este alumno?"
+
+msgid "error_enviar_password"
+msgstr "Error enviando password"
+
+msgid "usuario_no_auth_estatus"
+msgstr "El password del usuario no se autentifica en el repositorio de estatus"
+
+msgid "nota_notificaciones_error_trad"
+msgstr "Nota: Usen este formulario para notificar errores de lenguaje del texto de la aplicación. 
+No usen este formulario para notificar errores generales ni tampoco cuestiones relacionadas con el texto de los problemas. Estas notificaciones son de agradecer pero han de hacerse al profesor correspondiente."
+
+msgid "problema_mas_10"
+msgstr "Problemas con al menos diez valoraciones"
+
+msgid "problema_menos_10"
+msgstr "Problemas con menos de diez valoraciones
+"
+
+msgid "cantidad"
+msgstr "Cantidad"
+
+msgid "fecha_invalida"
+msgstr "Fecha(s) no válida(s)"
+
+msgid "facil"
+msgstr "Fácil"
+
+msgid "medio"
+msgstr "Medio"
+
+msgid "dificil"
+msgstr "Difícil"
+
+msgid "dificultad_"
+msgstr "Dificultad"
+
+msgid "reasignar"
+msgstr "Reasignar"
+
+msgid "explic_modificar_problemas_bloques"
+msgstr "Permite modificar el tiempo de ejecución de problemas asignados. Es necesario tener problemas asignados seleccionados.
+"
+
+msgid "explic_reasignar_problemas_bloques"
+msgstr "Modifica la asignación de un problema de un bloque a otro. Es necesario tener un problema asignado y una carpeta de destino seleccionados."
+
+msgid "listado_valoracion_problemas"
+msgstr "Valoración de los problemas"
+
+msgid "numero_valoraciones"
+msgstr "Número de valoraciones"
+
+msgid "num_ejecuciones_sa "
+msgstr "Numero de ejecuciones
+"
+
+msgid "idiomas"
+msgstr "Idiomas"
+
+msgid "avanzado"
+msgstr "Avanzado"
+
+msgid "hora_header"
+msgstr "Hora
+"
+
+msgid "ayuda_"
+msgstr "Ayuda"
+
+msgid "graficos"
+msgstr "Gráficos"
+
+msgid "asignatura"
+msgstr "Asignatura"
+
+msgid "orden_alfabetico "
+msgstr "Orden alfabético"
+
+msgid "orden_creacion"
+msgstr "Orden creación"
+
+msgid "envio_passwords"
+msgstr "Envio passwords"
+
+msgid "orden_apellidos"
+msgstr "Orden por apellidos"
+
+msgid "orden_login"
+msgstr "Orden por login"
+
+msgid "porcentaje_obs"
+msgstr "Porcentaje observado"
+
+msgid "porcentaje_real"
+msgstr "Porcentaje real"
+
+msgid "mis_encuestas"
+msgstr "Mis encuestas"
+
+msgid "todas_las_encuestas"
+msgstr "Todas las encuestas"
+
+msgid "asociar"
+msgstr "Asociar"
+
+msgid "encuestas_asociadas"
+msgstr "Encuestas asociadas"
+
+msgid "si"
+msgstr "Sí"
+
+msgid "no"
+msgstr "No"
+
+msgid "clonar"
+msgstr "Clonar"
+
+msgid "info_max_altes_suhosin"
+msgstr "%1$s registros leídos. El último alumno cargado ha sido '%2$s'."
+
+msgid "error_max_altes_suhosin"
+msgstr "Se ha superado el límite de alumnos por archivo de Excel. Realice una nueva carga eliminando del archivo los primeros %1$s alumnos."
+
+msgid "form_simbolo_decimal"
+msgstr "Símbolo decimal"
+
+msgid "form_simbolo_punto"
+msgstr "Punto"
+
+msgid "form_simbolo_coma"
+msgstr "Coma"
+
+msgid "form_separador_columnas"
+msgstr "Separador de columnas"
+
+msgid "form_separador_tabulador"
+msgstr "Minitab/Excel (tabulador)"
+
+msgid "form_separador_espacio"
+msgstr "R (espacio)"
+
+msgid "form_separador_puntocoma"
+msgstr "Punto y coma"
+
+msgid "form_separador_dospuntos"
+msgstr "Dos puntos"
+
+msgid "form_separador_dolar"
+msgstr "Dólar"
+
+msgid "form_separador_barra"
+msgstr "Barra vertical"
+
+msgid "notificacion"
+msgstr "Notificación"
+
+msgid "notificacion_problema_info"
+msgstr "El problema %1$s se ha añadido en el bloque %2$s"
+
+msgid "notificacion_problema_desc"
+msgstr "Ha sido clasificado de dificultad %1$s y consiste en"
+
+msgid "notificacion_problema_restricciones"
+msgstr "Nota: este problema estará disponible"

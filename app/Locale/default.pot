@@ -1,0 +1,2818 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-03-03 03:01+0100\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/AdministradoresController.php:21;36
+#: Controller/ProfesoresController.php:18;33
+#: Controller/UsuariosController.php:96;111
+msgid "The usuario has been saved"
+msgstr ""
+
+#: Controller/AdministradoresController.php:24;39
+#: Controller/ProfesoresController.php:21;36
+#: Controller/UsuariosController.php:99;114
+msgid "The usuario could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/AdministradoresController.php:32;52
+#: Controller/ProfesoresController.php:29;49
+#: Controller/UsuariosController.php:87;107;127
+msgid "Invalid usuario"
+msgstr ""
+
+#: Controller/AdministradoresController.php:55
+#: Controller/ProfesoresController.php:52
+#: Controller/UsuariosController.php:130
+msgid "Usuario deleted"
+msgstr ""
+
+#: Controller/AdministradoresController.php:58
+#: Controller/ProfesoresController.php:55
+#: Controller/UsuariosController.php:133
+msgid "Usuario was not deleted"
+msgstr ""
+
+#: Controller/AlumnosController.php:38;75;106
+msgid "Invalid alumno"
+msgstr ""
+
+#: Controller/AlumnosController.php:54;79
+msgid "The alumno has been saved"
+msgstr ""
+
+#: Controller/AlumnosController.php:57;82
+msgid "The alumno could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/AlumnosController.php:109
+msgid "Alumno deleted"
+msgstr ""
+
+#: Controller/AlumnosController.php:112
+msgid "Alumno was not deleted"
+msgstr ""
+
+#: Controller/AsignaturasController.php:30;64;94
+msgid "Invalid asignatura"
+msgstr ""
+
+#: Controller/AsignaturasController.php:44;68
+msgid "The asignatura has been saved"
+msgstr ""
+
+#: Controller/AsignaturasController.php:47;71
+msgid "The asignatura could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/AsignaturasController.php:97
+msgid "Asignatura deleted"
+msgstr ""
+
+#: Controller/AsignaturasController.php:100
+msgid "Asignatura was not deleted"
+msgstr ""
+
+#: Controller/AsignaturasController.php:107
+msgid "The asignatura has been selected."
+msgstr ""
+
+#: Controller/BloquesController.php:40;74;104
+msgid "Invalid bloque"
+msgstr ""
+
+#: Controller/BloquesController.php:54;78
+msgid "The bloque has been saved"
+msgstr ""
+
+#: Controller/BloquesController.php:57;81
+msgid "The bloque could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/BloquesController.php:107
+msgid "Bloque deleted"
+msgstr ""
+
+#: Controller/BloquesController.php:110
+msgid "Bloque was not deleted"
+msgstr ""
+
+#: Controller/BloquesController.php:193
+msgid "error_asignar_problemas_bloque"
+msgstr ""
+
+#: Controller/BloquesController.php:214
+#: Controller/EjecucionesController.php:204
+#: Controller/ProblemasController.php:142
+msgid "error_no_acceso"
+msgstr ""
+
+#: Controller/BloquesController.php:228
+msgid "error_asignacion"
+msgstr ""
+
+#: Controller/BloquesController.php:232
+msgid "mens_asignacion"
+msgstr ""
+
+#: Controller/BloquesController.php:261
+msgid "error_mostrar_problemas_arbol"
+msgstr ""
+
+#: Controller/BloquesController.php:271
+msgid "mens_problemas_mostrados_ocultados"
+msgstr ""
+
+#: Controller/EditorController.php:82
+msgid "mens_carpeta_creada"
+msgstr ""
+
+#: Controller/EditorController.php:86
+msgid "error_carpeta_creada"
+msgstr ""
+
+#: Controller/EditorController.php:115
+msgid "mens_marcar_carpeta_destino"
+msgstr ""
+
+#: Controller/EditorController.php:146
+msgid "mens_publicados_despublicados"
+msgstr ""
+
+#: Controller/EditorController.php:175
+msgid "error_no_carpeta_propia"
+msgstr ""
+
+#: Controller/EditorController.php:179
+msgid "error_editor_compartirdescompartir"
+msgstr ""
+
+#: Controller/EditorController.php:183
+msgid "editor_compartidodescompartido"
+msgstr ""
+
+#: Controller/EditorController.php:210
+msgid "mens_subscritas_nosubscritas"
+msgstr ""
+
+#: Controller/EditorController.php:231
+msgid "mens_eliminados_carpetas"
+msgstr ""
+
+#: Controller/EditorController.php:263;314;366
+msgid "error_copiar_problemas_carpeta"
+msgstr ""
+
+#: Controller/EditorController.php:278;330;380
+msgid "error_problemas_copiados"
+msgstr ""
+
+#: Controller/EditorController.php:282
+msgid "mens_problemas_copiados"
+msgstr ""
+
+#: Controller/EditorController.php:334;384
+msgid "mens_problemas_movidos"
+msgstr ""
+
+#: Controller/EditorController.php:404
+msgid "mens_copiado_carpeta"
+msgstr ""
+
+#: Controller/EjecucionesController.php:32
+msgid "Invalid Ejecucion"
+msgstr ""
+
+#: Controller/EjecucionesController.php:46;72
+msgid "The ejecucion has been saved"
+msgstr ""
+
+#: Controller/EjecucionesController.php:49;75
+msgid "The ejecucion could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/EjecucionesController.php:68;100
+msgid "Invalid ejecucion"
+msgstr ""
+
+#: Controller/EjecucionesController.php:103
+msgid "Ejecucion deleted"
+msgstr ""
+
+#: Controller/EjecucionesController.php:106
+msgid "Ejecucion was not deleted"
+msgstr ""
+
+#: Controller/EjecucionesController.php:121;209
+msgid "mens_tiempo_ejecucion"
+msgstr ""
+
+#: Controller/EjecucionesController.php:126;212
+msgid "error_general"
+msgstr ""
+
+#: Controller/EjecucionesController.php:223
+msgid "error_permiso_denegado"
+msgstr ""
+
+#: Controller/EstadisticasAlumnosController.php:38
+msgid "error_indicar_campo"
+msgstr ""
+
+#: Controller/EstadisticasAlumnosController.php:43
+msgid "error_indicar_termino"
+msgstr ""
+
+#: Controller/EstadisticasAlumnosController.php:65
+msgid "Num ejecuciones"
+msgstr ""
+
+#: Controller/EstadisticasAlumnosController.php:65;87;108
+#: Controller/EstadisticasGruposController.php:199
+msgid "# Alumnos"
+msgstr ""
+
+#: Controller/EstadisticasAlumnosController.php:87
+#: Controller/EstadisticasController.php:55
+#: Controller/EstadisticasGruposController.php:117;145
+msgid "Nota media"
+msgstr ""
+
+#: Controller/EstadisticasAlumnosController.php:108
+#: Controller/EstadisticasGruposController.php:117;171
+#: Controller/EstadisticasProblemasController.php:175
+msgid "Puntuación"
+msgstr ""
+
+#: Controller/EstadisticasController.php:55;268
+msgid "numero ejecuciones"
+msgstr ""
+
+#: Controller/EstadisticasController.php:125
+msgid "fecha_invalida"
+msgstr ""
+
+#: Controller/EstadisticasController.php:206
+msgid "numero alumnos difentes"
+msgstr ""
+
+#: Controller/EstadisticasController.php:210
+msgid "numero logins"
+msgstr ""
+
+#: Controller/EstadisticasController.php:213;269
+msgid "Fecha"
+msgstr ""
+
+#: Controller/EstadisticasGruposController.php:145;171
+msgid "Grupos"
+msgstr ""
+
+#: Controller/EstadisticasGruposController.php:199
+msgid "# Problemas"
+msgstr ""
+
+#: Controller/EstadisticasProblemasController.php:141
+msgid "Número repeticiones"
+msgstr ""
+
+#: Controller/EstadisticasProblemasController.php:141;175
+msgid "Número de alumnos"
+msgstr ""
+
+#: Controller/ListadosAlumnosController.php:99
+msgid "mens_todos_identificador"
+msgstr ""
+
+#: Controller/ListadosAlumnosController.php:102
+msgid "mens_todos_grupos"
+msgstr ""
+
+#: Controller/ListadosAlumnosController.php:105
+msgid "mens_grupo_nombre"
+msgstr ""
+
+#: Controller/ListadosAlumnosController.php:108
+msgid "mens_alumno"
+msgstr ""
+
+#: Controller/ListadosAlumnosController.php:200
+msgid "mens_num_ejecuciones"
+msgstr ""
+
+#: Controller/ListadosAlumnosController.php:205
+msgid "mens_nota_media"
+msgstr ""
+
+#: Controller/ListadosAlumnosController.php:210
+msgid "mens_nota_maxima"
+msgstr ""
+
+#: Controller/ListadosAlumnosController.php:215
+msgid "mens_nota_minima"
+msgstr ""
+
+#: Controller/ListadosAlumnosController.php:220
+msgid "mens_num_ejecuciones_aprobadas"
+msgstr ""
+
+#: Controller/ListadosAlumnosController.php:225
+msgid "mens_desviacion_nota"
+msgstr ""
+
+#: Controller/PreguntasController.php:31;66;97
+msgid "Invalid pregunta"
+msgstr ""
+
+#: Controller/PreguntasController.php:45;70
+msgid "The pregunta has been saved"
+msgstr ""
+
+#: Controller/PreguntasController.php:48;73
+msgid "The pregunta could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/PreguntasController.php:100
+msgid "Pregunta deleted"
+msgstr ""
+
+#: Controller/PreguntasController.php:103
+msgid "Pregunta was not deleted"
+msgstr ""
+
+#: Controller/ProblemasController.php:38
+msgid "error_problema"
+msgstr ""
+
+#: Controller/ProblemasController.php:109;149
+msgid "The problema has been saved"
+msgstr ""
+
+#: Controller/ProblemasController.php:112;152
+msgid "The problema could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ProblemasController.php:131;185
+msgid "Invalid problema"
+msgstr ""
+
+#: Controller/ProblemasController.php:188
+msgid "Problema deleted"
+msgstr ""
+
+#: Controller/ProblemasController.php:191
+msgid "Problema was not deleted"
+msgstr ""
+
+#: Controller/ProfesoresController.php:71;89
+msgid "error_profesor"
+msgstr ""
+
+#: Controller/ProfesoresController.php:126
+msgid "mens_asignatura_seleccion"
+msgstr ""
+
+#: Controller/ProgramasController.php:33;65;93
+msgid "Invalid programa"
+msgstr ""
+
+#: Controller/ProgramasController.php:47;69
+msgid "The programa has been saved"
+msgstr ""
+
+#: Controller/ProgramasController.php:50;72
+msgid "The programa could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ProgramasController.php:96
+msgid "Programa deleted"
+msgstr ""
+
+#: Controller/ProgramasController.php:99
+msgid "Programa was not deleted"
+msgstr ""
+
+#: Controller/ProgramasController.php:117
+msgid "error_programa"
+msgstr ""
+
+#: Controller/SintaxisRespuestasController.php:35;67;95
+msgid "Invalid sintaxis respuesta"
+msgstr ""
+
+#: Controller/SintaxisRespuestasController.php:49;71
+msgid "The sintaxis respuesta has been saved"
+msgstr ""
+
+#: Controller/SintaxisRespuestasController.php:52;74
+msgid "The sintaxis respuesta could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/SintaxisRespuestasController.php:98
+msgid "Sintaxis respuesta deleted"
+msgstr ""
+
+#: Controller/SintaxisRespuestasController.php:101
+msgid "Sintaxis respuesta was not deleted"
+msgstr ""
+
+#: Controller/TiposRespuestasController.php:30;62;90
+msgid "Invalid tipos respuesta"
+msgstr ""
+
+#: Controller/TiposRespuestasController.php:44;66
+msgid "The tipos respuesta has been saved"
+msgstr ""
+
+#: Controller/TiposRespuestasController.php:47;69
+msgid "The tipos respuesta could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TiposRespuestasController.php:93
+msgid "Tipos respuesta deleted"
+msgstr ""
+
+#: Controller/TiposRespuestasController.php:96
+msgid "Tipos respuesta was not deleted"
+msgstr ""
+
+#: Controller/UsuariosController.php:58
+msgid "Username or password is incorrect"
+msgstr ""
+
+#: Controller/UsuariosController.php:150
+msgid "Password anterior incorrecto"
+msgstr ""
+
+#: Controller/UsuariosController.php:158
+msgid "Password modificado"
+msgstr ""
+
+#: Controller/UsuariosController.php:162
+msgid "error_password_cambiado"
+msgstr ""
+
+#: Controller/UsuariosController.php:185
+msgid "Lenguaje seleccionado"
+msgstr ""
+
+#: Controller/UsuariosController.php:225
+msgid "Notificacion insertada"
+msgstr ""
+
+#: Model/Administrador.php:20
+#: Model/Alumno.php:427
+#: Model/Profesor.php:238
+msgid "inv_usuario_no_creado"
+msgstr ""
+
+#: Model/Administrador.php:27
+msgid "inv_administrador_existe"
+msgstr ""
+
+#: Model/Alumno.php:353
+msgid "inv_alumno_no_existe"
+msgstr ""
+
+#: Model/Alumno.php:361
+#: Model/Profesor.php:281
+msgid "inv_usuario_no_guardado"
+msgstr ""
+
+#: Model/Alumno.php:417
+msgid "inv_alumno_existe_asignatura"
+msgstr ""
+
+#: Model/Alumno.php:436
+msgid "inv_grupo_no_creado"
+msgstr ""
+
+#: Model/Pregunta.php:386
+#: Model/Problema.php:194
+#: Model/Programa.php:32
+#: Model/SintaxisRespuesta.php:41
+#: Model/TiposRespuesta.php:36
+msgid "inv_expresiones_no_validas"
+msgstr ""
+
+#: Model/Problema.php:201
+msgid "error_subir_xml"
+msgstr ""
+
+#: Model/Problema.php:209
+msgid "error_xml_no_valido"
+msgstr ""
+
+#: Model/Problema.php:218;242
+msgid "error_fichero_no_valido"
+msgstr ""
+
+#: Model/Problema.php:268
+msgid "error_problema_guardando"
+msgstr ""
+
+#: Model/Profesor.php:245
+msgid "inv_profesor_existe"
+msgstr ""
+
+#: Model/Profesor.php:274
+msgid "inv_profesor_no_existe"
+msgstr ""
+
+#: Model/RestriccionesBloque.php:43
+msgid "inv_fecha_ini_anterior_fin"
+msgstr ""
+
+#: View/Administradores/add.ctp:4
+#: View/Usuarios/add.ctp:4
+msgid "Admin Add Usuario"
+msgstr ""
+
+#: View/Administradores/add.ctp:13
+#: View/Administradores/edit.ctp:14
+#: View/Alumnos/add.ctp:16
+#: View/Alumnos/edit.ctp:14
+#: View/Asignaturas/add.ctp:14
+#: View/Asignaturas/edit.ctp:15
+#: View/Bloques/add.ctp:9
+#: View/Bloques/edit.ctp:10
+#: View/Ejecuciones/add.ctp:14
+#: View/Ejecuciones/edit.ctp:15
+#: View/Preguntas/add.ctp:25
+#: View/Preguntas/edit.ctp:26
+#: View/Problemas/add.ctp:23
+#: View/Problemas/edit.ctp:28
+#: View/Profesores/add.ctp:13
+#: View/Profesores/edit.ctp:14
+#: View/Profesores/seleccionar.ctp:9
+#: View/Programas/add.ctp:26
+#: View/Programas/edit.ctp:26
+#: View/SintaxisRespuestas/add.ctp:11
+#: View/SintaxisRespuestas/edit.ctp:12
+#: View/TiposRespuestas/add.ctp:11
+#: View/TiposRespuestas/edit.ctp:12
+#: View/Usuarios/add.ctp:15
+#: View/Usuarios/change_password.ctp:11
+#: View/Usuarios/edit.ctp:16
+#: View/Usuarios/notificar_error_traduccion.ctp:16
+#: View/Usuarios/seleccionar_lenguaje.ctp:9
+msgid "Submit"
+msgstr ""
+
+#: View/Administradores/edit.ctp:4
+msgid "Admin Edit Administrador"
+msgstr ""
+
+#: View/Administradores/index.ctp:4
+#: View/Elements/sidebar/admin.ctp:22
+msgid "administradores"
+msgstr ""
+
+#: View/Administradores/index.ctp:9
+msgid "Administradores"
+msgstr ""
+
+#: View/Administradores/index.ctp:20
+#: View/Administradores/view.ctp:47;104
+#: View/Alumnos/edit.ctp:17
+#: View/Alumnos/index.ctp:11
+#: View/Alumnos/view.ctp:37;282;320;361
+#: View/Asignaturas/index.ctp:18
+#: View/Asignaturas/view.ctp:37;237;277;313;345;380;414
+#: View/Bloques/index.ctp:13
+#: View/Bloques/view.ctp:42;69;109
+#: View/Ejecuciones/add.ctp:17
+#: View/Ejecuciones/edit.ctp:18
+#: View/Ejecuciones/index.ctp:13;50
+#: View/Ejecuciones/view.ctp:47
+#: View/Preguntas/index.ctp:8
+#: View/Preguntas/view.ctp:97
+#: View/Problemas/index.ctp:15
+#: View/Profesores/index.ctp:13
+#: View/Programas/index.ctp:14
+#: View/Programas/view.ctp:107
+#: View/SintaxisRespuestas/add.ctp:14
+#: View/SintaxisRespuestas/index.ctp:15
+#: View/SintaxisRespuestas/view.ctp:32;65
+#: View/TiposRespuestas/index.ctp:15
+#: View/TiposRespuestas/view.ctp:32
+#: View/Usuarios/edit.ctp:19
+#: View/Usuarios/index.ctp:13
+#: View/Usuarios/view.ctp:47;104
+msgid "Actions"
+msgstr ""
+
+#: View/Administradores/index.ctp:34
+#: View/Administradores/view.ctp:118
+#: View/Alumnos/index.ctp:28
+#: View/Alumnos/view.ctp:298;331;380
+#: View/Asignaturas/index.ctp:31
+#: View/Asignaturas/view.ctp:252;291;324;355;394;423
+#: View/Bloques/index.ctp:20
+#: View/Bloques/view.ctp:85;122
+#: View/Ejecuciones/index.ctp:28
+#: View/Preguntas/index.ctp:17
+#: View/Problemas/eliminables.ctp:19
+#: View/Problemas/index.ctp:25
+#: View/Problemas/no_eliminables.ctp:19
+#: View/Profesores/index.ctp:20
+#: View/Programas/index.ctp:23
+#: View/SintaxisRespuestas/index.ctp:24
+#: View/SintaxisRespuestas/view.ctp:91
+#: View/TiposRespuestas/index.ctp:24
+#: View/Usuarios/index.ctp:28
+#: View/Usuarios/view.ctp:118
+msgid "Edit"
+msgstr ""
+
+#: View/Administradores/index.ctp:35
+#: View/Administradores/view.ctp:119
+#: View/Alumnos/edit.ctp:20
+#: View/Alumnos/index.ctp:29
+#: View/Alumnos/view.ctp:299;332;381
+#: View/Asignaturas/index.ctp:32
+#: View/Asignaturas/view.ctp:253;292;325;356;395;424
+#: View/Bloques/index.ctp:21
+#: View/Bloques/view.ctp:86;123
+#: View/Ejecuciones/edit.ctp:21
+#: View/Ejecuciones/index.ctp:29
+#: View/Preguntas/index.ctp:18
+#: View/Problemas/eliminables.ctp:20
+#: View/Problemas/index.ctp:26
+#: View/Problemas/no_eliminables.ctp:20
+#: View/Profesores/index.ctp:22
+#: View/Programas/index.ctp:24
+#: View/SintaxisRespuestas/index.ctp:25
+#: View/SintaxisRespuestas/view.ctp:92
+#: View/TiposRespuestas/index.ctp:25
+#: View/Usuarios/edit.ctp:22
+#: View/Usuarios/index.ctp:29
+#: View/Usuarios/view.ctp:119
+msgid "Delete"
+msgstr ""
+
+#: View/Administradores/index.ctp:35
+#: View/Administradores/view.ctp:50;119
+#: View/Alumnos/edit.ctp:20
+#: View/Alumnos/index.ctp:29
+#: View/Alumnos/view.ctp:40;299;332;381
+#: View/Asignaturas/index.ctp:32
+#: View/Asignaturas/view.ctp:40;253;292;325;356;395;424
+#: View/Bloques/index.ctp:21
+#: View/Bloques/view.ctp:45;86;123
+#: View/Ejecuciones/edit.ctp:21
+#: View/Ejecuciones/index.ctp:29
+#: View/Ejecuciones/view.ctp:50
+#: View/Preguntas/index.ctp:18
+#: View/Preguntas/view.ctp:100
+#: View/Problemas/eliminables.ctp:20
+#: View/Problemas/index.ctp:26
+#: View/Problemas/no_eliminables.ctp:20
+#: View/Profesores/index.ctp:22
+#: View/Programas/index.ctp:24
+#: View/Programas/view.ctp:110
+#: View/SintaxisRespuestas/index.ctp:25
+#: View/SintaxisRespuestas/view.ctp:35;92
+#: View/TiposRespuestas/index.ctp:25
+#: View/TiposRespuestas/view.ctp:35
+#: View/Usuarios/edit.ctp:22
+#: View/Usuarios/index.ctp:29
+#: View/Usuarios/view.ctp:50;119
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: View/Administradores/index.ctp:43
+#: View/Alumnos/index.ctp:37
+#: View/Asignaturas/index.ctp:40
+#: View/Bloques/index.ctp:29
+#: View/Ejecuciones/index.ctp:37
+#: View/Preguntas/index.ctp:26
+#: View/Problemas/index.ctp:34
+#: View/Profesores/index.ctp:30
+#: View/Programas/index.ctp:32
+#: View/SintaxisRespuestas/index.ctp:33
+#: View/TiposRespuestas/index.ctp:33
+#: View/Usuarios/index.ctp:37
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: View/Administradores/index.ctp:49
+#: View/Alumnos/index.ctp:43
+#: View/Asignaturas/index.ctp:46
+#: View/Bloques/index.ctp:35
+#: View/Ejecuciones/index.ctp:43
+#: View/Preguntas/index.ctp:32
+#: View/Problemas/index.ctp:40
+#: View/Profesores/index.ctp:36
+#: View/Programas/index.ctp:38
+#: View/SintaxisRespuestas/index.ctp:39
+#: View/TiposRespuestas/index.ctp:39
+#: View/Usuarios/index.ctp:43
+msgid "previous"
+msgstr ""
+
+#: View/Administradores/index.ctp:51
+#: View/Alumnos/index.ctp:45
+#: View/Asignaturas/index.ctp:48
+#: View/Bloques/index.ctp:37
+#: View/Ejecuciones/index.ctp:45
+#: View/Preguntas/index.ctp:34
+#: View/Problemas/index.ctp:42
+#: View/Profesores/index.ctp:38
+#: View/Programas/index.ctp:40
+#: View/SintaxisRespuestas/index.ctp:41
+#: View/TiposRespuestas/index.ctp:41
+#: View/Usuarios/index.ctp:45
+msgid "next"
+msgstr ""
+
+#: View/Administradores/login.ctp:9
+#: View/Administradores/view.ctp:24
+#: View/Usuarios/login.ctp:9
+#: View/Usuarios/view.ctp:24
+msgid "Login"
+msgstr ""
+
+#: View/Administradores/view.ctp:2
+#: View/Alumnos/view.ctp:19
+#: View/Usuarios/view.ctp:2
+msgid "Usuario"
+msgstr ""
+
+#: View/Administradores/view.ctp:4;65;81;98
+#: View/Alumnos/view.ctp:4;274
+#: View/Asignaturas/view.ctp:4;230;271;310;413
+#: View/Bloques/view.ctp:4;61;104
+#: View/Ejecuciones/view.ctp:4
+#: View/Preguntas/view.ctp:4
+#: View/Programas/view.ctp:4
+#: View/SintaxisRespuestas/view.ctp:4;47
+#: View/TiposRespuestas/view.ctp:4
+#: View/Usuarios/view.ctp:4;65;81;98
+msgid "Id"
+msgstr ""
+
+#: View/Administradores/view.ctp:9
+#: View/Asignaturas/view.ctp:9;231;312
+#: View/Bloques/view.ctp:9
+#: View/Programas/view.ctp:14
+#: View/SintaxisRespuestas/view.ctp:9
+#: View/TiposRespuestas/view.ctp:9
+#: View/Usuarios/view.ctp:9
+msgid "Nombre"
+msgstr ""
+
+#: View/Administradores/view.ctp:14
+#: View/Usuarios/view.ctp:14
+msgid "Apellidos"
+msgstr ""
+
+#: View/Administradores/view.ctp:19
+#: View/Usuarios/view.ctp:19
+msgid "Email"
+msgstr ""
+
+#: View/Administradores/view.ctp:29
+#: View/Usuarios/view.ctp:29
+msgid "Password"
+msgstr ""
+
+#: View/Administradores/view.ctp:34
+#: View/Alumnos/view.ctp:257
+#: View/Asignaturas/view.ctp:379
+#: View/Usuarios/view.ctp:34
+msgid "Tipo Auth"
+msgstr ""
+
+#: View/Administradores/view.ctp:39
+#: View/Usuarios/view.ctp:39
+msgid "Lenguaje"
+msgstr ""
+
+#: View/Administradores/view.ctp:49
+#: View/Usuarios/view.ctp:49
+msgid "Edit Usuario"
+msgstr ""
+
+#: View/Administradores/view.ctp:50
+#: View/Usuarios/view.ctp:50
+msgid "Delete Usuario"
+msgstr ""
+
+#: View/Administradores/view.ctp:51
+#: View/Alumnos/edit.ctp:24
+#: View/Alumnos/view.ctp:45
+#: View/Usuarios/edit.ctp:23
+#: View/Usuarios/view.ctp:51
+msgid "List Usuarios"
+msgstr ""
+
+#: View/Administradores/view.ctp:52
+#: View/Alumnos/edit.ctp:25
+#: View/Alumnos/view.ctp:46
+#: View/Usuarios/view.ctp:52
+msgid "New Usuario"
+msgstr ""
+
+#: View/Administradores/view.ctp:53
+#: View/Asignaturas/view.ctp:65
+#: View/Usuarios/edit.ctp:24
+#: View/Usuarios/view.ctp:53
+msgid "List Profesors"
+msgstr ""
+
+#: View/Administradores/view.ctp:54
+#: View/Asignaturas/view.ctp:66;433
+#: View/Usuarios/edit.ctp:25
+#: View/Usuarios/view.ctp:54
+msgid "New Profesor"
+msgstr ""
+
+#: View/Administradores/view.ctp:55
+#: View/Usuarios/edit.ctp:26
+#: View/Usuarios/view.ctp:55
+msgid "List Administradors"
+msgstr ""
+
+#: View/Administradores/view.ctp:56
+#: View/Usuarios/edit.ctp:27
+#: View/Usuarios/view.ctp:56
+msgid "New Administrador"
+msgstr ""
+
+#: View/Administradores/view.ctp:57
+#: View/Alumnos/edit.ctp:21
+#: View/Alumnos/view.ctp:41
+#: View/Asignaturas/view.ctp:57
+#: View/Usuarios/edit.ctp:28
+#: View/Usuarios/view.ctp:57
+msgid "List Alumnos"
+msgstr ""
+
+#: View/Administradores/view.ctp:58;128
+#: View/Alumnos/view.ctp:42
+#: View/Asignaturas/view.ctp:58;301
+#: View/Usuarios/edit.ctp:29
+#: View/Usuarios/view.ctp:58;128
+msgid "New Alumno"
+msgstr ""
+
+#: View/Administradores/view.ctp:62
+#: View/Asignaturas/view.ctp:409
+#: View/Usuarios/view.ctp:62
+msgid "Related Profesors"
+msgstr ""
+
+#: View/Administradores/view.ctp:73
+#: View/Profesores/edit.ctp:4
+#: View/Usuarios/view.ctp:73
+msgid "Edit Profesor"
+msgstr ""
+
+#: View/Administradores/view.ctp:78
+#: View/Usuarios/view.ctp:78
+msgid "Related Administradors"
+msgstr ""
+
+#: View/Administradores/view.ctp:89
+#: View/Usuarios/view.ctp:89
+msgid "Edit Administrador"
+msgstr ""
+
+#: View/Administradores/view.ctp:94
+#: View/Asignaturas/view.ctp:267
+#: View/Usuarios/view.ctp:94
+msgid "Related Alumnos"
+msgstr ""
+
+#: View/Administradores/view.ctp:99
+#: View/Alumnos/view.ctp:9
+#: View/Asignaturas/view.ctp:272
+#: View/Usuarios/view.ctp:99
+msgid "Repetidor"
+msgstr ""
+
+#: View/Administradores/view.ctp:100
+#: View/Alumnos/view.ctp:14;109;350
+#: View/Asignaturas/view.ctp:73;273
+#: View/Usuarios/view.ctp:100
+msgid "Alias"
+msgstr ""
+
+#: View/Administradores/view.ctp:101
+#: View/Alumnos/view.ctp:113;237;351
+#: View/Asignaturas/view.ctp:77;274;374
+#: View/Usuarios/view.ctp:101
+msgid "Usuario Id"
+msgstr ""
+
+#: View/Administradores/view.ctp:102
+#: View/Alumnos/view.ctp:77;129;245;355
+#: View/Asignaturas/view.ctp:93;275;376
+#: View/Usuarios/view.ctp:102
+msgid "Grupo Id"
+msgstr ""
+
+#: View/Administradores/view.ctp:103
+#: View/Alumnos/view.ctp:29;117;352
+#: View/Asignaturas/view.ctp:81;276
+#: View/Usuarios/view.ctp:103
+msgid "Avatar"
+msgstr ""
+
+#: View/Administradores/view.ctp:117
+#: View/Alumnos/index.ctp:27
+#: View/Alumnos/view.ctp:297;330;379
+#: View/Asignaturas/view.ctp:251;290;323;354;393;422
+#: View/Bloques/view.ctp:84;121
+#: View/Ejecuciones/index.ctp:27
+#: View/Problemas/eliminables.ctp:18
+#: View/Problemas/index.ctp:24
+#: View/Problemas/no_eliminables.ctp:18
+#: View/SintaxisRespuestas/view.ctp:90
+#: View/Usuarios/index.ctp:27
+#: View/Usuarios/view.ctp:117
+msgid "View"
+msgstr ""
+
+#: View/Alumnos/add.ctp:4
+msgid "Add Alumno"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:4
+#: View/Alumnos/view.ctp:39
+msgid "Edit Alumno"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:22
+#: View/Alumnos/view.ctp:43
+#: View/Asignaturas/view.ctp:59
+msgid "List Grupos"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:23
+#: View/Alumnos/view.ctp:44
+#: View/Asignaturas/view.ctp:60;334
+msgid "New Grupo"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:26
+#: View/Alumnos/view.ctp:47
+msgid "List Est Alumnos"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:27
+#: View/Alumnos/view.ctp:48
+msgid "New Est Alumno"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:28
+#: View/Alumnos/view.ctp:49
+#: View/Asignaturas/view.ctp:43
+msgid "List View Puntuaciones Problemas Alumnos"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:29
+#: View/Alumnos/view.ctp:50;390
+#: View/Asignaturas/view.ctp:44
+msgid "New View Puntuaciones Problemas Alumno"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:30
+#: View/Alumnos/view.ctp:51
+msgid "List Est Ranking Puntuacions"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:31
+#: View/Alumnos/view.ctp:52
+msgid "New Est Ranking Puntuacion"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:32
+#: View/Alumnos/view.ctp:53
+msgid "List Est Ranking Ejecucions"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:33
+#: View/Alumnos/view.ctp:54
+msgid "New Est Ranking Ejecucion"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:34
+#: View/Alumnos/view.ctp:55
+msgid "List Est Ranking Notas"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:35
+#: View/Alumnos/view.ctp:56
+msgid "New Est Ranking Nota"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:36
+#: View/Alumnos/view.ctp:57
+#: View/Asignaturas/view.ctp:63
+msgid "List View Alumnos Usuarios"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:37
+#: View/Alumnos/view.ctp:58
+#: View/Asignaturas/view.ctp:64;404
+msgid "New View Alumnos Usuario"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:38
+#: View/Alumnos/view.ctp:59
+msgid "List Ejecucions"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:39
+#: View/Alumnos/view.ctp:60;308
+msgid "New Ejecucion"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:40
+#: View/Alumnos/view.ctp:61
+msgid "List View Puntuacion Bloques"
+msgstr ""
+
+#: View/Alumnos/edit.ctp:41
+#: View/Alumnos/view.ctp:62;341
+msgid "New View Puntuacion Bloque"
+msgstr ""
+
+#: View/Alumnos/index.ctp:2
+msgid "Alumnos"
+msgstr ""
+
+#: View/Alumnos/view.ctp:2
+msgid "Alumno"
+msgstr ""
+
+#: View/Alumnos/view.ctp:24
+#: View/Bloques/view.ctp:106
+msgid "Grupo"
+msgstr ""
+
+#: View/Alumnos/view.ctp:40
+msgid "Delete Alumno"
+msgstr ""
+
+#: View/Alumnos/view.ctp:66
+msgid "Related Est Alumnos"
+msgstr ""
+
+#: View/Alumnos/view.ctp:69;121;165;189;213;241;275;317;353
+#: View/Asignaturas/view.ctp:85;375
+#: View/Ejecuciones/view.ctp:9
+msgid "Alumno Id"
+msgstr ""
+
+#: View/Alumnos/view.ctp:73;125;169;193;217;253;354
+#: View/Asignaturas/view.ctp:89;133;153;173;193;213;235;311;343;378
+#: View/Bloques/view.ctp:29
+msgid "Asignatura Id"
+msgstr ""
+
+#: View/Alumnos/view.ctp:81
+msgid "Puntuacion Total"
+msgstr ""
+
+#: View/Alumnos/view.ctp:85
+msgid "Nota Media"
+msgstr ""
+
+#: View/Alumnos/view.ctp:89
+msgid "Num Problemas Ejecutados"
+msgstr ""
+
+#: View/Alumnos/view.ctp:93
+msgid "Num Ejecuciones"
+msgstr ""
+
+#: View/Alumnos/view.ctp:101
+msgid "Edit Est Alumno"
+msgstr ""
+
+#: View/Alumnos/view.ctp:106;346
+#: View/Asignaturas/view.ctp:70
+msgid "Related View Puntuaciones Problemas Alumnos"
+msgstr ""
+
+#: View/Alumnos/view.ctp:133;281;356
+#: View/Asignaturas/view.ctp:97;344
+#: View/Bloques/view.ctp:63
+#: View/Ejecuciones/view.ctp:39
+#: View/SintaxisRespuestas/view.ctp:48
+msgid "Problema Id"
+msgstr ""
+
+#: View/Alumnos/view.ctp:137;357
+#: View/Asignaturas/view.ctp:101
+msgid "Factor"
+msgstr ""
+
+#: View/Alumnos/view.ctp:141;358
+#: View/Asignaturas/view.ctp:105
+msgid "Puntuacion Problema"
+msgstr ""
+
+#: View/Alumnos/view.ctp:145;359
+#: View/Asignaturas/view.ctp:109
+msgid "Nota Media Problema"
+msgstr ""
+
+#: View/Alumnos/view.ctp:149;360
+#: View/Asignaturas/view.ctp:113
+msgid "Num Ejecuciones Problema"
+msgstr ""
+
+#: View/Alumnos/view.ctp:157
+#: View/Asignaturas/view.ctp:121
+msgid "Edit View Puntuaciones Problemas Alumno"
+msgstr ""
+
+#: View/Alumnos/view.ctp:162
+msgid "Related Est Ranking Puntuacions"
+msgstr ""
+
+#: View/Alumnos/view.ctp:173
+msgid "Posicion Ranking Puntuacion"
+msgstr ""
+
+#: View/Alumnos/view.ctp:181
+msgid "Edit Est Ranking Puntuacion"
+msgstr ""
+
+#: View/Alumnos/view.ctp:186
+msgid "Related Est Ranking Ejecucions"
+msgstr ""
+
+#: View/Alumnos/view.ctp:197
+msgid "Posicion Ranking Ejecuciones"
+msgstr ""
+
+#: View/Alumnos/view.ctp:205
+msgid "Edit Est Ranking Ejecucion"
+msgstr ""
+
+#: View/Alumnos/view.ctp:210
+msgid "Related Est Ranking Notas"
+msgstr ""
+
+#: View/Alumnos/view.ctp:221
+msgid "Posicion Ranking Nota"
+msgstr ""
+
+#: View/Alumnos/view.ctp:229
+msgid "Edit Est Ranking Nota"
+msgstr ""
+
+#: View/Alumnos/view.ctp:234
+#: View/Asignaturas/view.ctp:370
+msgid "Related View Alumnos Usuarios"
+msgstr ""
+
+#: View/Alumnos/view.ctp:249
+#: View/Asignaturas/view.ctp:377
+msgid "Grupo Nombre"
+msgstr ""
+
+#: View/Alumnos/view.ctp:265
+msgid "Edit View Alumnos Usuario"
+msgstr ""
+
+#: View/Alumnos/view.ctp:270
+msgid "Related Ejecucions"
+msgstr ""
+
+#: View/Alumnos/view.ctp:276
+#: View/Ejecuciones/view.ctp:14
+msgid "Agrupacion Id"
+msgstr ""
+
+#: View/Alumnos/view.ctp:277
+#: View/Asignaturas/view.ctp:233
+#: View/Bloques/view.ctp:19;66
+#: View/Ejecuciones/view.ctp:19
+msgid "Created"
+msgstr ""
+
+#: View/Alumnos/view.ctp:278
+#: View/Ejecuciones/view.ctp:24
+msgid "Fecha Limite"
+msgstr ""
+
+#: View/Alumnos/view.ctp:279
+#: View/Ejecuciones/view.ctp:29
+msgid "Nota"
+msgstr ""
+
+#: View/Alumnos/view.ctp:280
+#: View/Ejecuciones/view.ctp:34
+msgid "Semilla"
+msgstr ""
+
+#: View/Alumnos/view.ctp:313
+msgid "Related View Puntuacion Bloques"
+msgstr ""
+
+#: View/Alumnos/view.ctp:318
+#: View/Bloques/view.ctp:62;105
+msgid "Bloque Id"
+msgstr ""
+
+#: View/Alumnos/view.ctp:319
+msgid "Puntuacion"
+msgstr ""
+
+#: View/Asignaturas/add.ctp:4
+msgid "Add Asignatura"
+msgstr ""
+
+#: View/Asignaturas/edit.ctp:4
+#: View/Asignaturas/view.ctp:39
+msgid "Edit Asignatura"
+msgstr ""
+
+#: View/Asignaturas/index.ctp:4
+#: View/Elements/sidebar/admin.ctp:23
+msgid "asignaturas"
+msgstr ""
+
+#: View/Asignaturas/index.ctp:9
+msgid "Asignaturas"
+msgstr ""
+
+#: View/Asignaturas/index.ctp:30
+msgid "Select"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:2
+msgid "Asignatura"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:14
+#: View/Programas/view.ctp:19
+#: View/SintaxisRespuestas/view.ctp:14
+#: View/TiposRespuestas/view.ctp:14
+msgid "Descripcion"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:19
+msgid "Asignar Todos Publicados"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:24
+#: View/Bloques/view.ctp:107
+msgid "Fecha Inicio"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:29
+#: View/Bloques/view.ctp:108
+msgid "Fecha Fin"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:40
+msgid "Delete Asignatura"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:41
+#: View/Bloques/view.ctp:48
+msgid "List Asignaturas"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:42
+#: View/Bloques/view.ctp:49
+msgid "New Asignatura"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:45
+msgid "List View Nota Media Ejecuciones Asignaturas"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:46
+msgid "New View Nota Media Ejecuciones Asignatura"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:47
+msgid "List View Numero Ejecuciones Asignaturas"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:48
+msgid "New View Numero Ejecuciones Asignatura"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:49
+msgid "List View Numero Ejecuciones Aprobadas Asignaturas"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:50
+msgid "New View Numero Ejecuciones Aprobadas Asignatura"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:51
+msgid "List View Numero Problemas Disponibles Asignaturas"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:52
+msgid "New View Numero Problemas Disponibles Asignatura"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:53
+msgid "List View Numero Problemas Ejecutados Asignaturas"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:54
+msgid "New View Numero Problemas Ejecutados Asignatura"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:55
+#: View/Bloques/view.ctp:46
+msgid "List Bloques"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:56;262
+#: View/Bloques/view.ctp:47
+msgid "New Bloque"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:61
+msgid "List View Problemas Asignaturas"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:62;365
+msgid "New View Problemas Asignatura"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:126
+msgid "Related View Nota Media Ejecuciones Asignaturas"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:129
+msgid "Nota Media Ejecuciones"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:141
+msgid "Edit View Nota Media Ejecuciones Asignatura"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:146
+msgid "Related View Numero Ejecuciones Asignaturas"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:149
+msgid "Numero Ejecuciones"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:161
+msgid "Edit View Numero Ejecuciones Asignatura"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:166
+msgid "Related View Numero Ejecuciones Aprobadas Asignaturas"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:169
+msgid "Numero Ejecuciones Aprobadas"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:181
+msgid "Edit View Numero Ejecuciones Aprobadas Asignatura"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:186
+msgid "Related View Numero Problemas Disponibles Asignaturas"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:189
+msgid "Problemas Disponibles"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:201
+msgid "Edit View Numero Problemas Disponibles Asignatura"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:206
+msgid "Related View Numero Problemas Ejecutados Asignaturas"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:209
+msgid "Problemas Ejecutados"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:221
+msgid "Edit View Numero Problemas Ejecutados Asignatura"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:226
+msgid "Related Bloques"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:232
+#: View/Bloques/view.ctp:14
+msgid "Tipo"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:234
+#: View/Bloques/view.ctp:24;67
+msgid "Modified"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:236
+#: View/Bloques/view.ctp:34
+#: View/Preguntas/view.ctp:14
+#: View/Programas/view.ctp:9
+#: View/SintaxisRespuestas/view.ctp:24;49
+#: View/TiposRespuestas/view.ctp:24
+msgid "Orden"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:306
+msgid "Related Grupos"
+msgstr ""
+
+#: View/Asignaturas/view.ctp:339
+msgid "Related View Problemas Asignaturas"
+msgstr ""
+
+#: View/Bloques/add.ctp:4
+msgid "Add Bloque"
+msgstr ""
+
+#: View/Bloques/asignar_problemas.ctp:3;4
+msgid "minutos"
+msgstr ""
+
+#: View/Bloques/asignar_problemas.ctp:5
+#: View/Ejecuciones/tiempo_limite.ctp:31;41
+msgid "hora"
+msgstr ""
+
+#: View/Bloques/asignar_problemas.ctp:6;7;8;9
+#: View/Ejecuciones/tiempo_limite.ctp:33;43
+msgid "horas"
+msgstr ""
+
+#: View/Bloques/asignar_problemas.ctp:10
+#: View/Ejecuciones/tiempo_limite.ctp:46
+msgid "dia"
+msgstr ""
+
+#: View/Bloques/asignar_problemas.ctp:11
+#: View/Ejecuciones/tiempo_limite.ctp:48
+msgid "dias"
+msgstr ""
+
+#: View/Bloques/asignar_problemas.ctp:12
+msgid "semana"
+msgstr ""
+
+#: View/Bloques/asignar_problemas.ctp:13;14
+msgid "semanas"
+msgstr ""
+
+#: View/Bloques/asignar_problemas.ctp:32
+msgid "asignar"
+msgstr ""
+
+#: View/Bloques/edit.ctp:4
+#: View/Bloques/view.ctp:44
+msgid "Edit Bloque"
+msgstr ""
+
+#: View/Bloques/index.ctp:4
+msgid "bloques"
+msgstr ""
+
+#: View/Bloques/index.ctp:9
+msgid "Bloques"
+msgstr ""
+
+#: View/Bloques/problemas.ctp:4
+#: View/Elements/sidebar/bloques/bloques.ctp:6;7
+msgid "asignaciones"
+msgstr ""
+
+#: View/Bloques/view.ctp:2
+msgid "Bloque"
+msgstr ""
+
+#: View/Bloques/view.ctp:45
+msgid "Delete Bloque"
+msgstr ""
+
+#: View/Bloques/view.ctp:50
+msgid "List Agrupacions"
+msgstr ""
+
+#: View/Bloques/view.ctp:51;95
+msgid "New Agrupacion"
+msgstr ""
+
+#: View/Bloques/view.ctp:52
+msgid "List Restricciones Bloques"
+msgstr ""
+
+#: View/Bloques/view.ctp:53;132
+msgid "New Restricciones Bloque"
+msgstr ""
+
+#: View/Bloques/view.ctp:57
+msgid "Related Agrupacions"
+msgstr ""
+
+#: View/Bloques/view.ctp:64
+msgid "Limite Minutos"
+msgstr ""
+
+#: View/Bloques/view.ctp:65
+msgid "Visible"
+msgstr ""
+
+#: View/Bloques/view.ctp:68
+msgid "Notificado"
+msgstr ""
+
+#: View/Bloques/view.ctp:100
+msgid "Related Restricciones Bloques"
+msgstr ""
+
+#: View/Ejecuciones/add.ctp:4
+msgid "Add Ejecucione"
+msgstr ""
+
+#: View/Ejecuciones/add.ctp:20
+#: View/Ejecuciones/edit.ctp:22
+#: View/Ejecuciones/view.ctp:51
+msgid "List Ejecuciones"
+msgstr ""
+
+#: View/Ejecuciones/correccion.ctp:3
+msgid "correccion_problema"
+msgstr ""
+
+#: View/Ejecuciones/correccion.ctp:22
+#: View/Ejecuciones/iniciar_problema.ctp:19
+msgid "copiar_datos_minitab_excel"
+msgstr ""
+
+#: View/Ejecuciones/correccion.ctp:74;117
+#: View/EstadisticasProblemas/listado_ejecuciones.ctp:13
+msgid "nota"
+msgstr ""
+
+#: View/Ejecuciones/correccion.ctp:102
+msgid "solucion"
+msgstr ""
+
+#: View/Ejecuciones/correccion.ctp:114
+msgid "resultado"
+msgstr ""
+
+#: View/Ejecuciones/correccion.ctp:122
+#: View/Elements/alumno/home.ctp:14
+#: View/Elements/estadisticas/problemas/listado_puntuacion.ctp:7;30
+#: View/EstadisticasAlumnos/index.ctp:14
+#: View/EstadisticasAlumnos/ranking_puntuacion.ctp:4
+msgid "puntuacion"
+msgstr ""
+
+#: View/Ejecuciones/correccion.ctp:129
+msgid "pregunta_utilidad_problema"
+msgstr ""
+
+#: View/Ejecuciones/correccion.ctp:132
+msgid "gracias"
+msgstr ""
+
+#: View/Ejecuciones/correccion.ctp:140
+#: View/Ejecuciones/iniciar_problema.ctp:70
+msgid "correccion"
+msgstr ""
+
+#: View/Ejecuciones/edit.ctp:4
+#: View/Ejecuciones/view.ctp:49
+msgid "Edit Ejecucione"
+msgstr ""
+
+#: View/Ejecuciones/index.ctp:2
+msgid "Ejecuciones"
+msgstr ""
+
+#: View/Ejecuciones/index.ctp:52
+#: View/Ejecuciones/view.ctp:52
+msgid "New Ejecucione"
+msgstr ""
+
+#: View/Ejecuciones/iniciar_problema.ctp:5
+msgid "ejecucion_problema"
+msgstr ""
+
+#: View/Ejecuciones/tiempo_limite.ctp:1
+msgid "tiempo_limite"
+msgstr ""
+
+#: View/Ejecuciones/tiempo_limite.ctp:5
+msgid "expirado"
+msgstr ""
+
+#: View/Ejecuciones/tiempo_limite.ctp:15
+msgid "segundos_abrev"
+msgstr ""
+
+#: View/Ejecuciones/tiempo_limite.ctp:19;26
+msgid "minutos_abrev"
+msgstr ""
+
+#: View/Ejecuciones/view.ctp:2
+msgid "Ejecucione"
+msgstr ""
+
+#: View/Ejecuciones/view.ctp:50
+msgid "Delete Ejecucione"
+msgstr ""
+
+#: View/Elements/alumno/home.ctp:13
+msgid "dificultad_"
+msgstr ""
+
+#: View/Elements/alumno/home.ctp:15
+#: View/Estadisticas/problemas_listado.ctp:12
+#: View/EstadisticasAlumnos/index.ctp:15
+#: View/EstadisticasAlumnos/ranking_nota.ctp:4
+#: View/EstadisticasProblemas/index.ctp:11
+msgid "nota_media"
+msgstr ""
+
+#: View/Elements/alumno/home.ctp:16
+#: View/Estadisticas/historial_login_post.ctp:15
+msgid "ejecuciones"
+msgstr ""
+
+#: View/Elements/alumno/home.ctp:61
+msgid "facil"
+msgstr ""
+
+#: View/Elements/alumno/home.ctp:64
+msgid "medio"
+msgstr ""
+
+#: View/Elements/alumno/home.ctp:67
+msgid "dificil"
+msgstr ""
+
+#: View/Elements/alumno/home.ctp:90
+#: View/Problemas/view.ctp:11
+msgid "resolver"
+msgstr ""
+
+#: View/Elements/estadisticas/alumnos/ranking.ctp:4
+#: View/EstadisticasAlumnos/index.ctp:4
+#: View/EstadisticasAlumnos/search.ctp:4
+#: View/ListadosAlumnos/index.ctp:4
+msgid "Estadisticas alumnos"
+msgstr ""
+
+#: View/Elements/estadisticas/alumnos/ranking.ctp:15
+msgid "posicion"
+msgstr ""
+
+#: View/Elements/estadisticas/alumnos/ranking.ctp:16
+#: View/EstadisticasAlumnos/index.ctp:12
+#: View/EstadisticasAlumnos/search.ctp:27
+msgid "nombre"
+msgstr ""
+
+#: View/Elements/estadisticas/alumnos/ranking.ctp:17
+#: View/EstadisticasAlumnos/index.ctp:11
+#: View/EstadisticasAlumnos/search.ctp:26
+msgid "apellidos"
+msgstr ""
+
+#: View/Elements/estadisticas/problemas/listado_puntuacion.ctp:3
+msgid "problema_mas_10"
+msgstr ""
+
+#: View/Elements/estadisticas/problemas/listado_puntuacion.ctp:6;29
+#: View/Estadisticas/problemas_listado.ctp:10
+msgid "problema"
+msgstr ""
+
+#: View/Elements/estadisticas/problemas/listado_puntuacion.ctp:8;31
+msgid "numero_valoraciones"
+msgstr ""
+
+#: View/Elements/estadisticas/problemas/listado_puntuacion.ctp:26
+msgid "problema_menos_10"
+msgstr ""
+
+#: View/Elements/sidebar/admin.ctp:3
+msgid "administrador"
+msgstr ""
+
+#: View/Elements/sidebar/admin.ctp:9
+#: View/Elements/sidebar/profesor.ctp:9
+msgid "asignatura_asignatura"
+msgstr ""
+
+#: View/Elements/sidebar/admin.ctp:10
+msgid "alumnos"
+msgstr ""
+
+#: View/Elements/sidebar/admin.ctp:14
+#: View/Elements/sidebar/profesor.ctp:14
+msgid "menu_texto_no_asignatura"
+msgstr ""
+
+#: View/Elements/sidebar/admin.ctp:19
+msgid "idiomas"
+msgstr ""
+
+#: View/Elements/sidebar/admin.ctp:20
+#: View/Profesores/index.ctp:4
+msgid "profesores"
+msgstr ""
+
+#: View/Elements/sidebar/admin.ctp:21
+#: View/Elements/tree/arboles.ctp:18
+#: View/EstadisticasAlumnos/index.ctp:13
+#: View/Problemas/eliminables.ctp:4
+#: View/Problemas/index.ctp:4
+#: View/Problemas/no_eliminables.ctp:4
+msgid "problemas"
+msgstr ""
+
+#: View/Elements/sidebar/admin.ctp:24
+#: View/Programas/index.ctp:4
+#: View/SintaxisRespuestas/avanzado.ctp:4
+#: View/SintaxisRespuestas/index.ctp:4
+#: View/TiposRespuestas/index.ctp:4
+msgid "avanzado"
+msgstr ""
+
+#: View/Elements/sidebar/all_users.ctp:3
+#: View/Elements/sidebar/all_users_no_lenguajes.ctp:3
+#: View/EstadisticasAlumnos/index.ctp:10
+#: View/EstadisticasAlumnos/search.ctp:25
+msgid "usuario"
+msgstr ""
+
+#: View/Elements/sidebar/all_users.ctp:9
+#: View/Elements/sidebar/all_users_no_lenguajes.ctp:8
+msgid "saludo_usuario"
+msgstr ""
+
+#: View/Elements/sidebar/all_users.ctp:10
+msgid "lenguaje_lenguaje"
+msgstr ""
+
+#: View/Elements/sidebar/all_users.ctp:11
+msgid "menu_seleccion_lenguaje"
+msgstr ""
+
+#: View/Elements/sidebar/all_users.ctp:12
+msgid "notificar_error_traduccion"
+msgstr ""
+
+#: View/Elements/sidebar/all_users.ctp:13
+msgid "cambiar_password"
+msgstr ""
+
+#: View/Elements/sidebar/all_users.ctp:14
+msgid "cerrar_sesion"
+msgstr ""
+
+#: View/Elements/sidebar/all_users_no_lenguaje.ctp:3
+msgid "User"
+msgstr ""
+
+#: View/Elements/sidebar/alumno.ctp:3
+#: View/EstadisticasProblemas/listado_ejecuciones.ctp:12
+msgid "alumno"
+msgstr ""
+
+#: View/Elements/sidebar/alumno.ctp:8
+#: View/Elements/sidebar/profesor.ctp:19
+msgid "seleccionar_asignatura"
+msgstr ""
+
+#: View/Elements/sidebar/alumno.ctp:15
+msgid "ultimo_problema_probado"
+msgstr ""
+
+#: View/Elements/sidebar/profesor.ctp:3
+#: View/Helper/TreeHelper.php:190;245
+msgid "profesor"
+msgstr ""
+
+#: View/Elements/sidebar/profesor.ctp:10
+msgid "estadisticas"
+msgstr ""
+
+#: View/Elements/sidebar/profesor.ctp:11
+msgid "encuestas"
+msgstr ""
+
+#: View/Elements/sidebar/profesor.ctp:12
+msgid "gestionar_bloques"
+msgstr ""
+
+#: View/Elements/sidebar/profesor.ctp:17
+msgid "editor"
+msgstr ""
+
+#: View/Elements/sidebar/profesor.ctp:18
+#: View/Elements/sidebar/avanzado/avanzado.ctp:4
+msgid "programas"
+msgstr ""
+
+#: View/Elements/sidebar/administradores/administradores.ctp:2;3
+msgid "menu_crear_administrador"
+msgstr ""
+
+#: View/Elements/sidebar/administradores/administradores.ctp:3
+msgid "explic_crear_administrador"
+msgstr ""
+
+#: View/Elements/sidebar/asignaturas/asignaturas.ctp:2;3
+msgid "menu_crear_asignatura"
+msgstr ""
+
+#: View/Elements/sidebar/asignaturas/asignaturas.ctp:3
+msgid "explic_crear_asignatura"
+msgstr ""
+
+#: View/Elements/sidebar/asignaturas/asignaturas.ctp:4
+msgid "orden_alfabetico"
+msgstr ""
+
+#: View/Elements/sidebar/asignaturas/asignaturas.ctp:5
+msgid "orden_creacion"
+msgstr ""
+
+#: View/Elements/sidebar/avanzado/avanzado.ctp:2
+msgid "sintaxis_respuestas"
+msgstr ""
+
+#: View/Elements/sidebar/avanzado/avanzado.ctp:3
+msgid "tipos_respuestas"
+msgstr ""
+
+#: View/Elements/sidebar/avanzado/programas.ctp:2;3
+#: View/Elements/sidebar/avanzado/sintaxis_respuesta.ctp:2;3
+#: View/Elements/sidebar/avanzado/tipos_respuestas.ctp:2;3
+#: View/Elements/sidebar/bloques/bloques.ctp:2;3
+msgid "menu_cambiar_orden"
+msgstr ""
+
+#: View/Elements/sidebar/avanzado/programas.ctp:3
+msgid "explic_cambiar_orden_programas"
+msgstr ""
+
+#: View/Elements/sidebar/avanzado/programas.ctp:4;5
+msgid "menu_crear_programa"
+msgstr ""
+
+#: View/Elements/sidebar/avanzado/programas.ctp:5
+msgid "explic_crear_programa"
+msgstr ""
+
+#: View/Elements/sidebar/avanzado/sintaxis_respuesta.ctp:3
+msgid "explic_cambiar_orden_sintaxis_respuesta"
+msgstr ""
+
+#: View/Elements/sidebar/avanzado/sintaxis_respuesta.ctp:4;5
+msgid "menu_crear_sintaxis_respuesta"
+msgstr ""
+
+#: View/Elements/sidebar/avanzado/sintaxis_respuesta.ctp:5
+msgid "explic_crear_sintaxis_respuesta"
+msgstr ""
+
+#: View/Elements/sidebar/avanzado/tipos_respuestas.ctp:3
+msgid "explic_cambiar_orden_tipos_respuestas"
+msgstr ""
+
+#: View/Elements/sidebar/avanzado/tipos_respuestas.ctp:4;5
+msgid "menu_crear_tipo"
+msgstr ""
+
+#: View/Elements/sidebar/avanzado/tipos_respuestas.ctp:5
+msgid "explic_crear_tipo_respuesta"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:6;7
+#: View/Profesores/docencia.ctp:15
+msgid "modificar"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:7
+msgid "explic_modificar_problemas_bloques"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:9;10
+msgid "reasignar"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:10
+msgid "explic_reasignar_problemas_bloques"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:12;13
+msgid "menu_asignar"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:13
+#: View/Elements/sidebar/bloques/bloques.ctp:7
+msgid "explic_asignar_problemas_bloque"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:15;16
+msgid "menu_desasignar"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:16
+msgid "explic_desasignar_problemas_bloques"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:18;19
+msgid "menu_mostrar"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:19
+msgid "explic_mostrar_problemas_bloques"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:21;22
+msgid "menu_ocultar"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:22
+msgid "explic_ocultar_problemas_bloques"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:24;25
+msgid "menu_notificar"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:25
+msgid "explic_notificar_problemas_bloques"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:27;28
+msgid "menu_no_notificar"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:28
+msgid "explic_no_notificar_problemas_bloques"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:30;31
+msgid "menu_buscar_problemas"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:31
+msgid "explic_buscar_problemas"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:33;34
+msgid "menu_volver_bloques"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/asignaciones.ctp:34
+msgid "explic_volver_bloques"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/bloques.ctp:3
+msgid "explic_cambiar_orden_bloques"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/bloques.ctp:4;5
+msgid "menu_crear_bloque"
+msgstr ""
+
+#: View/Elements/sidebar/bloques/bloques.ctp:5
+msgid "explic_crear_bloque"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/asignaturas.ctp:2;3
+msgid "menu_asignatura"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/asignaturas.ctp:3
+msgid "explic_asignatura_estadisticas"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/asignaturas.ctp:4;5
+msgid "menu_problemas"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/asignaturas.ctp:5
+msgid "explic_problemas_estadisticas"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/asignaturas.ctp:6;7
+#: View/Elements/sidebar/estadisticas/estadisticas_grupos.ctp:2;3
+msgid "menu_grupos"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/asignaturas.ctp:7
+msgid "explic_grupos_estadisticas"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/asignaturas.ctp:8;9
+msgid "menu_alumnos"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/asignaturas.ctp:9
+msgid "explic_alumnos_estadisticas"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/asignaturas.ctp:10;11
+msgid "menu_historial_login"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/asignaturas.ctp:11
+msgid "explic_historial_login_estadisticas"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/asignaturas.ctp:12
+msgid "listado_valoracion_problemas"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_alumnos.ctp:2;3
+msgid "menu_listado_alumnos"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_alumnos.ctp:3
+msgid "explic_listado_alumnos"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_alumnos.ctp:4;5
+msgid "menu_buscar_alumnos"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_alumnos.ctp:5
+msgid "explic_buscar_alumnos"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_alumnos.ctp:6;7
+msgid "menu_listado_excel"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_alumnos.ctp:7
+msgid "explic_listado_excel_alumnos"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_alumnos.ctp:8;9
+#: View/EstadisticasAlumnos/ranking_ejecuciones.ctp:3
+msgid "menu_ranking_ejecuciones"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_alumnos.ctp:9
+msgid "explic_ranking_ejecuciones_alumnos"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_alumnos.ctp:10
+#: View/EstadisticasAlumnos/ranking_nota.ctp:3
+msgid "menu_ranking_nota"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_alumnos.ctp:11
+msgid "explic_ranking_nota_alumnos"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_alumnos.ctp:12;13
+#: View/EstadisticasAlumnos/ranking_puntuacion.ctp:3
+msgid "menu_ranking_puntuacion"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_alumnos.ctp:13
+msgid "explic_ranking_puntuacion_alumnos"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_alumnos.ctp:14;15
+#: View/Elements/sidebar/estadisticas/estadisticas_grupos.ctp:12;13
+#: View/Elements/sidebar/estadisticas/estadisticas_problemas.ctp:8;9
+msgid "volver"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_alumnos.ctp:15
+#: View/Elements/sidebar/estadisticas/estadisticas_grupos.ctp:13
+#: View/Elements/sidebar/estadisticas/estadisticas_problemas.ctp:9
+msgid "volver_estadisticas"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_grupos.ctp:3
+msgid "explic_estadisticas_grupos"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_grupos.ctp:4;5
+msgid "menu_grafico_nota_vs_puntuacion"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_grupos.ctp:5
+msgid "explic_grafico_nota_vs_puntuacion"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_grupos.ctp:6;7
+msgid "menu_grafico_nota"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_grupos.ctp:7
+msgid "explic_grafico_nota"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_grupos.ctp:8;9
+msgid "menu_grafico_puntuacion"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_grupos.ctp:9
+msgid "explic_grafico_puntuacion"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_grupos.ctp:10;11
+msgid "menu_grafico_problemas_alumno"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_grupos.ctp:11
+msgid "explic_grafico_problemas_alumno"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_problemas.ctp:2;3
+msgid "menu_grafico"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_problemas.ctp:3
+msgid "explic_grafico_nota_vs_ejecuciones"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_problemas.ctp:4;5
+msgid "menu_listado_nota"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_problemas.ctp:5
+msgid "explic_listado_problemas_nota"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_problemas.ctp:6;7
+#: View/Elements/sidebar/estadisticas/problemas/problemas.ctp:5;7
+msgid "menu_listado_ejecuciones"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/estadisticas_problemas.ctp:7
+msgid "explic_listado_ejecuciones"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/problemas/problemas.ctp:2;4
+msgid "menu_estadisticas_generales"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/problemas/problemas.ctp:4
+msgid "explic_estadisticas_generales"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/problemas/problemas.ctp:7
+msgid "explic_listado_ejecuciones_problema"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/problemas/problemas.ctp:8;10
+msgid "menu_preguntas"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/problemas/problemas.ctp:10
+msgid "explic_estadisticas_preguntas"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/problemas/problemas.ctp:11;13
+msgid "menu_grafico_repeticiones"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/problemas/problemas.ctp:13
+msgid "explic_grafico_repeticiones"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/problemas/problemas.ctp:14;16
+msgid "menu_grafico_opiniones"
+msgstr ""
+
+#: View/Elements/sidebar/estadisticas/problemas/problemas.ctp:16
+msgid "explic_grafico_opiniones"
+msgstr ""
+
+#: View/Elements/sidebar/problemas/problemas.ctp:2;3
+msgid "menu_eliminables"
+msgstr ""
+
+#: View/Elements/sidebar/problemas/problemas.ctp:3
+msgid "explic_eliminables"
+msgstr ""
+
+#: View/Elements/sidebar/problemas/problemas.ctp:4;5
+msgid "menu_no_eliminables"
+msgstr ""
+
+#: View/Elements/sidebar/problemas/problemas.ctp:5
+msgid "explic_no_eliminables"
+msgstr ""
+
+#: View/Elements/sidebar/profesores/profesores.ctp:2;3
+msgid "menu_crear_profesor"
+msgstr ""
+
+#: View/Elements/sidebar/profesores/profesores.ctp:3
+msgid "explic_crear_profesor"
+msgstr ""
+
+#: View/Elements/sidebar/profesores/profesores.ctp:4
+msgid "orden_apellidos"
+msgstr ""
+
+#: View/Elements/sidebar/profesores/profesores.ctp:5
+msgid "orden_login"
+msgstr ""
+
+#: View/Elements/tree/arboles.ctp:9;40
+msgid "plegar_todo"
+msgstr ""
+
+#: View/Elements/tree/arboles.ctp:14;44
+msgid "desplegar_todo"
+msgstr ""
+
+#: View/Elements/tree/arboles.ctp:20;54
+msgid "carpetas_propias"
+msgstr ""
+
+#: View/Elements/tree/arboles.ctp:21;55
+msgid "externas_subscritas"
+msgstr ""
+
+#: View/Elements/tree/arboles.ctp:22;56
+msgid "externas_no_subscritas"
+msgstr ""
+
+#: View/Elements/tree/buscar.ctp:14
+msgid "buscar_form"
+msgstr ""
+
+#: View/Estadisticas/asignatura.ctp:4
+#: View/Estadisticas/historial_login.ctp:4
+#: View/Estadisticas/historial_login_post.ctp:4
+#: View/Estadisticas/problemas_listado.ctp:4
+#: View/EstadisticasProblemas/grafico_opiniones.ctp:4
+#: View/EstadisticasProblemas/grafico_repeticiones.ctp:4
+#: View/EstadisticasProblemas/index.ctp:4
+#: View/EstadisticasProblemas/listado_ejecuciones.ctp:4
+#: View/EstadisticasProblemas/preguntas.ctp:4
+#: View/EstadisticasProblemas/profesor_listado_valoraciones.ctp:4
+msgid "Estadisticas"
+msgstr ""
+
+#: View/Estadisticas/asignatura.ctp:10
+msgid "total_problemas_disponibles"
+msgstr ""
+
+#: View/Estadisticas/asignatura.ctp:15
+#: View/EstadisticasGrupos/index.ctp:11
+msgid "total_problemas_utilizados"
+msgstr ""
+
+#: View/Estadisticas/asignatura.ctp:20
+#: View/EstadisticasGrupos/index.ctp:12
+msgid "total_ejecuciones"
+msgstr ""
+
+#: View/Estadisticas/asignatura.ctp:25
+#: View/EstadisticasGrupos/index.ctp:13
+msgid "media_ejecuciones_problemas_utilizados"
+msgstr ""
+
+#: View/Estadisticas/asignatura.ctp:30
+#: View/EstadisticasGrupos/index.ctp:14
+msgid "nota_media_ejecuciones"
+msgstr ""
+
+#: View/Estadisticas/historial_login.ctp:12
+#: View/EstadisticasAlumnos/search.ctp:19
+#: View/ListadosAlumnos/index.ctp:21
+msgid "aceptar"
+msgstr ""
+
+#: View/Estadisticas/historial_login_post.ctp:11
+msgid "alumnos_diferentes"
+msgstr ""
+
+#: View/Estadisticas/historial_login_post.ctp:21
+msgid "no_login_sistema"
+msgstr ""
+
+#: View/Estadisticas/problemas_grafico.ctp:4
+msgid "Estadisticas problemas"
+msgstr ""
+
+#: View/Estadisticas/problemas_listado.ctp:11
+#: View/EstadisticasAlumnos/ranking_ejecuciones.ctp:4
+#: View/EstadisticasProblemas/index.ctp:12
+msgid "numero_ejecuciones"
+msgstr ""
+
+#: View/EstadisticasAlumnos/search.ctp:28
+#: View/EstadisticasGrupos/index.ctp:10
+msgid "grupo"
+msgstr ""
+
+#: View/EstadisticasAlumnos/search.ctp:29
+msgid "email"
+msgstr ""
+
+#: View/EstadisticasGrupos/grafico_nota.ctp:4
+#: View/EstadisticasGrupos/grafico_nota_puntuacion.ctp:4
+#: View/EstadisticasGrupos/grafico_problemas_por_alumno.ctp:4
+#: View/EstadisticasGrupos/grafico_puntuacion.ctp:4
+#: View/EstadisticasGrupos/index.ctp:4
+msgid "Estadisticas grupos"
+msgstr ""
+
+#: View/EstadisticasGrupos/index.ctp:15
+msgid "puntuacion_total"
+msgstr ""
+
+#: View/EstadisticasGrupos/index.ctp:16
+msgid "total_alumnos"
+msgstr ""
+
+#: View/EstadisticasGrupos/index.ctp:17
+msgid "total_usuarios"
+msgstr ""
+
+#: View/EstadisticasGrupos/index.ctp:18
+msgid "porcentaje_usuarios"
+msgstr ""
+
+#: View/EstadisticasGrupos/index.ctp:44
+msgid "suma"
+msgstr ""
+
+#: View/EstadisticasGrupos/index.ctp:56
+msgid "media"
+msgstr ""
+
+#: View/EstadisticasProblemas/index.ctp:13
+msgid "numero_alumnos"
+msgstr ""
+
+#: View/EstadisticasProblemas/listado_ejecuciones.ctp:11
+msgid "ejecuciones_problema"
+msgstr ""
+
+#: View/EstadisticasProblemas/listado_ejecuciones.ctp:14
+msgid "fecha"
+msgstr ""
+
+#: View/EstadisticasProblemas/preguntas.ctp:14
+msgid "pregunta"
+msgstr ""
+
+#: View/EstadisticasProblemas/preguntas.ctp:15
+msgid "numero_respuestas"
+msgstr ""
+
+#: View/EstadisticasProblemas/preguntas.ctp:16
+msgid "media_resultado"
+msgstr ""
+
+#: View/EstadisticasProblemas/preguntas.ctp:17
+msgid "desviacion_resultado"
+msgstr ""
+
+#: View/Helper/TreeHelper.php:191
+msgid "modificado"
+msgstr ""
+
+#: View/Helper/TreeHelper.php:192
+msgid "dificultad"
+msgstr ""
+
+#: View/Helper/TreeHelper.php:193
+msgid "publicado"
+msgstr ""
+
+#: View/Helper/TreeHelper.php:194
+msgid "expresiones_publicas"
+msgstr ""
+
+#: View/Helper/TreeHelper.php:221
+msgid "tiempo_limite_minutos"
+msgstr ""
+
+#: View/Helper/TreeHelper.php:222
+msgid "visible"
+msgstr ""
+
+#: View/Helper/TreeHelper.php:222
+msgid "oculto"
+msgstr ""
+
+#: View/Helper/TreeHelper.php:246
+msgid "compartida"
+msgstr ""
+
+#: View/Layouts/default.ctp:59
+msgid "inicio"
+msgstr ""
+
+#: View/Layouts/default.ctp:60
+msgid "ayuda_"
+msgstr ""
+
+#: View/Layouts/default.ctp:61
+msgid "acerca_de"
+msgstr ""
+
+#: View/Preguntas/add.ctp:4
+msgid "Add Pregunta"
+msgstr ""
+
+#: View/Preguntas/edit.ctp:4
+#: View/Preguntas/view.ctp:99
+msgid "Edit Pregunta"
+msgstr ""
+
+#: View/Preguntas/index.ctp:2
+msgid "Preguntas"
+msgstr ""
+
+#: View/Preguntas/view.ctp:2
+msgid "Pregunta"
+msgstr ""
+
+#: View/Preguntas/view.ctp:9
+msgid "Problema"
+msgstr ""
+
+#: View/Preguntas/view.ctp:19
+#: View/SintaxisRespuestas/view.ctp:50
+msgid "Enunciado"
+msgstr ""
+
+#: View/Preguntas/view.ctp:24
+#: View/SintaxisRespuestas/view.ctp:51
+msgid "Respuesta"
+msgstr ""
+
+#: View/Preguntas/view.ctp:29
+#: View/SintaxisRespuestas/view.ctp:2
+msgid "Sintaxis Respuesta"
+msgstr ""
+
+#: View/Preguntas/view.ctp:34
+#: View/SintaxisRespuestas/view.ctp:53
+msgid "Sintaxis Parametro"
+msgstr ""
+
+#: View/Preguntas/view.ctp:39
+#: View/SintaxisRespuestas/view.ctp:54
+msgid "Expresiones Respuesta"
+msgstr ""
+
+#: View/Preguntas/view.ctp:44
+#: View/SintaxisRespuestas/view.ctp:55
+msgid "Expresiones Parametro"
+msgstr ""
+
+#: View/Preguntas/view.ctp:49
+#: View/SintaxisRespuestas/view.ctp:56
+msgid "Peso"
+msgstr ""
+
+#: View/Preguntas/view.ctp:54
+#: View/SintaxisRespuestas/view.ctp:57
+msgid "Intentos"
+msgstr ""
+
+#: View/Preguntas/view.ctp:59
+#: View/SintaxisRespuestas/view.ctp:58
+msgid "Ayuda"
+msgstr ""
+
+#: View/Preguntas/view.ctp:64
+#: View/SintaxisRespuestas/view.ctp:59
+msgid "Link1"
+msgstr ""
+
+#: View/Preguntas/view.ctp:69
+#: View/SintaxisRespuestas/view.ctp:60
+msgid "Link2"
+msgstr ""
+
+#: View/Preguntas/view.ctp:74
+#: View/SintaxisRespuestas/view.ctp:61
+msgid "Mostrar Solucion"
+msgstr ""
+
+#: View/Preguntas/view.ctp:79
+#: View/SintaxisRespuestas/view.ctp:62
+msgid "Mensaje Correcto"
+msgstr ""
+
+#: View/Preguntas/view.ctp:84
+#: View/SintaxisRespuestas/view.ctp:63
+msgid "Mensaje Semicorrecto"
+msgstr ""
+
+#: View/Preguntas/view.ctp:89
+#: View/SintaxisRespuestas/view.ctp:64
+msgid "Mensaje Incorrecto"
+msgstr ""
+
+#: View/Preguntas/view.ctp:100
+msgid "Delete Pregunta"
+msgstr ""
+
+#: View/Preguntas/view.ctp:101
+#: View/SintaxisRespuestas/add.ctp:18
+#: View/SintaxisRespuestas/view.ctp:38
+msgid "List Preguntas"
+msgstr ""
+
+#: View/Preguntas/view.ctp:102
+#: View/SintaxisRespuestas/add.ctp:19
+#: View/SintaxisRespuestas/view.ctp:39;101
+msgid "New Pregunta"
+msgstr ""
+
+#: View/Preguntas/view.ctp:103
+msgid "List Problemas"
+msgstr ""
+
+#: View/Preguntas/view.ctp:104
+msgid "New Problema"
+msgstr ""
+
+#: View/Preguntas/view.ctp:105
+#: View/SintaxisRespuestas/add.ctp:17
+#: View/SintaxisRespuestas/view.ctp:36
+msgid "List Sintaxis Respuestas"
+msgstr ""
+
+#: View/Preguntas/view.ctp:106
+#: View/SintaxisRespuestas/view.ctp:37
+msgid "New Sintaxis Respuesta"
+msgstr ""
+
+#: View/Problemas/add.ctp:4
+msgid "Add Problema"
+msgstr ""
+
+#: View/Problemas/add.ctp:20
+#: View/Problemas/edit.ctp:25
+msgid "restaurar_xml"
+msgstr ""
+
+#: View/Problemas/edit.ctp:4
+msgid "Edit Problema"
+msgstr ""
+
+#: View/Problemas/edit.ctp:21
+msgid "editar_preguntas"
+msgstr ""
+
+#: View/Problemas/edit.ctp:22
+msgid "prueba_problema"
+msgstr ""
+
+#: View/Problemas/edit.ctp:24
+msgid "generar_xml"
+msgstr ""
+
+#: View/Problemas/eliminables.ctp:9
+#: View/Problemas/index.ctp:9
+#: View/Problemas/no_eliminables.ctp:9
+msgid "Problemas"
+msgstr ""
+
+#: View/Problemas/restaurar_xml.ctp:1
+msgid "indicar_xml_restaurar_problema"
+msgstr ""
+
+#: View/Problemas/restaurar_xml.ctp:3
+msgid "aviso_sobreescritura_problema"
+msgstr ""
+
+#: View/Problemas/restaurar_xml.ctp:8
+msgid "enviar"
+msgstr ""
+
+#: View/Problemas/view.ctp:3
+msgid "problema_problema"
+msgstr ""
+
+#: View/Problemas/view.ctp:38
+msgid "problema_pesos_preguntas"
+msgstr ""
+
+#: View/Profesores/add.ctp:4
+msgid "Add Profesor"
+msgstr ""
+
+#: View/Profesores/index.ctp:21
+msgid "Docencia"
+msgstr ""
+
+#: View/Profesores/seleccionar.ctp:4
+msgid "Seleccionar asignatura"
+msgstr ""
+
+#: View/Programas/add.ctp:4
+msgid "Add Programa"
+msgstr ""
+
+#: View/Programas/edit.ctp:4
+#: View/Programas/view.ctp:109
+msgid "Edit Programa"
+msgstr ""
+
+#: View/Programas/index.ctp:9
+msgid "Programas"
+msgstr ""
+
+#: View/Programas/index.ctp:22
+msgid "Run"
+msgstr ""
+
+#: View/Programas/run.ctp:34
+msgid "ejecutar"
+msgstr ""
+
+#: View/Programas/run.ctp:38
+msgid "salida"
+msgstr ""
+
+#: View/Programas/view.ctp:2
+msgid "Programa"
+msgstr ""
+
+#: View/Programas/view.ctp:24
+#: View/SintaxisRespuestas/view.ctp:19
+#: View/TiposRespuestas/view.ctp:19
+msgid "Expresiones"
+msgstr ""
+
+#: View/Programas/view.ctp:29
+msgid "Param1"
+msgstr ""
+
+#: View/Programas/view.ctp:34
+msgid "Param2"
+msgstr ""
+
+#: View/Programas/view.ctp:39
+msgid "Param3"
+msgstr ""
+
+#: View/Programas/view.ctp:44
+msgid "Param4"
+msgstr ""
+
+#: View/Programas/view.ctp:49
+msgid "Param5"
+msgstr ""
+
+#: View/Programas/view.ctp:54
+msgid "Param6"
+msgstr ""
+
+#: View/Programas/view.ctp:59
+msgid "Param7"
+msgstr ""
+
+#: View/Programas/view.ctp:64
+msgid "Publico"
+msgstr ""
+
+#: View/Programas/view.ctp:69
+msgid "Tipo Param1"
+msgstr ""
+
+#: View/Programas/view.ctp:74
+msgid "Tipo Param2"
+msgstr ""
+
+#: View/Programas/view.ctp:79
+msgid "Tipo Param3"
+msgstr ""
+
+#: View/Programas/view.ctp:84
+msgid "Tipo Param4"
+msgstr ""
+
+#: View/Programas/view.ctp:89
+msgid "Tipo Param5"
+msgstr ""
+
+#: View/Programas/view.ctp:94
+msgid "Tipo Param6"
+msgstr ""
+
+#: View/Programas/view.ctp:99
+msgid "Tipo Param7"
+msgstr ""
+
+#: View/Programas/view.ctp:110
+msgid "Delete Programa"
+msgstr ""
+
+#: View/Programas/view.ctp:111
+msgid "List Programas"
+msgstr ""
+
+#: View/Programas/view.ctp:112
+msgid "New Programa"
+msgstr ""
+
+#: View/SintaxisRespuestas/add.ctp:4
+msgid "Add Sintaxis Respuesta"
+msgstr ""
+
+#: View/SintaxisRespuestas/edit.ctp:4
+#: View/SintaxisRespuestas/view.ctp:34
+msgid "Edit Sintaxis Respuesta"
+msgstr ""
+
+#: View/SintaxisRespuestas/index.ctp:9
+msgid "Sintaxis Respuestas"
+msgstr ""
+
+#: View/SintaxisRespuestas/view.ctp:35
+msgid "Delete Sintaxis Respuesta"
+msgstr ""
+
+#: View/SintaxisRespuestas/view.ctp:43
+msgid "Related Preguntas"
+msgstr ""
+
+#: View/SintaxisRespuestas/view.ctp:52
+msgid "Sintaxis Respuesta Id"
+msgstr ""
+
+#: View/TiposRespuestas/add.ctp:4
+msgid "Add Tipos Respuesta"
+msgstr ""
+
+#: View/TiposRespuestas/edit.ctp:4
+#: View/TiposRespuestas/view.ctp:34
+msgid "Edit Tipos Respuesta"
+msgstr ""
+
+#: View/TiposRespuestas/index.ctp:9
+msgid "Tipos Respuestas"
+msgstr ""
+
+#: View/TiposRespuestas/view.ctp:2
+msgid "Tipos Respuesta"
+msgstr ""
+
+#: View/TiposRespuestas/view.ctp:35
+msgid "Delete Tipos Respuesta"
+msgstr ""
+
+#: View/TiposRespuestas/view.ctp:36
+msgid "List Tipos Respuestas"
+msgstr ""
+
+#: View/TiposRespuestas/view.ctp:37
+msgid "New Tipos Respuesta"
+msgstr ""
+
+#: View/Usuarios/change_password.ctp:4
+msgid "Change Password"
+msgstr ""
+
+#: View/Usuarios/edit.ctp:4
+msgid "Admin Edit Usuario"
+msgstr ""
+
+#: View/Usuarios/index.ctp:2
+msgid "Usuarios"
+msgstr ""
+
+#: View/Usuarios/notificar_error_traduccion.ctp:4
+msgid "Notificacion error lenguaje"
+msgstr ""
+
+#: View/Usuarios/seleccionar_lenguaje.ctp:4
+msgid "Seleccionar Lenguaje"
+msgstr ""
+

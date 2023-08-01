@@ -1,0 +1,32 @@
+.tooltip {
+        visibility: hidden;
+        position: absolute;
+        width: 240px;
+        background-color: rgb(255, 255, 234);
+        border: 1px solid black;
+        padding: 0px;
+        font-size: 12px;
+        margin: 0em;
+}
+
+.tooltip h1 {
+        height: auto;
+        padding: 0.5em;
+        margin: 0px;
+        background-color: #003399;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+}
+
+.tooltip p {
+        padding: 0px;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        line-height: 1.2em;
+}
+
+.tooltip p.close {
+}
+.tooltip a.close {
+}

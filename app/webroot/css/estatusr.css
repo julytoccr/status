@@ -1,0 +1,139 @@
+.estatusr
+{
+	text-align:center;
+}
+
+#tiempo_limite
+{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+table.estatusr_table
+{
+	border-width: 1px 1px 1px 1px;
+	text-align: center;
+
+	vertical-align: center;
+}
+
+td.estatusr_colname
+{
+	padding: 3px;
+	font-weight: bold;
+	text-align: center;
+	color: yellow;
+	background-color:  darkblue;
+}
+
+td.estatusr_blanco
+{
+	background-color: white;
+}
+
+td.estatusr_rowname
+{
+	padding: 3px;
+	background-color:  darkblue;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: yellow;
+	font-weight: bold;
+}
+
+td.estatusr_field
+{
+	background-color:  #CFDFFF;
+	color: black;
+	font-weight: bold;
+}
+
+#problema_enunciado
+{
+	padding: 10px;
+	font-weight: bold;
+}
+
+#problema_preguntas
+{
+	padding: 10px;
+	width: 100%;
+	text-align:center;
+}
+#problema_preguntas table
+{
+	width: 100%;
+}
+
+.fila_pregunta
+{
+	padding-bottom: 10px;
+	background-color: #CFDFFF;
+	color:black;
+}
+
+.pregunta
+{
+	font-weight: bold;
+	padding: 8px;
+	text-align: left;
+	font-size: 12px;
+}
+
+.respuesta
+{
+	padding: 8px;
+	min-width: 20px;
+	vertical-align: center;
+	font-weight: bold;
+	text-align: center;
+}
+
+.respuesta input
+{
+	font-size: 14px;
+}
+
+.correcta
+{
+	background-color: green;
+	color: white;
+}
+
+.casicorrecta
+{
+	background-color: olive;
+	color: white;
+}
+
+
+.incorrecta
+{
+	background-color: red;
+	color:white;
+}
+
+#puntuacion
+{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#puntuacion table th
+{
+	background-color: darkblue;
+	color: white;
+}
+
+#puntuacion table td
+{
+	padding: 5px;
+	background-color: #CFDFFF;
+}
+
+
+.tabla_minitab
+{
+	color:black;
+	background-color: #CFDFFF;;
+}
